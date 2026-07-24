@@ -2,6 +2,7 @@ import { Box, Container, Heading, HStack, SimpleGrid, Text } from "@chakra-ui/re
 import Link from "next/link";
 import { NavItem } from "../navbar/NavItem";
 import { navItems } from "../navbar/navItems";
+import { SiteConfig } from "@/site-config";
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
       <Container py={20}>
         <HStack flexWrap={"wrap"} gap={20}>
         <Box maxW={"md"}>
-          <Heading>Logo</Heading>
+          <Heading>{SiteConfig.name}</Heading>
           <Text mt={4} fontSize={"sm"} color="fg.muted">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
             earum cum nihil cumque aliquid blanditiis necessitatibus qui
