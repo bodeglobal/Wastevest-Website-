@@ -102,4 +102,4 @@ const config = defineConfig({
   },
 });
 
-const SystemTheme = createSystem(defaultConfig, config);
+export const SystemTheme = createSystem(defaultConfig, config);
