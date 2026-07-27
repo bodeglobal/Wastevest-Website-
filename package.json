@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "chakra:i-snippets": "bash ./scripts/chakra-snippet.sh"
+    "chakra:i-snippets": "bash ./scripts/chakra-snippet.sh",
+    "update-from-base-template": "git pull upstream main"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.36.1",
