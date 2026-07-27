@@ -8,10 +8,14 @@ export const navItems: { label: string; href: string; subMenu?: NavItem[]; }[] =
     },
     {
         label: "About",
+        href: "/about",
+    },
+    {
+        label: "Solutions",
         href: "/",
     },
     {
-        label: "Contact",
-        href: "/",
+        label: "RouteBeacon",
+        href: "/routebeaon",
     },
 ];

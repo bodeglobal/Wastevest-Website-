@@ -1,3 +1,4 @@
+"use client"
 import {
   Box,
   BoxProps,
@@ -6,28 +7,37 @@ import {
   Container,
   Heading,
   HStack,
+  IconButton,
 } from "@chakra-ui/react";
-import Link from "next/link";
+import Link, { useLinkStatus } from "next/link";
 import { navItems } from "./navItems";
-import { SiteConfig } from "@/site-config";
-import Image from "next/image";
+import WVLogo from "../wv-logo";
+import { BookBode } from "../btns";
+import { LuMenu } from "react-icons/lu";
 
 export default function NavigationBar(props: BoxProps) {
+  const a = useLinkStatus()
   return (
-    <Box as={"nav"} asChild p={4} {...props}>
-      <Container>
+    <Box
+      as={"nav"}
+      // asChild
+      p={4}
+      backdropFilter={"auto"}
+      backdropBlur={"xl"}
+      zIndex={99}
+      pos="fixed"
+      {...props}
+      bg={`${props.bg}/80`}
+      bgColor={`${props.bgColor}/80`}
+      backgroundColor={`${props.backgroundColor}/80`}
+      w="full"
+    >
+      <Container pos="relative">
         <HStack pos="relative" justifyContent={"space-between"}>
           <Heading as="h1">
-            {SiteConfig.logo.iconOnly ? (
-              <Image
-                src={SiteConfig.logo.iconOnly}
-                alt=""
-                width={100}
-                height={100}
-              />
-            ) : (
-              SiteConfig.name
-            )}
+            <Link href="/">
+              <WVLogo w={[24, null, 40]} />
+            </Link>
           </Heading>
           <HStack
             as="ul"
@@ -35,6 +45,7 @@ export default function NavigationBar(props: BoxProps) {
             top={"50%"}
             left={"50%"}
             transform={"translate(-50%, -50%)"}
+            hideBelow={"md"}
           >
             {navItems.map((item) => {
               return (
@@ -43,6 +54,7 @@ export default function NavigationBar(props: BoxProps) {
                   as="li"
                   asChild
                   variant={"ghost"}
+                  
                 >
                   <Link href={item.href}>{item.label}</Link>
                 </Button>
@@ -50,7 +62,11 @@ export default function NavigationBar(props: BoxProps) {
             })}
           </HStack>
           <ButtonGroup>
-            <Button colorPalette={"orange"}>Action</Button>
+            <BookBode variant="outline" />
+
+            <IconButton hideFrom={"md"} variant={"outline"}>
+              <LuMenu />
+            </IconButton>
           </ButtonGroup>
         </HStack>
       </Container>

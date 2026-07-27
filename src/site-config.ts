@@ -1,9 +1,10 @@
 export const SiteConfig = {
-  name: "Template",
+  name: "Wastevest",
   description: "",
   logo: {
-    full: "",
+    full: "/assets/logo/wv-logo.svg",
     iconOnly: "",
+    white: "/assets/logo/wv-logo-white.png"
   },
   contact: {
     emails: ["", ""],
