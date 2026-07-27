@@ -69,6 +69,39 @@ const config = defineConfig({
       colors: {
         bg: { value: "#F6F5F1" },
         "bg.muted": { value: "#e9e9e9d1" },
+
+        primary: {
+          solid: { value: "{colors.primary.500}" },
+          contrast: { value: "{colors.primary.0}" },
+          fg: { value: "{colors.primary.700}" },
+          muted: { value: "{colors.primary.100}" },
+          subtle: { value: "{colors.primary.50}" },
+          emphasized: { value: "{colors.primary.200}" },
+          focusRing: { value: "{colors.primary.500}" },
+        },
+
+        // colorPalette: {
+        //   solid: { value: "{colors.primary.500}" },
+        //   contrast: { value: "{colors.primary.0}" },
+        //   fg: { value: "{colors.primary.700}" },
+        //   muted: { value: "{colors.primary.100}" },
+        //   subtle: { value: "{colors.primary.50}" },
+        //   emphasized: { value: "{colors.primary.200}" },
+        //   focusRing: { value: "{colors.primary.500}" },
+
+        //   // Optional shade aliases used internally by some recipes
+        //   50: { value: "{colors.primary.50}" },
+        //   100: { value: "{colors.primary.100}" },
+        //   200: { value: "{colors.primary.200}" },
+        //   300: { value: "{colors.primary.300}" },
+        //   400: { value: "{colors.primary.400}" },
+        //   500: { value: "{colors.primary.500}" },
+        //   600: { value: "{colors.primary.600}" },
+        //   700: { value: "{colors.primary.700}" },
+        //   800: { value: "{colors.primary.800}" },
+        //   900: { value: "{colors.primary.900}" },
+        //   950: { value: "{colors.primary.950}" },
+        // },
       },
     },
     recipes: {

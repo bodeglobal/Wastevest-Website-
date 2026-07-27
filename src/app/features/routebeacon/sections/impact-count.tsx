@@ -1,10 +1,22 @@
 import SectionTitleTag from "@/components/section-tag";
 import WVLink from "@/components/wv-link";
-import { Box, Button, ButtonGroup, Container, Heading, HStack, SimpleGrid, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  ButtonGroup,
+  Container,
+  Heading,
+  HStack,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/react";
 import { ImpactData } from "../../about/sections/ImpactData";
 import { LuArrowRight } from "react-icons/lu";
+import { AnimateNumberCount } from "@/components/animate-number-count";
+import { useRef } from "react";
 
 export default function ImpactCount() {
+  const ref = useRef(null);
   return (
     <Box as="section">
       <Container py={100}>
@@ -15,16 +27,18 @@ export default function ImpactCount() {
         </Heading>
 
         <ButtonGroup>
-          <Button colorPalette={"primary"}>Request Pickup <LuArrowRight /></Button>
+          <Button colorPalette={"primary"}>
+            Request Pickup <LuArrowRight />
+          </Button>
           <Button variant={"outline"}>Apply as a Service Partner</Button>
         </ButtonGroup>
 
-        <SimpleGrid columns={[2, null, 5]} mt={10} flexWrap={"wrap"}>
+        <SimpleGrid ref={ref} columns={[2, null, 5]} mt={10} flexWrap={"wrap"}>
           {ImpactData.map((item, i) => {
             return (
               <Box key={i} py={[4, 14]} textAlign={"center"}>
                 <Text fontSize={"4xl"} fontFamily={"heading"}>
-                  {item.value}
+                  <AnimateNumberCount ref={ref} targetCount={item.value} />
                   {item.plus && "+"} {item.unit && ` ${item.unit}`}
                 </Text>
                 <Text color={"fg.muted"} fontSize={"xs"}>
@@ -38,5 +52,3 @@ export default function ImpactCount() {
     </Box>
   );
 }
-
-
