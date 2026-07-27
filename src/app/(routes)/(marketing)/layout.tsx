@@ -1,17 +1,7 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import AppProvider from "@/app/providers/app-provider";
 import Footer from "@/components/footer/footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { geistMono, geistSans } from "@/components/theme/fonts";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Philtech Website Template",

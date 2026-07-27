@@ -8,7 +8,16 @@ type Props = {
   targetCount: number;
 };
 
-export function useAnimateNumberCount({ ref, targetCount }: Props) {
+type Returns = ReturnType<typeof useAnimateNumberCount>;
+
+/**
+ *
+ * @param  props - ref: The target element that triggers animation when in view
+ * - targetCount: the final count
+ * @returns {Return}
+ */
+export function useAnimateNumberCount(props: Props): { count: number } {
+  const { ref, targetCount } = props;
   const value = useMotionValue(0);
   const inView = useInView(ref);
 
@@ -32,10 +41,10 @@ export function useAnimateNumberCount({ ref, targetCount }: Props) {
     };
   }, [inView]);
 
-  return {count};
+  return { count };
 }
 
 export function AnimateNumberCount(props: Props) {
-  const {count} = useAnimateNumberCount(props);
+  const { count } = useAnimateNumberCount(props);
   return <FormatNumber value={count} />;
 }
