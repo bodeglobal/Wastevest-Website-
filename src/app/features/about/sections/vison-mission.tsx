@@ -19,7 +19,7 @@ export default function VisionMission() {
   return (
     <Box as="section" py={100}>
       <Container centerContent>
-        <HStack gap={20} mdDown={{ flexDir: "column" }}>
+        <HStack gap={[10]} mdDown={{ flexDir: "column" }} alignItems={"stretch"}>
           <DecorCard
             bgUrl={`/assets/illustrations/wave-lines-dark.svg`}
             bgColor="{colors.primary}"
@@ -56,14 +56,17 @@ function DecorCard({
   return (
     <Card.Root
       bg={`url("${bgUrl}"), ${bgColor}`}
-      maxW={"md"}
+      maxW={[null, null, null, "md"]}
+      flex={1}
       rounded={"2xl"}
       overflow={"hidden"}
+      
     >
       <Card.Body
         p={10}
         // bgRepeat={"repeat"}
         fill={"purple"}
+        // justifyContent={"space-between"}
       >
         <Card.Title fontSize={["3xl", null, "5xl"]} color="white">
           {title}

@@ -16,9 +16,9 @@ export default function HeroSection() {
 "
     >
       <Container asChild color="white" py={100} h="full" minH={"svh"}>
-        <Center flexDir={["column", null, null, "row"]} justifyContent={["center", null, "start"]}>
+        <Center flexDir={["column",   "row"]} justifyContent={["center", null, "start"]} gap={10}>
           <Box w="full" pe={[0, null, 20]}>
-            <Heading size={["2xl", "6xl"]}>
+            <Heading size={["4xl", null, "5xl", "6xl"]}>
               A Pan-African climate organization.
             </Heading>
             <Text my={10}>
@@ -43,8 +43,10 @@ export default function HeroSection() {
               Read the Petition that started it all
             </WVLink>
           </Box>
-          <Center w="full" pos="relative" hideBelow={"md"}>
-            <AnimatedTrash />
+          <Center w={["xs", null, "2xs", "full"]} h="fit" pos="relative" hideBelow={"sm"}>
+            <Box pos="relative">
+              <AnimatedTrash />
+            </Box>
           </Center>
         </Center>
       </Container>

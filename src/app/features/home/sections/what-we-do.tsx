@@ -116,7 +116,7 @@ export default function WhatWeDo({
                 <HStack
                   key={i}
                   p={[4, null, 20]}
-                  // gap={[10,]}
+                  gap={[10,]}
                   flexDir={
                     isEven
                       ? ["column", null, "row-reverse"]

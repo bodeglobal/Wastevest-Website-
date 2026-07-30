@@ -19,7 +19,7 @@ export default function ImpactCount() {
       <Container py={100}>
         <SectionTitleTag color="primary">Impact so far</SectionTitleTag>
 
-        <Heading size={["2xl", null, "5xl"]} my={4}>
+        <Heading size={["2xl", null, "5xl"]} my={4} >
           Our Numbers and stories behind every one.
         </Heading>
 

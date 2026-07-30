@@ -12,8 +12,8 @@ export function FinalCTA() {
         bgRepeat={"no-repeat"}
         pos={"relative"}
       >
-        <Container md={{ px: 100 }} py={150}>
-          <Heading size={["4xl", null, "7xl"]} maxW={"3xl"}>
+        <Container md={{ px: [20, null, null, 100] }} py={150}>
+          <Heading size={["4xl", null, "6xl", "7xl"]} maxW={"3xl"}>
             Let's build Africa's circular future together.
           </Heading>
           <ButtonGroup mt={10} fontFamily={"body"}>
