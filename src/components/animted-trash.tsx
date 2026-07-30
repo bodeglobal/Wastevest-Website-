@@ -41,7 +41,6 @@ export default function AnimatedTrash() {
       if (count == 6) count = 0;
       setActive(count);
       count++;
-      console.log("Active: ", count);
     }, 2000);
 
     return () => clearTimeout(timeout);

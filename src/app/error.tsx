@@ -1,5 +1,6 @@
 "use client";
 import NavigationBar from "@/components/navbar/navbar";
+import { ThemeProvider } from "@/components/provider";
 import { Button, Center, Container, Heading, Text } from "@chakra-ui/react";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
@@ -17,7 +18,8 @@ export default function ErrorPage({
   }, [error]);
   const slug = usePathname();
   return (
-    <Container>
+    <ThemeProvider>
+      <Container>
       <NavigationBar pos="relative" />
 
       <Center flexDir={"column"} py={200}>
@@ -34,5 +36,6 @@ export default function ErrorPage({
         </Button>
       </Center>
     </Container>
+    </ThemeProvider>
   );
 }

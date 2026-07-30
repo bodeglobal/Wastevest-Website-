@@ -1,8 +1,6 @@
 import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react";
 import { abyssinica_sil, afacad } from "./fonts";
 
-console.log("Fonts: ", abyssinica_sil.variable, afacad.variable);
-
 const config = defineConfig({
   globalCss: {
     "*::selction": {
