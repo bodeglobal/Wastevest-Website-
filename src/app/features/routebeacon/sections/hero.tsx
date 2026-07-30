@@ -59,7 +59,7 @@ export default function HeroSection() {
           <Box asChild w={"xl"}>
             <Image
               src="/assets/images/routebeacon-wa-demo.webp"
-              alt=""
+              alt="RouteBeacon WhatsApp Demo"
               width={1080}
               height={1080}
             />

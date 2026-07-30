@@ -14,15 +14,19 @@ import Quote from "./sections/quote";
 export default function AboutPageEntry() {
   return (
     <>
-    <NavigationBar bg="bg" bgOpacity={70} />
+    <header>
+      <NavigationBar bg="bg" bgOpacity={70} />
       <HeroSection />
-      <Quote />
+    </header>
+      <main>
+        <Quote />
       <AboutWV variant="subtle" />
       <VisionMission />
       <WhatWeDo mode="full" />
       <TheTeam />
       <ImpactCount />
       <FinalCTA />
+      </main>
     </>
   );
 }

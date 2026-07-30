@@ -51,6 +51,7 @@ export default function FeaturedPlatform() {
               alignItems={"center"}
               gap={4}
               py={4}
+              as="li"
             >
               <Circle as={"span"} size={2} rounded={"full"} bg="primary" />
               WhatsApp-first — no app to download, no login to remember.
@@ -62,6 +63,7 @@ export default function FeaturedPlatform() {
               alignItems={"center"}
               gap={4}
               py={4}
+              as="li"
             >
               <Circle as={"span"} size={2} rounded={"full"} bg="primary" />
               Verified collectors, optimised routes, transparent payouts.
@@ -73,6 +75,7 @@ export default function FeaturedPlatform() {
               alignItems={"center"}
               gap={4}
               py={4}
+              as="li"
             >
               <Circle as={"span"} size={2} rounded={"full"} bg="primary" />
               Every kilogram becomes wallet credit for electricity or airtime.
@@ -85,7 +88,7 @@ export default function FeaturedPlatform() {
             width={1080}
             height={1080}
             src={"/assets/images/routebeacon-wa-demo.webp"}
-            alt=""
+            alt="Routebeacon WhatsApp Demo"
           />
         </Box>
       </Container>

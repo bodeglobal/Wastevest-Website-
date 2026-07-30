@@ -41,6 +41,7 @@ export default function NavigationBar({
   return (
     <Box
       as={"nav"}
+      role="navigation"
       // asChild
       p={2}
       backdropFilter={"auto"}
@@ -106,7 +107,7 @@ export default function NavigationBar({
           <ButtonGroup>
             <BookBode variant={isHome ? "outline" : "solid"} color={"white"} />
 
-            <IconButton hideFrom={"md"} color={isHome ?"white" : undefined} variant={"outline"}>
+            <IconButton hideFrom={"md"} color={isHome ?"white" : "black"} variant={"outline"}>
               <LuMenu />
             </IconButton>
           </ButtonGroup>

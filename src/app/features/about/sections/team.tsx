@@ -21,18 +21,18 @@ export default function TheTeam() {
 
 
            <Box asChild hideBelow={"sm"} pos="absolute" w={[40, 48, null, "3xs"]} left={0} bottom={0} aspectRatio={"golden"} rounded={"md"} objectFit={"cover"} objectPosition={"top"}>
-          <Image src="/assets/images/teams/five.webp" alt="" width={1080} height={1080} />
+          <Image src="/assets/images/teams/five.webp" alt="Team member" width={1080} height={1080} />
         </Box>
         <Box asChild hideBelow={"sm"} pos="absolute" w={[40, 48, null, "3xs"]} top={0} right={0} aspectRatio={"golden"} rounded={"md"} objectFit={"cover"} objectPosition={"top"}>
-          <Image src="/assets/images/teams/two.webp" alt="" width={1080} height={1080} />
+          <Image src="/assets/images/teams/two.webp" alt="Wastevest Founder" width={1080} height={1080} />
         </Box>
 
         <HStack hideFrom={"sm"} mt={10}>
           <Box asChild  w={[40, 48, null, "3xs"]} aspectRatio={"golden"} rounded={"md"} objectFit={"cover"} objectPosition={"top"}>
-          <Image src="/assets/images/teams/five.webp" alt="" width={1080} height={1080} />
+          <Image src="/assets/images/teams/five.webp" alt="Team member" width={1080} height={1080} />
         </Box>
         <Box asChild  w={[40, 48, null, "3xs"]} aspectRatio={"golden"} rounded={"md"} objectFit={"cover"} objectPosition={"top"}>
-          <Image src="/assets/images/teams/two.webp" alt="" width={1080} height={1080} />
+          <Image src="/assets/images/teams/two.webp" alt="Wastevest Founder" width={1080} height={1080} />
         </Box>
         </HStack>
         </Center>

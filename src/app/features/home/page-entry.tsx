@@ -16,19 +16,23 @@ import BookBodeCTA from "./sections/book-bode-cta";
 export default function HomePageEntry() {
   return (
     <>
-    <NavigationBar bg="black" color="white" pos="fixed" top={0} left={0} />
-      <HeroSection />
-      <Quote />
-      <Trusties />
-      <AboutWV />
-      <WhatWeDo />
-      <FeaturedPlatform />
-      <ImpactCount />
-      <Extra />
-      <JoinMovement />
-      <BookBodeCTA />
-      <Voices />
-      <FinalCTA />
+      <header>
+        <NavigationBar bg="black" color="white" pos="fixed" top={0} left={0} />
+        <HeroSection />
+      </header>
+      <main>
+        <Quote />
+        <Trusties />
+        <AboutWV />
+        <WhatWeDo />
+        <FeaturedPlatform />
+        <ImpactCount />
+        <Extra />
+        <JoinMovement />
+        <BookBodeCTA />
+        <Voices />
+        <FinalCTA />
+      </main>
     </>
   );
 }

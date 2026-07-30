@@ -30,7 +30,7 @@ function Podcast() {
           width={1080}
           height={1080}
           src={"/assets/images/circular-brief-podcast.png"}
-          alt=""
+          alt="Circular Brief Podcast Banner"
         />
       </Box>
 
@@ -74,7 +74,7 @@ function Newsletter() {
           width={1080}
           height={1080}
           src={"/assets/images/circular-brief-newsletter.png"}
-          alt=""
+          alt="Circluar Brief Newsletter Banner"
         />
       </Box>
 

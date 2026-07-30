@@ -61,7 +61,7 @@ export default function AboutWV(props: Props) {
               <Box asChild w="full" h="full" objectFit={"cover"}>
                 <Image
                   src={"/assets/images/gallery/founder2.webp"}
-                  alt=""
+                  alt="Wastvest Founder"
                   width={1080}
                   height={1080}
                 />

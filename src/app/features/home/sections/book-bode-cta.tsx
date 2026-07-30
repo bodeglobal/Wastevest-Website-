@@ -45,7 +45,7 @@ export default function BookBodeCTA() {
           <Box flex={1} bg="bg.muted/30" h={["10"]} rounded="2xl" asChild>
             <Image
               src={"/assets/images/gallery/founder3.jpg"}
-              alt=""
+              alt="Wastevest Founder"
               width={1080}
               height={1080}
             />

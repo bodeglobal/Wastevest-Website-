@@ -24,7 +24,7 @@ export default function HeroSection() {
       pos={"relative"}
     >
       <Carousel.ItemGroup gap={0}>
-        <Carousel.Item m={0} w="full" index={0}>
+        <Carousel.Item aria-hidden={false} m={0} w="full" index={0}>
           <SlideOne
             minH="svh"
             h="full"
@@ -34,7 +34,7 @@ export default function HeroSection() {
           />
         </Carousel.Item>
 
-        <Carousel.Item m={0} index={1}>
+        <Carousel.Item aria-hidden={false} m={0} index={1}>
           <SlideTwo
             minH="svh"
             h="full"
@@ -44,7 +44,7 @@ export default function HeroSection() {
           />
         </Carousel.Item>
 
-        <Carousel.Item m={0} index={2}>
+        <Carousel.Item aria-hidden={false} m={0} index={2}>
           <SlideThree
             minH="svh"
             h="full"
@@ -54,7 +54,7 @@ export default function HeroSection() {
           />
         </Carousel.Item>
 
-        <Carousel.Item m={0} index={3}>
+        <Carousel.Item aria-hidden={false} m={0} index={3}>
           <SlideFour
             minH="svh"
             h="full"

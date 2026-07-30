@@ -32,7 +32,7 @@ export default function Voices() {
             >
               <Image
                 src={"/assets/images/gallery/g3.webp"}
-                alt=""
+                alt="Wastevest Group Photo"
                 width={1080}
                 height={1080}
               />
