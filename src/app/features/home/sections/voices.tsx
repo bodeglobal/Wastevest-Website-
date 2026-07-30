@@ -39,7 +39,7 @@ export default function Voices() {
             </Box>
           </Box>
 
-          <Box flex={1}>
+          <Box flex={1} overflow={"hidden"}>
             <VoicesSlide />
           </Box>
         </HStack>
@@ -50,13 +50,13 @@ export default function Voices() {
 
 function VoicesSlide() {
   return (
-    <Carousel.Root slideCount={voices.length} autoplay pos="relative">
+    <Carousel.Root slideCount={voices.length} autoplay pos="relative" w="full">
       <Carousel.ItemGroup>
         {voices.map((item, i) => {
           return (
-            <Carousel.Item key={i} index={i}>
+            <Carousel.Item key={i} index={i} overflow={"hidden"}>
               <Box key={i}>
-                <Text fontSize={"3xl"} color="#0A0A0A" fontFamily={"heading"}>
+                <Text w="full" fontSize={["xl", "3xl"]} color="#0A0A0A" fontFamily={"heading"}>
                   “{item.comment}”
                 </Text>
 

@@ -16,6 +16,7 @@ import { NavItem } from "../navbar/NavItem";
 import { navItems } from "../navbar/navItems";
 import WVLogo from "../wv-logo";
 import WVLink from "../wv-link";
+import { WhatWeDoData } from "@/app/features/home/sections/what-we-do";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear() //Temporal.PlainDate.prototype.year
@@ -85,12 +86,7 @@ export default function Footer() {
               <NavSection label="Explore" items={navItems} />
               <NavSection
                 label="Solutions"
-                items={[
-                  { label: "RouteBeacon", href: "#" },
-                  { label: "Circular Economy", href: "#" },
-                  { label: "Community Engagement", href: "#" },
-                  { label: "Carbon Literacy Training", href: "#" },
-                ]}
+                items={WhatWeDoData.map(item => ({label: item.title, href: item.learnMoreUrl}))}
               />
               <NavSection
                 label="Learn"

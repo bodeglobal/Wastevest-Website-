@@ -6,10 +6,16 @@ import NavigationBar from "@/components/navbar/navbar";
 import { abyssinica_sil, afacad } from "@/components/theme/fonts";
 import { SiteConfig } from "@/site-config";
 
+// App Router layout.tsx
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1, // Optional: Prevents layout snapping during accidental zoom
+};
+
 export const metadata: Metadata = {
   title: SiteConfig.name,
-  description:
-    SiteConfig.description,
+  description: SiteConfig.description,
   authors: {
     name: "epicdevler | Nwadike Philip",
     url: "https://linkedin.com/in/nwadikephilip",
@@ -29,7 +35,6 @@ export const metadata: Metadata = {
     siteName: SiteConfig.name,
     countryName: "NG",
   },
-  
 };
 
 export default function RootLayout({

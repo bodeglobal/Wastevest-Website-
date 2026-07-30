@@ -13,11 +13,20 @@ export default function BookBodeCTA() {
   return (
     <Box as="section">
       <Container py={100}>
-        <HStack bg={`url('/assets/illustrations/wave-lines-dark.svg') {colors.primary}`} p={[5, null, 10]} rounded="4xl" flexDir={["column", null, "row"]} color="white">
-          <Box flex={1} >
+        <HStack
+          bg={`url('/assets/illustrations/wave-lines-dark.svg') {colors.primary}`}
+          p={[5, null, 10]}
+          gap={10}
+          rounded="4xl"
+          flexDir={["column", null, null, "row"]}
+          color="white"
+        >
+          <Box w="full">
             <SectionTitleTag>Book Bode</SectionTitleTag>
-            <Heading mt={5} size={["3xl", null, "5xl"]} maxW={"sm"}>Your Vision inspires Action.</Heading>
-            <Text maxW={"md"} mt={6}>
+            <Heading mt={5} size={["3xl", null, "5xl"]} maxW={"sm"}>
+              Your Vision inspires Action.
+            </Heading>
+            <Text  mt={6}>
               Bode delivers sustainability training, workshops and keynote talks
               that turn climate ideas into practical action. As the founder of
               WasteVest, he helps individuals and organisations rethink waste as
@@ -33,8 +42,13 @@ export default function BookBodeCTA() {
               Book a Call with Bode
             </Button>
           </Box>
-          <Box flex={1} bg="bg.muted/30" h="sm" rounded="2xl" asChild>
-          <Image src={"/assets/images/gallery/founder3.jpg"} alt="" width={1080} height={1080} />
+          <Box flex={1} bg="bg.muted/30" h={["10"]} rounded="2xl" asChild>
+            <Image
+              src={"/assets/images/gallery/founder3.jpg"}
+              alt=""
+              width={1080}
+              height={1080}
+            />
           </Box>
         </HStack>
       </Container>

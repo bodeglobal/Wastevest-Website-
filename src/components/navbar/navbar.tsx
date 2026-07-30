@@ -106,7 +106,7 @@ export default function NavigationBar({
           <ButtonGroup>
             <BookBode variant={isHome ? "outline" : "solid"} color={"white"} />
 
-            <IconButton hideFrom={"md"} variant={"outline"}>
+            <IconButton hideFrom={"md"} color={isHome ?"white" : undefined} variant={"outline"}>
               <LuMenu />
             </IconButton>
           </ButtonGroup>
@@ -172,8 +172,8 @@ function SolutionsNavMenu() {
               fontSize={"4xl"}
               // fontFamily={"heading"}
               fontWeight={"black"}
-              p={16}
-              h="full"
+              p={[10, null, null, 16]}
+              // h="full"
               color="white"
               bg="url('/assets/illustrations/noise.svg')"
               bgSize={"cover"}
@@ -184,10 +184,15 @@ function SolutionsNavMenu() {
             </Center>
 
             <Box flex={1}>
-              <Text fontSize={"xl"} fontWeight={"medium"}>
+              <Text fontSize={["md", null, null, "xl"]} fontWeight={"medium"}>
                 {item.title}
               </Text>
-              <Text lineClamp={2} my={4} maxW={"3xs"} color="fg.muted">
+              <Text
+                lineClamp={2}
+                my={[2, null, null, 4]}
+                maxW={"3xs"}
+                color="fg.muted"
+              >
                 {item.descripton}
               </Text>
               {item.learnMoreUrl && (

@@ -17,11 +17,11 @@ export default function CTA() {
         <HStack
           rounded={"4xl"}
           bg={`url('/assets/illustrations/wave-lines-dark.svg') {colors.primary}`}
-          p={[10, null, 20]}
+          p={[8, null, 20]}
           gap={20}
           color={"white"}
-          alignItems={"end"}
-          justifyContent={"space-between"}
+          alignItems={[null, "end"]}
+          justifyContent={["space-between"]}
           mdDown={{ flexDir: "column" }}
         >
           <Box>
@@ -29,7 +29,7 @@ export default function CTA() {
               Start today
             </SectionTitleTag>
 
-            <Heading maxW={"lg"} size={["6xl"]} my={10}>
+            <Heading maxW={"lg"} size={["4xl", null, "6xl"]} my={[5, null, 10]}>
               Ready to Clear the Clutter
             </Heading>
 

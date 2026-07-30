@@ -58,7 +58,7 @@ export default function WhatWeDo({
         </HStack>
 
         {mode == "compact" && (
-          <SimpleGrid columns={[1, 2, 4]} gap={4} mt={10}>
+          <SimpleGrid columns={[1, 2, null, 4]} gap={4} mt={10}>
             {WhatWeDoData.map((item, i) => {
               const sn = ++i;
               return (
@@ -119,8 +119,8 @@ export default function WhatWeDo({
                   gap={[10,]}
                   flexDir={
                     isEven
-                      ? ["column", null, "row-reverse"]
-                      : ["column", null, "row"]
+                      ? ["column", "row-reverse"]
+                      : ["column", "row"]
                   }
                   // justifyContent={"space-between"}
                 >
@@ -157,7 +157,7 @@ export default function WhatWeDo({
                     justifyContent={/* isEven ? "start" :  */"start"}
                   >
                     <Box
-                      w={["full", null, "sm"]}
+                      w={["full", "sm"]}
                       aspectRatio={1}
                       rounded={"xl"}
                       boxShadow={`${isEven ? "-" : ""}11px 12px 0px 0px {colors.primary/${isEven ? 40 : 90}}`}

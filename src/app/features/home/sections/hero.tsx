@@ -72,17 +72,17 @@ export default function HeroSection() {
         w="full"
         pos="absolute"
         // bg="blue"
-        bottom={6}
+        bottom={0}
         // bg="red"
       >
         <Carousel.Indicators
-          h={1}
+          h={[0.5, null, 1]}
           w={[7]}
           bg={"white/40"}
           _current={{ bg: "white", w: [10, null, 16] }}
         />
 
-        <ButtonGroup size="sm" variant={"outline"}>
+        <ButtonGroup size="xs" variant={"outline"}>
           <Carousel.PrevTrigger asChild>
             <IconButton color="white" _hover={{ color: "black" }}>
               <LuChevronLeft />
@@ -102,7 +102,7 @@ export default function HeroSection() {
 
 function SlideOne(props: CenterProps) {
   return (
-    <Center flexDir={"column"} {...props}>
+    <Center flexDir={"column"} {...props} >
       <SharedContent
         title="Sustainability training, built for African business."
         description="Hands-on programmes that turn climate ambition into decisions
@@ -246,9 +246,11 @@ function SharedContent({
       flexDir={"column"}
       textAlign={"center"}
       gap={5}
+      py={100}
+      px={4}
     >
       <SectionTitleTag color="primary.muted">{label}</SectionTitleTag>
-      <Heading size={["5xl", null, "6xl"]} maxW={"2xl"}>
+      <Heading size={{base:{base:"5xl", _landscape: "4xl"}, md: "6xl"}} maxW={"2xl"}>
         {title}
       </Heading>
       <Text maxW={"md"}>{description}</Text>

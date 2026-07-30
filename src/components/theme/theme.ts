@@ -5,8 +5,8 @@ const config = defineConfig({
   globalCss: {
     "*::selction": {
       bg: "blue",
-      color: 'white'
-    }
+      color: "white",
+    },
   },
   theme: {
     tokens: {
@@ -115,10 +115,11 @@ const config = defineConfig({
         },
       },
       button: {
+        defaultVariants: {
+          paddingBlock: 0,
+        },
         base: {
           rounded: "full",
-          px: "6",
-          py: "5",
           fontFamily: "body",
           fontWeight: "medium",
         },
@@ -128,7 +129,7 @@ const config = defineConfig({
               borderWidth: "22px",
               // color: "primary"
             },
-          }
+          },
         },
       },
       input: {

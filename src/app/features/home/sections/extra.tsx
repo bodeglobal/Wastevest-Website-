@@ -13,7 +13,7 @@ export default function Extra() {
   return (
     <Box as="section" bg="#0A0A0A" color="white" borderColor="white">
       <Container py={100}>
-        <SimpleGrid columns={[1, null, 2]} gap={20}>
+        <SimpleGrid columns={[1, 2]} gap={20}>
           <Podcast />
           <Newsletter />
         </SimpleGrid>
@@ -25,7 +25,7 @@ export default function Extra() {
 function Podcast() {
   return (
     <Box>
-      <Box asChild rounded={"4xl"} w="full" smDown={{ w: "10/12" }}>
+      <Box asChild rounded={"4xl"} w={"full"}  >
         <Image
           width={1080}
           height={1080}
@@ -36,7 +36,7 @@ function Podcast() {
 
       <Heading
         size={["2xl", null, "3xl"]}
-        fontSize={["2xl", null, "3xl"]}
+        fontSize={["xl", null, "3xl"]}
         maxW={"sm"}
         my={6}
       >
@@ -69,7 +69,7 @@ function Podcast() {
 function Newsletter() {
   return (
     <Box  bg={`url('/assets/illustrations/wave-lines.svg')`}>
-      <Box asChild rounded={"4xl"} w="full" smDown={{ w: "10/12" }}>
+      <Box asChild rounded={"4xl"} w="full" smOnly={{w: "sm"}} >
         <Image
           width={1080}
           height={1080}
@@ -80,7 +80,7 @@ function Newsletter() {
 
       <Heading
         size={["2xl", null, "3xl"]}
-        fontSize={["2xl", null, "3xl"]}
+        fontSize={["xl", null, "3xl"]}
         maxW={"sm"}
         my={6}
       >

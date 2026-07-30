@@ -80,7 +80,7 @@ export default function FeaturedPlatform() {
           </Box>
         </Box>
 
-        <Box asChild pos="absolute" w={"7/12"} right={[0, null, -120]} bottom={0}>
+        <Box asChild pos="absolute" w={"7/12"} right={[0, -100,, -120]} bottom={0}>
           <Image
             width={1080}
             height={1080}
