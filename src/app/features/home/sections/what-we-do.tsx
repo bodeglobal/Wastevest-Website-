@@ -212,7 +212,7 @@ export const WhatWeDoData: {
   learnMoreUrl?: string;
 }[] = [
   {
-    imgUrl: "/assets/images/routebeacon-wa-demo.png",
+    imgUrl: "/assets/images/routebeacon-wa-demo.webp",
     title: "RouteBeacon",
     shortDescription: "Recycling in a message.",
     descripton:
@@ -221,7 +221,7 @@ export const WhatWeDoData: {
     learnMoreUrl: "/routebeacon",
   },
   {
-    imgUrl: "/assets/images/gallery/circular-econ.png",
+    imgUrl: "/assets/images/gallery/circular-econ.webp",
     title: "Circular Economy",
     shortDescription: "Redesigning material flows.",
     descripton:
@@ -229,7 +229,7 @@ export const WhatWeDoData: {
     learnMoreUrl: "/s/circular-economy",
   },
   {
-    imgUrl: "/assets/images/gallery/com-engagement-4.png",
+    imgUrl: "/assets/images/gallery/com-engagement-4.webp",
     title: "Community Engagement",
     shortDescription: "Disclosure you can stand behind.",
     descripton:
@@ -237,7 +237,7 @@ export const WhatWeDoData: {
     learnMoreUrl: "/s/community-engagement",
   },
   {
-    imgUrl: "/assets/images/gallery/clt-1.png",
+    imgUrl: "/assets/images/gallery/clt-1.webp",
     title: "Carbon Litracy Training",
     shortDescription: "Climate decisions people can act on Monday.",
     descripton:

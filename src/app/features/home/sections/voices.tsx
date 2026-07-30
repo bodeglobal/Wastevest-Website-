@@ -31,7 +31,7 @@ export default function Voices() {
               objectPosition={"bottom"}
             >
               <Image
-                src={"/assets/images/gallery/g3.png"}
+                src={"/assets/images/gallery/g3.webp"}
                 alt=""
                 width={1080}
                 height={1080}
@@ -50,11 +50,7 @@ export default function Voices() {
 
 function VoicesSlide() {
   return (
-    <Carousel.Root
-      slideCount={voices.length}
-      autoplay
-      pos="relative"
-    >
+    <Carousel.Root slideCount={voices.length} autoplay pos="relative">
       <Carousel.ItemGroup>
         {voices.map((item, i) => {
           return (
@@ -67,7 +63,11 @@ function VoicesSlide() {
                 <Separator my={5} />
 
                 <HStack>
-                  <Avatar src="" name={item.user.name} size="xl" />
+                  <Avatar
+                    src={item.user.profileUrl}
+                    name={item.user.name}
+                    size="xl"
+                  />
                   <Box fontSize={"xs"} flex={1}>
                     <Text fontWeight={600}>{item.user.name}</Text>
                     <Text color="#5A5A58">
@@ -125,6 +125,7 @@ const voices: {
       name: "Mrs. Adaeze Okoro",
       state: "Estate Chair",
       org: "Ikoyi, Lagos",
+      profileUrl: "/assets/images/gallery/g3.webp",
     },
   },
   {
@@ -134,6 +135,7 @@ const voices: {
       name: "Mrs. Jane Doe",
       state: "Estate Chair",
       org: "Ikoyi, Lagos",
+      profileUrl: "/assets/images/gallery/g3.webp",
     },
   },
   {
@@ -143,6 +145,7 @@ const voices: {
       name: "Mr. John Doe",
       state: "Estate Chair",
       org: "Ikoyi, Lagos",
+      profileUrl: "/assets/images/gallery/g3.webp",
     },
   },
 ];

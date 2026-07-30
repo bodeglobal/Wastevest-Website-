@@ -28,7 +28,7 @@ export default function HeroSection() {
           <SlideOne
             minH="svh"
             h="full"
-            bg="url('/assets/images/gallery/g2.png')"
+            bg="url('/assets/images/gallery/g2.webp')"
             backgroundSize={"cover"}
             bgRepeat={"no-repeat"}
           />
@@ -38,7 +38,7 @@ export default function HeroSection() {
           <SlideTwo
             minH="svh"
             h="full"
-            bg="url('/assets/images/gallery/hero1.png')"
+            bg="url('/assets/images/gallery/hero1.webp')"
             backgroundSize={"cover"}
             bgRepeat={"no-repeat"}
           />
@@ -48,7 +48,7 @@ export default function HeroSection() {
           <SlideThree
             minH="svh"
             h="full"
-            bg="url('/assets/images/gallery/hero2.png')"
+            bg="url('/assets/images/gallery/hero2.webp')"
             backgroundSize={"cover"}
             bgRepeat={"no-repeat"}
           />
@@ -58,7 +58,7 @@ export default function HeroSection() {
           <SlideFour
             minH="svh"
             h="full"
-            bg="url('/assets/images/routebeacon-wa-demo.png'), black"
+            bg="url('/assets/images/routebeacon-wa-demo.webp'), black"
             backgroundSize={"contain"}
             backgroundPosition={"bottom"}
             bgRepeat={"no-repeat"}

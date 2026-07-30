@@ -84,7 +84,7 @@ export default function FeaturedPlatform() {
           <Image
             width={1080}
             height={1080}
-            src={"/assets/images/routebeacon-wa-demo.png"}
+            src={"/assets/images/routebeacon-wa-demo.webp"}
             alt=""
           />
         </Box>

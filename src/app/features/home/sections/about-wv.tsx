@@ -44,7 +44,7 @@ export default function AboutWV() {
             >
               <Box asChild w="full" h="full" objectFit={"cover"}>
                 <Image
-                  src={"/assets/images/founder.png"}
+                  src={"/assets/images/gallery/founder.webp"}
                   alt=""
                   width={1080}
                   height={1080}
