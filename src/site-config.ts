@@ -1,6 +1,6 @@
 export const SiteConfig = {
-  name: "Wastevest",
-  description: "",
+  name: "Wastevest Technologies",
+  description: "A Pan-African climate and sustainability organization driving Africa's just transition",
   logo: {
     full: "/assets/logo/wv-logo.svg",
     iconOnly: "",
