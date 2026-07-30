@@ -47,7 +47,6 @@ export default function AboutWV(props: Props) {
               sustainable development and climate resilience across the
               continent. Industry: Environmental Services.
             </Text>
-
           </Box>
           <Center>
             <Box
@@ -61,7 +60,7 @@ export default function AboutWV(props: Props) {
             >
               <Box asChild w="full" h="full" objectFit={"cover"}>
                 <Image
-                  src={"/assets/images/founder-2.png"}
+                  src={"/assets/images/founder2.png"}
                   alt=""
                   width={1080}
                   height={1080}

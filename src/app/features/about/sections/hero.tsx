@@ -1,11 +1,11 @@
+import AnimatedTrash from "@/components/animted-trash";
 import WVLink from "@/components/wv-link";
 import {
   Box,
   Center,
   Container,
   Heading,
-  HStack,
-  Text,
+  Text
 } from "@chakra-ui/react";
 
 export default function HeroSection() {
@@ -15,9 +15,9 @@ export default function HeroSection() {
       bg="radial-gradient(53.97% 76.54% at 73.09% 41.85%, #74D4FF 9.06%, #62C3FF 17.54%, #2789FF 36.07%, #0C6EFF 47.21%, #0062FF 59.57%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 "
     >
-      <Container asChild color="white" py={100} minH={"svh"}>
-        <Center justifyContent={"start"}>
-          <Box maxW={"xl"}>
+      <Container asChild color="white" py={100} h="full" minH={"svh"}>
+        <Center flexDir={["column", null, null, "row"]} justifyContent={["center", null, "start"]}>
+          <Box w="full" pe={[0, null, 20]}>
             <Heading size={["2xl", "6xl"]}>
               A Pan-African climate organization.
             </Heading>
@@ -43,9 +43,14 @@ export default function HeroSection() {
               Read the Petition that started it all
             </WVLink>
           </Box>
-          <Box></Box>
+          <Center w="full" pos="relative" hideBelow={"md"}>
+            <AnimatedTrash />
+          </Center>
         </Center>
       </Container>
     </Box>
   );
 }
+
+
+

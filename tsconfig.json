@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/app/features/solutions/page-entry.tsx"  ],
   "exclude": ["node_modules"]
 }

@@ -44,7 +44,12 @@ export default function WhatWeDo({
               See the full picture on About
             </WVLink>
           ) : (
-            <Text textAlign={["left", null, "right"]} maxW={"sm"} fontSize={"sm"} color="fg.muted">
+            <Text
+              textAlign={["left", null, "right"]}
+              maxW={"sm"}
+              fontSize={"sm"}
+              color="fg.muted"
+            >
               Each of our solutions stands on its own. Together they form a
               circular loop from a child's first lesson to a business's
               recovered tone.
@@ -54,7 +59,7 @@ export default function WhatWeDo({
 
         {mode == "compact" && (
           <SimpleGrid columns={[1, 2, 4]} gap={4} mt={10}>
-            {items.map((item, i) => {
+            {WhatWeDoData.map((item, i) => {
               const sn = ++i;
               return (
                 <Card.Root key={i} rounded={"xl"}>
@@ -63,14 +68,13 @@ export default function WhatWeDo({
                       <FeaturedBadge pos="absolute" top={8} left={8} />
                     )}
                     {/* <motion.div  whileHover={{scale: 1.10}}> */}
-                      <Box
+                    <Box
                       h={52}
                       rounded={"md"}
                       bg="bg.muted"
                       asChild
                       objectFit={"cover"}
                       objectPosition={"top"}
-                      
                     >
                       <Image
                         src={item.imgUrl}
@@ -92,7 +96,7 @@ export default function WhatWeDo({
                       {item.shortDescription}
                     </Card.Description>
                     {item.learnMoreUrl && (
-                      <WVLink href={item.learnMoreUrl} w="fit" mt={4}>
+                      <WVLink href={item.learnMoreUrl} borderColor="fg" _hover={{borderColor: "primary"}} w="fit" mt={4}>
                         Learn More
                       </WVLink>
                     )}
@@ -104,43 +108,57 @@ export default function WhatWeDo({
         )}
 
         {mode == "full" && (
-          <VStack align={"stretch"} mt={10} gap={10} w="full">
-            {items.map((item, i) => {
+          <VStack align="stretch"  mt={10} gap={10} w="full">
+            {WhatWeDoData.map((item, i) => {
               const sn = ++i;
               const isEven = i % 2 == 0;
               return (
                 <HStack
                   key={i}
                   p={[4, null, 20]}
-                  gap={10}
-                  flexDir={isEven ? ["column", null, "row-reverse"] : ["column", null, "row"]}
-                  justifyContent={"space-between"}
-                  
+                  // gap={[10,]}
+                  flexDir={
+                    isEven
+                      ? ["column", null, "row-reverse"]
+                      : ["column", null, "row"]
+                  }
+                  // justifyContent={"space-between"}
                 >
-                  <Box maxW={["xs", null, null, "md"]}>
-                    <HStack>
+                  <Box flex={1} >
+                    <HStack maxW={"md"} gap={4}>
                       <Text>{sn.toString().padStart(2, "0")}</Text>
                       <Separator flex={1} />
                       {item.featured && <FeaturedBadge />}
                     </HStack>
 
-                    <Text fontSize={"2xl"} fontFamily={"heading"} mt={10}>
+                    <Text fontSize={"2xl"} fontFamily={"heading"} mt={10} >
                       {item.title}
                     </Text>
-                    <Text color="fg.muted" mt={3} mb={10}>
+                    <Text color="fg.muted" mt={3} mb={10} maxW={"xs"}>
                       {item.descripton}
                     </Text>
 
-                    {/* item.learnMoreUrl && */ (
-                      <WVLink href={item.learnMoreUrl ?? ""} color={"primary"} fontWeight={"semibold"} mt={20}>
+                    {
+                      /* item.learnMoreUrl && */ <WVLink
+                        href={item.learnMoreUrl ?? ""}
+                        color={"primary"}
+                        fontWeight={"semibold"}
+                        mt={20}
+                      >
                         Learn More
                       </WVLink>
-                    )}
+                    }
                   </Box>
-                  <Center flex={1} justifyContent={isEven ? "start" : undefined}>
+                  <Center
+                    // maxW={"md"}
+                    // w="full"
+                    flex={1}
+                    // bg="green"
+                    justifyContent={/* isEven ? "start" :  */"start"}
+                  >
                     <Box
-                      w={["full", null, "md"]}
-                      h={["sm", null, "md"]}
+                      w={["full", null, "sm"]}
+                      aspectRatio={1}
                       rounded={"xl"}
                       boxShadow={`${isEven ? "-" : ""}11px 12px 0px 0px {colors.primary/${isEven ? 40 : 90}}`}
                       asChild
@@ -185,7 +203,7 @@ function FeaturedBadge(props: BadgeProps) {
 
 /** DATA */
 
-const items: {
+export const WhatWeDoData: {
   imgUrl: string;
   title: string;
   shortDescription: string;
@@ -200,7 +218,7 @@ const items: {
     descripton:
       "The WhatsApp-first pickup, rewards and recycling platform. Households request collection in a message. Collectors get paid. Businesses onboard in minutes.",
     featured: true,
-    learnMoreUrl: "",
+    learnMoreUrl: "/routebeacon",
   },
   {
     imgUrl: "/assets/images/gallery/circular-econ.png",
@@ -208,7 +226,7 @@ const items: {
     shortDescription: "Redesigning material flows.",
     descripton:
       "Reporting, strategy and implementation for organis=zations navigating disclosure regimes and building credible sustainability commitments.",
-    learnMoreUrl: "",
+    learnMoreUrl: "/s/circular-economy",
   },
   {
     imgUrl: "/assets/images/gallery/com-engagement-4.png",
@@ -216,7 +234,7 @@ const items: {
     shortDescription: "Disclosure you can stand behind.",
     descripton:
       "Certified corporate training and workshops that translate climate science into decisions people can make on Monday morning.",
-    learnMoreUrl: "",
+    learnMoreUrl: "/s/community-engagement",
   },
   {
     imgUrl: "/assets/images/gallery/clt-1.png",
@@ -224,6 +242,6 @@ const items: {
     shortDescription: "Climate decisions people can act on Monday.",
     descripton:
       "Custom engagements for founders, funders and civic institutions — from feasibility studies to program design and impact measurement.",
-    learnMoreUrl: "/",
+    learnMoreUrl: "/s/carbon-litracy-training",
   },
 ];

@@ -14,7 +14,7 @@ import Quote from "./sections/quote";
 export default function AboutPageEntry() {
   return (
     <>
-    <NavigationBar />
+    <NavigationBar bg="bg" bgOpacity={70} />
       <HeroSection />
       <Quote />
       <AboutWV variant="subtle" />

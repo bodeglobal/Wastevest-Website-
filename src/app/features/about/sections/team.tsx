@@ -17,8 +17,8 @@ export default function TheTeam() {
           </Text>
         </Center>
 
-        <Center rounded={"4xl"} bg="primary" p={32}>
-          <WVLogo useWhite w={52} />
+        <Center rounded={"4xl"} p={[20, null, 40]} bg={`url('/assets/illustrations/wave-lines-dark.svg'), {colors.primary}`}>
+          <WVLogo filter={"brightness(0) invert(100%)"} w={[36, null, 52]} />
         </Center>
       </Container>
     </Box>

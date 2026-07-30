@@ -1,7 +1,7 @@
 import { NavItem } from "./NavItem";
 
 
-export const navItems: { label: string; href: string; subMenu?: NavItem[]; }[] = [
+export const navItems: NavItem[] = [
     {
         label: "Home",
         href: "/",
@@ -12,10 +12,11 @@ export const navItems: { label: string; href: string; subMenu?: NavItem[]; }[] =
     },
     {
         label: "Solutions",
-        href: "/",
+        subMenuName: "solutions",
+        href: "/s"
     },
     {
         label: "RouteBeacon",
-        href: "/routebeaon",
+        href: "/routebeacon",
     },
 ];

@@ -12,7 +12,7 @@ import Services from "./sections/services";
 export default function RoutebeaonPageEntry() {
   return (
     <>
-      <NavigationBar bg="white" />
+      <NavigationBar bg="bg" />
       <HeroSection />
       <Trusties />
       <Services />

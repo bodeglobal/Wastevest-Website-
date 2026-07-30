@@ -1,56 +1,148 @@
+import { Avatar } from "@/components/avatar";
 import SectionTitleTag from "@/components/section-tag";
 import {
   Box,
   ButtonGroup,
+  Carousel,
   Container,
   HStack,
   IconButton,
   Separator,
   Text,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 
 export default function Voices() {
   return (
     <Box as="section">
       <Container py={100}>
-        <HStack gap={20} mdDown={{flexDir: "column"}}>
+        <HStack gap={20} mdDown={{ flexDir: "column" }}>
           <Box w="full" maxW={"md"}>
             <SectionTitleTag color="primary">Voices</SectionTitleTag>
 
-            <Box w={"xs"} height={60} bg="bg.muted" mt={10} />
+            <Box
+              w={"xs"}
+              height={52}
+              bg="bg.muted"
+              mt={10}
+              asChild
+              objectFit={"cover"}
+              objectPosition={"bottom"}
+            >
+              <Image
+                src={"/assets/images/gallery/g3.png"}
+                alt=""
+                width={1080}
+                height={1080}
+              />
+            </Box>
           </Box>
 
           <Box flex={1}>
-            <Text fontSize={"3xl"} color="#0A0A0A">
-              “WasteVest didn't just talk about recycling, they built the system
-              that finally made it work on our street. Our estate now diverts
-              half its waste.”
-            </Text>
-
-            <Separator my={5} />
-
-            <HStack justifyContent={"space-between"}>
-              <Box fontSize={"xs"}>
-                <Text fontWeight={600}>Mrs. Adaeze Okoro</Text>
-                <Text color="#5A5A58">Estate Chair · Ikoyi, Lagos</Text>
-              </Box>
-
-              <HStack color="#5A5A58">
-                <Text fontSize={"xs"}>01 / 03</Text>
-                <ButtonGroup size="xs">
-                  <IconButton variant={"outline"}>
-                    <LuArrowLeft />
-                  </IconButton>
-                  <IconButton>
-                    <LuArrowRight />
-                  </IconButton>
-                </ButtonGroup>
-              </HStack>
-            </HStack>
+            <VoicesSlide />
           </Box>
         </HStack>
       </Container>
     </Box>
   );
 }
+
+function VoicesSlide() {
+  return (
+    <Carousel.Root
+      slideCount={voices.length}
+      autoplay
+      pos="relative"
+    >
+      <Carousel.ItemGroup>
+        {voices.map((item, i) => {
+          return (
+            <Carousel.Item key={i} index={i}>
+              <Box key={i}>
+                <Text fontSize={"3xl"} color="#0A0A0A" fontFamily={"heading"}>
+                  “{item.comment}”
+                </Text>
+
+                <Separator my={5} />
+
+                <HStack>
+                  <Avatar src="" name={item.user.name} size="xl" />
+                  <Box fontSize={"xs"} flex={1}>
+                    <Text fontWeight={600}>{item.user.name}</Text>
+                    <Text color="#5A5A58">
+                      {item.user.org} · {item.user.state}
+                    </Text>
+                  </Box>
+                </HStack>
+              </Box>
+            </Carousel.Item>
+          );
+        })}
+      </Carousel.ItemGroup>
+
+      <Carousel.Control
+        w="fit"
+        color="#5A5A58"
+        bg="bg"
+        gap={5}
+        pos="absolute"
+        right={0}
+        bottom={0}
+        p={2}
+      >
+        {/* <HStack color="#5A5A58"> */}
+        {/* <Text fontSize={"sm"}>01 / 03</Text> */}
+        <Carousel.ProgressText fontSize={"sm"} fontFamily={"body"} />
+        <ButtonGroup size="xs">
+          <Carousel.PrevTrigger asChild>
+            <IconButton variant={"outline"}>
+              <LuArrowLeft />
+            </IconButton>
+          </Carousel.PrevTrigger>
+          <Carousel.NextTrigger asChild>
+            <IconButton variant={"solid"}>
+              <LuArrowRight />
+            </IconButton>
+          </Carousel.NextTrigger>
+        </ButtonGroup>
+        {/* </HStack> */}
+      </Carousel.Control>
+    </Carousel.Root>
+  );
+}
+
+/** Data */
+
+const voices: {
+  comment: string;
+  user: { name: string; org: string; state: string; profileUrl?: string };
+}[] = [
+  {
+    comment:
+      "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",
+    user: {
+      name: "Mrs. Adaeze Okoro",
+      state: "Estate Chair",
+      org: "Ikoyi, Lagos",
+    },
+  },
+  {
+    comment:
+      "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",
+    user: {
+      name: "Mrs. Jane Doe",
+      state: "Estate Chair",
+      org: "Ikoyi, Lagos",
+    },
+  },
+  {
+    comment:
+      "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",
+    user: {
+      name: "Mr. John Doe",
+      state: "Estate Chair",
+      org: "Ikoyi, Lagos",
+    },
+  },
+];

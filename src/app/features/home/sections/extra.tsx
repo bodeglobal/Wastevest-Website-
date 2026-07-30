@@ -1,23 +1,21 @@
+import ArrowRight from "@/components/arrow-right";
 import {
   Box,
   Button,
   ButtonGroup,
   Container,
   Heading,
-  Icon,
-  SimpleGrid,
-  Text,
+  SimpleGrid
 } from "@chakra-ui/react";
 import Image from "next/image";
-import { LuArrowRight } from "react-icons/lu";
 
 export default function Extra() {
   return (
     <Box as="section" bg="#0A0A0A" color="white" borderColor="white">
       <Container py={100}>
-        <SimpleGrid columns={[1,null,2]} gap={20}>
-            <Podcast />
-            <Newsletter />
+        <SimpleGrid columns={[1, null, 2]} gap={20}>
+          <Podcast />
+          <Newsletter />
         </SimpleGrid>
       </Container>
     </Box>
@@ -27,7 +25,7 @@ export default function Extra() {
 function Podcast() {
   return (
     <Box>
-      <Box asChild rounded={"4xl"} w="full" sm={{w: "10/12"}}>
+      <Box asChild rounded={"4xl"} w="full" smDown={{ w: "10/12" }}>
         <Image
           width={1080}
           height={1080}
@@ -68,12 +66,10 @@ function Podcast() {
   );
 }
 
-
-
 function Newsletter() {
   return (
-    <Box>
-      <Box asChild rounded={"4xl"} w="full" sm={{w: "10/12"}}>
+    <Box  bg={`url('/assets/illustrations/wave-lines.svg')`}>
+      <Box asChild rounded={"4xl"} w="full" smDown={{ w: "10/12" }}>
         <Image
           width={1080}
           height={1080}
@@ -93,12 +89,8 @@ function Newsletter() {
 
       <ButtonGroup>
         <Button colorPalette={"blue"}>Read this issue</Button>
-        <Button
-          variant={"ghost"}
-          color="white"
-          _hover={{ bg: "white/5" }}
-        >
-          Browse all Issues <Icon display={"inline-block"}><LuArrowRight /></Icon>
+        <Button variant={"ghost"} color="white" _hover={{ bg: "white/5" }}>
+          Browse all Issues <ArrowRight />
         </Button>
       </ButtonGroup>
     </Box>

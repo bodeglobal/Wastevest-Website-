@@ -1,4 +1,4 @@
-import { Box, Center, HStack, Text } from "@chakra-ui/react";
+import { Box, Center, HStack, Marquee, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 const list = [
@@ -40,32 +40,60 @@ export default function Trusties() {
   return (
     <Box as="section" py={20}>
       <Text textAlign={"center"}>Trusted by partners across the continent</Text>
-      <HStack
-        // bg="red"
-        justifyContent={[null, null, "center"]}
-        w="full"
-        mt={16}
-        gap={10}
-        overflowX={"auto"}
-        px={10}
-        py={4}
-      >
-        {list.map((item, i) => {
-          return (
-            <Center key={i + item.title} minW={20} w={28}>
-              <Box asChild objectFit="contain">
-                <Image
-                  width={1080}
-                  height={1080}
-                  src={item.logoUrl}
 
-                  alt={`${item.title} Logo`}
-                />
-              </Box>
-            </Center>
-          );
-        })}
-      </HStack>
+      <Marquee.Root css={{"--marquee-edge-color": "colors.bg"}} autoFill spacing="5rem" mt={16}>
+        <Marquee.Edge side="start" />
+        <Marquee.Edge side="end" />
+        <Marquee.Viewport>
+          <Marquee.Content          
+            gap={0}
+            overflowX={"auto"}
+            px={0}
+            mx={0}
+            py={4}
+            // bg="red"
+
+          >
+            {list.map((item, i) => {
+              return (
+                <Marquee.Item
+                  key={i}
+                  alignItems={"center"}
+                  asChild
+                  // bg="red"
+                  // px={0}
+                >
+                  <Center key={i + item.title} minW={20} w={[20, null, 28]}>
+                    <Box asChild objectFit="contain">
+                      <Image
+                        width={1080}
+                        height={1080}
+                        src={item.logoUrl}
+
+                        alt={`${item.title} Logo`}
+                      />
+                    </Box>
+                  </Center>
+                </Marquee.Item>
+              );
+              return (
+                <Center key={i + item.title} minW={20} w={28}>
+                  <Box asChild objectFit="contain">
+                    <Image
+                      width={1080}
+                      height={1080}
+                      src={item.logoUrl}
+
+                      alt={`${item.title} Logo`}
+                    />
+                  </Box>
+                </Center>
+              );
+            })}
+          </Marquee.Content>
+        </Marquee.Viewport>
+        {/* <Marquee.Edge side="end" /> */}
+      </Marquee.Root>
     </Box>
   );
 }

@@ -50,7 +50,7 @@ export default function Services() {
             description="We provide structured collection services for general waste and
 recyclable materials across homes, offices, estates, and businesses."
             actions={
-              <Button colorPalette={"primary"} variant={"outline"} mt={5}>
+              <Button colorPalette={"primary"} color="primary" variant={"outline"} mt={5}>
                 Schedule a Pickup
               </Button>
             }

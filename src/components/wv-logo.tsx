@@ -12,7 +12,7 @@ export default function WVLogo({
       <Image
         width={1080}
         height={1080}
-        src={useWhite ? SiteConfig.logo.white : iconOnly ? SiteConfig.logo.iconOnly : SiteConfig.logo.full}
+        src={iconOnly ? SiteConfig.logo.iconOnly : SiteConfig.logo.full}
         alt="WasteVest Logo"
         // style={{ width: "auto", height: "auto" }}
         loading="eager"

@@ -21,14 +21,16 @@ export default function VisionMission() {
       <Container centerContent>
         <HStack gap={20} mdDown={{ flexDir: "column" }}>
           <DecorCard
-            bg="primary"
+            bgUrl={`/assets/illustrations/wave-lines-dark.svg`}
+            bgColor="{colors.primary}"
             title={"Vision"}
             description={
               "An Africa where waste becomes opportunity through circular innovation."
             }
           />
           <DecorCard
-            bg="black"
+            bgUrl={`/assets/illustrations/wave-lines.svg`}
+            bgColor="black"
             title={"Mission"}
             description={
               "Build practical climate solutions that reduce waste, lower emissions and empower communities."
@@ -43,24 +45,30 @@ export default function VisionMission() {
 function DecorCard({
   title,
   description,
-  bg,
+  bgUrl,
+  bgColor,
 }: {
-  bg: string;
+  bgUrl: string;
+  bgColor: string;
   title: string;
   description: string;
 }) {
   return (
-    <Card.Root bg={bg} maxW={"md"} rounded={"2xl"} overflow={"hidden"}>
+    <Card.Root
+      bg={`url("${bgUrl}"), ${bgColor}`}
+      maxW={"md"}
+      rounded={"2xl"}
+      overflow={"hidden"}
+    >
       <Card.Body
-        p={20}
-        bg={`url('assets/illustrations/wave-lines.svg')`}
-        bgRepeat={"repeat"}
+        p={10}
+        // bgRepeat={"repeat"}
         fill={"purple"}
       >
-        <Card.Title fontSize={"3xl"} color="white">
+        <Card.Title fontSize={["3xl", null, "5xl"]} color="white">
           {title}
         </Card.Title>
-        <Card.Description mt={4} color="white">
+        <Card.Description mt={10} fontSize={"md"} color="white">
           {description}
         </Card.Description>
       </Card.Body>

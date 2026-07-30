@@ -2,41 +2,55 @@ import {
   Box,
   Button,
   Container,
+  Flex,
+  GridItem,
   HStack,
   Input,
   SimpleGrid,
   Text,
-  Theme,
+  Theme
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { PartnerWithUs } from "../btns";
 import { NavItem } from "../navbar/NavItem";
 import { navItems } from "../navbar/navItems";
 import WVLogo from "../wv-logo";
-import { FinalCTA } from "./final-cta";
+import WVLink from "../wv-link";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear() //Temporal.PlainDate.prototype.year
   return (
     <>
-      <Theme appearance="dark">        
+      <Theme appearance="dark">
         <Box
           as="footer"
           bg="linear-gradient(356.64deg, #0A0A0A 75.22%, #0F0E0E 107.94%)"
           color="white"
         >
           <Container py={20}>
-            <HStack flexWrap={"wrap"} gap={20}>
-              <Box maxW={"md"}>
-                <WVLogo w={40} filter={"auto"} brightness={1} saturate={1} />
-                <Text mt={7} fontSize={"sm"} color="fg.muted">
+            <Flex
+              flexDir={["column", null, null, "row"]}
+              // gapX={5}
+              gap={20}
+              // justifyContent={"space-between"}
+              alignItems={"top"}
+            >
+              
+
+              <GridItem maxW={"sm"} w="full" colSpan={[1, 2]} >
+                <WVLogo w={40} filter={"invert(100%)"} />
+                <Text mt={7} fontSize={"sm"} color="fg.muted" maxW={"sm"}>
                   Get one considered email a month, field notes, new episodes
                   and what we're building next.
                 </Text>
 
                 <HStack
-                  my={10}
+                  mt={[8]}
+                  mb={[4, /* null, 8 */]}
                   borderWidth={"thin"}
                   borderColor="white"
+                  maxW={"sm"}
+                  // w="full"
                   _focusWithin={{
                     focusRing: "outside",
                     focusRingWidth: "thin",
@@ -58,18 +72,54 @@ export default function Footer() {
                     Subscribe
                   </Button>
                 </HStack>
+
                 <PartnerWithUs
                   showArrow
                   variant={"outline"}
                   borderColor={"white/50"}
                 />
-              </Box>
+              </GridItem>
+            <SimpleGrid flex={1} columns={[1, 2, 4]} gap={5} gapY={16}>
 
-              <SimpleGrid columns={[1, 2, 3]} gap={5} flex={1}>
-                <NavSection label="Explore" items={navItems} />
-                <NavSection label="Others" items={navItems} />
-                <NavSection label="Others" items={navItems} />
-              </SimpleGrid>
+              {/* LINKS */}
+              <NavSection label="Explore" items={navItems} />
+              <NavSection
+                label="Solutions"
+                items={[
+                  { label: "RouteBeacon", href: "#" },
+                  { label: "Circular Economy", href: "#" },
+                  { label: "Community Engagement", href: "#" },
+                  { label: "Carbon Literacy Training", href: "#" },
+                ]}
+              />
+              <NavSection
+                label="Learn"
+                items={[
+                  { label: "Newsletter", href: "#" },
+                  { label: "Podcast", href: "#" },
+                  { label: "Legal", href: "#" },
+                ]}
+              />
+              <NavSection
+                label="Contact"
+                items={[
+                  { label: "hello@wastevest.com", href: "mailto:hello@wastevest.com" },
+                  { label: "partners@wastevest.com", href: "mailto:partners@wastevest.com" },
+                  { label: "Abuja · Nigeria" },
+                ]}
+              />
+            </SimpleGrid>
+            </Flex>
+
+            <HStack mt={20} borderTopWidth={"thin"} pt={8} justifyContent={"space-between"} fontSize={"sm"} flexDir={["column", null, "row"]} gap={10}>
+              <Text>© {currentYear} WasteVest. All rights reserved.</Text>
+
+              <HStack gap={6} >
+                <WVLink href="" hideArrow border={"none"} p={0}>Privacy</WVLink>
+                <WVLink href="" hideArrow border={"none"} p={0}>Terms</WVLink>
+                <WVLink href="" hideArrow border={"none"} p={0}>Legal</WVLink>
+                <Text>Made with intention · Abuja</Text>
+              </HStack>
             </HStack>
           </Container>
         </Box>
@@ -87,10 +137,10 @@ function NavSection({ label, items }: { label: string; items: NavItem[] }) {
 
       <Box as="ul" spaceY={4}>
         {items.map((item) => {
-          if (!item.href) return null;
+          if (item.subMenuName) return null;
           return (
-            <Text key={item.href + item.label} as="li" color="fg.muted">
-              <Link href={item.href}>{item.label}</Link>
+            <Text key={item.href + item.label} as="li" color="fg.muted" _hover={{color: "fg"}}>
+              {item.href ? <Link href={item.href}>{item.label}</Link> : item.label}
             </Text>
           );
         })}

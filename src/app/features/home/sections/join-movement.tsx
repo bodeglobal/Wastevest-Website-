@@ -14,7 +14,7 @@ export default function JoinMovement(){
                 <SimpleGrid columns={[2,null, null,4]} mt={20} borderWidth={"thin"} rounded={"2xl"} bg="border" gap={"1px"} overflow={"hidden"}>
                     {
                         items.map((item, i) => {
-                            return <Flex key={i} p={6} bg="bg" flexDir={"column"} justifyContent={"space-between"}>
+                            return <Flex key={i} p={6} bg="bg" transition=".3s ease-out" flexDir={"column"} justifyContent={"space-between"}>
                                 <Text fontSize={"xl"}>{item.label}</Text>
                                 <Text my={10} color="fg.muted" fontSize={"sm"}>{item.description}</Text>
                                 <WVLink href={item.action.href} fontWeight={"600"} border={"none"}>{item.action.label}</WVLink>

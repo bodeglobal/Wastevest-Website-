@@ -1,2 +1,2 @@
 
-export type NavItem = { label: string; href?: string; };
+export type NavItem = { label: string; href?: string; subMenuName?: string; };

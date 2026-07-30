@@ -42,6 +42,7 @@ export default function FeaturedPlatform() {
             color={"white/80"}
             divideY={"1px"}
             divideColor={"white/80"}
+            mb={[16, null, 0]}
           >
             <Text
               borderTopWidth={"thin"}
@@ -79,7 +80,7 @@ export default function FeaturedPlatform() {
           </Box>
         </Box>
 
-        <Box asChild pos="absolute" w={"7/12"} right={-120} bottom={0}>
+        <Box asChild pos="absolute" w={"7/12"} right={[0, null, -120]} bottom={0}>
           <Image
             width={1080}
             height={1080}

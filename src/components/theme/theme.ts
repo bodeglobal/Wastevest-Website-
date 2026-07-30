@@ -1,9 +1,15 @@
 import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react";
-import { abyssinica_sil, afacad } from "./font";
+import { abyssinica_sil, afacad } from "./fonts";
 
 console.log("Fonts: ", abyssinica_sil.variable, afacad.variable);
 
 const config = defineConfig({
+  globalCss: {
+    "*::selction": {
+      bg: "blue",
+      color: 'white'
+    }
+  },
   theme: {
     tokens: {
       colors: {
@@ -59,8 +65,8 @@ const config = defineConfig({
         },
       },
       fonts: {
-        heading: { value: `var(--font-abyssinica)` }, //${abyssinica_sil.variable}
-        body: { value: `var(--font-afacad)` }, //${afacad.variable}
+        heading: { value: `"Abyssinica SIL", serif` }, //${abyssinica_sil.variable}
+        body: { value: `"Afacad", sans-serif` }, //${afacad.variable}
         // mono: { value: "" },
         // monospace: { value: "" },
       },
@@ -116,14 +122,15 @@ const config = defineConfig({
           px: "6",
           py: "5",
           fontFamily: "body",
-          fontWeight: 600,
+          fontWeight: "medium",
         },
         variants: {
-          outline: {
-            base: {
-              borderWidth: "2px",
+          varient: {
+            outline: {
+              borderWidth: "22px",
+              // color: "primary"
             },
-          },
+          }
         },
       },
       input: {
