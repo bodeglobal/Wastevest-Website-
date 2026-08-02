@@ -1,5 +1,5 @@
 import { Box, Container, Heading, ButtonGroup, Theme } from "@chakra-ui/react";
-import { BookBode, PartnerWithUs } from "../btns";
+import { BookConsult, PartnerWithUs } from "../btns";
 
 export function FinalCTA() {
   return (
@@ -17,7 +17,7 @@ export function FinalCTA() {
             Let's build Africa's circular future together.
           </Heading>
           <ButtonGroup mt={10} fontFamily={"body"}>
-            <BookBode showArrow />
+            <BookConsult showArrow colorPalette={"secondary"} />
             <PartnerWithUs
               borderColor={"white"}
               _hover={{ bg: "white/10" }}

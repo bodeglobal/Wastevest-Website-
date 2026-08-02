@@ -3,8 +3,8 @@ import { Box, Container, Highlight, Text } from "@chakra-ui/react";
 export default function Quote() {
   return (
     <Box as="section">
-      <Container py={16}>
-        <Text fontSize={"3xl"} maxW={"3xl"}>
+      <Container py={28} centerContent textAlign={"center"} >
+        <Text fontSize={["3xl", null, "5xl"]} maxW={"5xl"}>
           <Highlight
             query={["education", "circular economy"]}
             styles={{ color: "primary" }}

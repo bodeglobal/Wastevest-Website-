@@ -17,50 +17,40 @@ import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
 export default function HeroSection() {
   return (
     <Carousel.Root
-      slideCount={4}
+      slideCount={3}
       slidesPerPage={1}
       gap={0}
       autoplay={{ delay: 3000 }}
       pos={"relative"}
     >
-      <Carousel.ItemGroup gap={0}>
-        <Carousel.Item aria-hidden={false} m={0} w="full" index={0}>
-          <SlideOne
+      <Carousel.ItemGroup gap={0} style={{gap: 0}}>
+        <Carousel.Item aria-hidden={false} m={0} index={0}>
+          <SlideThree
             minH="svh"
             h="full"
-            bg="url('/assets/images/gallery/g2.webp')"
+            bg="url('/assets/images/hero1.jpg')"
             backgroundSize={"cover"}
             bgRepeat={"no-repeat"}
           />
         </Carousel.Item>
 
-        <Carousel.Item aria-hidden={false} m={0} index={1}>
+        <Carousel.Item aria-hidden={false} m={0} w="full" index={1}>
           <SlideTwo
             minH="svh"
             h="full"
-            bg="url('/assets/images/gallery/hero1.webp')"
+            bg="url('/assets/images/hero3.jpg')"
             backgroundSize={"cover"}
             bgRepeat={"no-repeat"}
           />
         </Carousel.Item>
 
         <Carousel.Item aria-hidden={false} m={0} index={2}>
-          <SlideThree
+          
+          <SlideOne
             minH="svh"
             h="full"
-            bg="url('/assets/images/gallery/hero2.webp')"
+            bg="url('/assets/images/hero2.jpg')"
             backgroundSize={"cover"}
-            bgRepeat={"no-repeat"}
-          />
-        </Carousel.Item>
-
-        <Carousel.Item aria-hidden={false} m={0} index={3}>
-          <SlideFour
-            minH="svh"
-            h="full"
-            bg="url('/assets/images/routebeacon-wa-demo.webp'), black"
-            backgroundSize={"contain"}
-            backgroundPosition={"bottom"}
             bgRepeat={"no-repeat"}
           />
         </Carousel.Item>
@@ -79,7 +69,7 @@ export default function HeroSection() {
           h={[0.5, null, 1]}
           w={[7]}
           bg={"white/40"}
-          _current={{ bg: "white", w: [10, null, 16] }}
+          _current={{ bg: "white", w: [10, null, 12] }}
         />
 
         <ButtonGroup size="xs" variant={"outline"}>
@@ -102,7 +92,7 @@ export default function HeroSection() {
 
 function SlideOne(props: CenterProps) {
   return (
-    <Center flexDir={"column"} {...props} >
+    <Center flexDir={"column"} {...props}>
       <SharedContent
         title="Sustainability training, built for African business."
         description="Hands-on programmes that turn climate ambition into decisions
@@ -113,7 +103,7 @@ your team can make on Monday morning."
             <ButtonGroup>
               <Button bg="white" color="black" asChild>
                 <WVLink href="#" hideArrow>
-                  Explore training
+                  Learn More
                 </WVLink>
               </Button>{" "}
               <Button
@@ -145,7 +135,7 @@ your team can make on Monday morning."
             <ButtonGroup>
               <Button bg="white" color="black" asChild>
                 <WVLink href="#" hideArrow>
-                  See our Advisory
+                  Book a Consultation
                 </WVLink>
               </Button>{" "}
               <Button
@@ -175,7 +165,7 @@ function SlideThree(props: CenterProps) {
           <>
             <ButtonGroup>
               <Button bg="white" color="black" asChild>
-                <WVLink href="#">Book a Cohort</WVLink>
+                <WVLink href="#">Learn More</WVLink>
               </Button>{" "}
               <Button
                 variant={"outline"}
@@ -250,10 +240,14 @@ function SharedContent({
       px={4}
     >
       <SectionTitleTag color="primary.muted">{label}</SectionTitleTag>
-      <Heading size={{base:{base:"5xl", _landscape: "4xl"}, md: "6xl"}} maxW={"2xl"}>
+      <Heading
+        size={{ mdDown: { _portrait: "5xl", _landscape: "7xl" }, md: "7xl" }}
+        fontSize={{ mdDown: { _portrait: "5xl", _landscape: "7xl" }, md: "7xl" }}
+        maxW={"4xl"}
+      >
         {title}
       </Heading>
-      <Text maxW={"md"}>{description}</Text>
+      <Text maxW={"md"} mt={3} mb={10} fontSize={["md", "xl"]}>{description}</Text>
       {actions}
     </Center>
   );

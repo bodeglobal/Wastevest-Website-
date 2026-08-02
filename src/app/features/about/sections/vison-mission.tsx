@@ -1,26 +1,26 @@
-import SectionTitleTag from "@/components/section-tag";
+import { WVIcons } from "@/components/icons";
 import {
   Box,
   Card,
   Center,
   Container,
-  Heading,
   HStack,
-  Icon,
-  Separator,
-  SimpleGrid,
-  Text,
+  IconProps,
 } from "@chakra-ui/react";
-import Image from "next/image";
-import Link from "next/link";
-import { LuArrowRight } from "react-icons/lu";
+import { JSX, ReactElement } from "react";
 
 export default function VisionMission() {
   return (
-    <Box as="section" py={100}>
+    <Box as="section" py={150} bg="black">
       <Container centerContent>
-        <HStack gap={[10]} mdDown={{ flexDir: "column" }} alignItems={"stretch"}>
+        <HStack
+          w="full"
+          gap={[10]}
+          mdDown={{ flexDir: "column" }}
+          alignItems={"stretch"}
+        >
           <DecorCard
+            icon={WVIcons.Binoculars}
             bgUrl={`/assets/illustrations/wave-lines-dark.svg`}
             bgColor="{colors.primary}"
             title={"Vision"}
@@ -29,6 +29,7 @@ export default function VisionMission() {
             }
           />
           <DecorCard
+            icon={WVIcons.Crosshair}
             bgUrl={`/assets/illustrations/wave-lines.svg`}
             bgColor="black"
             title={"Mission"}
@@ -43,6 +44,7 @@ export default function VisionMission() {
 }
 
 function DecorCard({
+  icon,
   title,
   description,
   bgUrl,
@@ -52,26 +54,37 @@ function DecorCard({
   bgColor: string;
   title: string;
   description: string;
+  icon: (props: IconProps) => JSX.Element;
 }) {
+  const Icon = icon;
+
   return (
     <Card.Root
-      bg={`url("${bgUrl}"), ${bgColor}`}
-      maxW={[null, null, null, "md"]}
+      // bg={`url("${bgUrl}"), ${bgColor}`}
+      // maxW={[null, null, null, "md"]}
       flex={1}
       rounded={"2xl"}
       overflow={"hidden"}
+      flexDir={"row"}
+      alignItems={"center"}
       
+      border={"none"}
+      p={4}
+      gap={5}
     >
+      <Center boxSize={[28, null, null, 40]} color={"white"} fontSize={"xl"}>
+        <Icon  />
+      </Center>
       <Card.Body
-        p={10}
+        p={0}
         // bgRepeat={"repeat"}
         fill={"purple"}
         // justifyContent={"space-between"}
       >
-        <Card.Title fontSize={["3xl", null, "5xl"]} color="white">
+        <Card.Title  fontFamily="heading" fontSize={["3xl", null, "5xl"]} color="white">
           {title}
         </Card.Title>
-        <Card.Description mt={10} fontSize={"md"} color="white">
+        <Card.Description maxW="sm" mt={6} fontSize={"md"} fontWeight={500} color="white">
           {description}
         </Card.Description>
       </Card.Body>

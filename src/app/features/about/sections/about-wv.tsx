@@ -38,24 +38,42 @@ export default function AboutWV(props: Props) {
             <Heading size="4xl" mt={10}>
               Turning Waste Into Africa's Greatest Opportunity
             </Heading>
-            <Text my={10} lineHeight={"taller"}>
-              WasteVest is a Pan-African climate and sustainability organization
-              driving Africa's just transition through innovative waste
-              management, carbon reduction, and climate action solutions. We
-              work at the intersection of environmental stewardship, circular
-              economy innovation, and community empowerment to accelerate
-              sustainable development and climate resilience across the
-              continent. Industry: Environmental Services.
+            <Text my={10} lineHeight={"tall"} fontSize={"lg"}>
+              WasteVest began with a question asked during the We Create Change
+              program: "What change would you like to see in your community?"
+              Our answer was simple: cleaner motor parks in Abuja.
+              <br />
+              <br />
+              That answer became a public petition to the Abuja Environmental
+              Protection Board (AEPB). But in trying to solve one problem, we
+              discovered another: one of Africa's biggest environmental
+              challenges was also one of its greatest untapped economic
+              opportunities.
+              <br />
+              <br />
+              Today, WasteVest builds technology, partnerships, and climate
+              literacy programs that transform waste into value helping
+              communities participate in a more circular, resilient future.
             </Text>
+
+            <WVLink
+              href=""
+              color={"primary"}
+              fontWeight={"semibold"}
+              fontSize={"lg"}
+            >
+              Read the Petition that started it all
+            </WVLink>
           </Box>
-          <Center>
+          <Center flex={1}>
             <Box
-              bg={isSolid ? "white" : "primary"}
-              w="md"
-              rounded={"xl"}
+              bg={"primary"}
+              w="full"
+              rounded={"3xl"}
               h={"xl"}
-              boxShadow={`11px 12px 0px 0px ${isSolid ? "{colors.white/40}" : "{colors.primary/40}"}`}
+              boxShadow={`11px 12px 0px 0px {colors.primary/40}}`}
               overflow={"hidden"}
+              asChild
               pos={"relative"}
             >
               <Box asChild w="full" h="full" objectFit={"cover"}>
@@ -80,7 +98,7 @@ export default function AboutWV(props: Props) {
                 backdropFilter={"auto"}
                 backdropBlur={"sm"}
               >
-                Olabode Frank · Founder
+                Olabode Afurewaju · Founder
               </Text>
             </Box>
           </Center>

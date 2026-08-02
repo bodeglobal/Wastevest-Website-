@@ -15,12 +15,12 @@ export default function AboutWV() {
     <Box as="section" bg={"primary"} color={"white"} py={100}>
       <Container>
         <SimpleGrid columns={[1,  2]} gap={[10]} alignItems={"center"}>
-          <Box flex={1} h="fit">
+          <Box h="fit">
             <SectionTitleTag color={"white"}>About Wastevest</SectionTitleTag>
-            <Heading size="4xl" mt={10}>
+            <Heading size="5xl" mt={10}>
               Turning Waste Into Africa's Greatest Opportunity
             </Heading>
-            <Text my={10} lineHeight={"taller"}>
+            <Text my={10} lineHeight={"taller"} maxW={"xl"}>
               WasteVest is a Pan-African climate and sustainability organization
               driving Africa's just transition through innovative waste
               management, carbon reduction, and climate action solutions. We
@@ -30,17 +30,17 @@ export default function AboutWV() {
               continent. Industry: Environmental Services.
             </Text>
 
-            <WVLink href="#about">Meet the team</WVLink>
+            <WVLink href="/about#team">Meet the team</WVLink>
           </Box>
           <Center>
             <Box
               bg={"white"}
-              w="sm"
+              w={["full", null, "10/12"]}
               rounded={"xl"}
               h={["sm", null, "xl"]}
               boxShadow={`11px 12px 0px 0px {colors.white/40}`}
               pos={"relative"}
-              overflow={"hidden"}
+              overflow={"hidden"}              
             >
               <Box asChild w="full" h="full" objectFit={"cover"}>
                 <Image
@@ -64,7 +64,7 @@ export default function AboutWV() {
                 backdropFilter={"auto"}
                 backdropBlur={"sm"}
               >
-                Olabode Frank · Founder
+                Olabode Afurewaju · Founder
               </Text>
             </Box>
           </Center>

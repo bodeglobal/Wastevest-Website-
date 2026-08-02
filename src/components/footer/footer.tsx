@@ -16,7 +16,7 @@ import { NavItem } from "../navbar/NavItem";
 import { navItems } from "../navbar/navItems";
 import WVLogo from "../wv-logo";
 import WVLink from "../wv-link";
-import { WhatWeDoData } from "@/app/features/home/sections/what-we-do";
+import { WhatWeDoData } from "@/app/features/about/sections/what-we-do";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear() //Temporal.PlainDate.prototype.year
@@ -77,7 +77,7 @@ export default function Footer() {
                 <PartnerWithUs
                   showArrow
                   variant={"outline"}
-                  borderColor={"white/50"}
+                  borderColor={"white"}
                 />
               </GridItem>
             <SimpleGrid flex={1} columns={[1, 2, 4]} gap={5} gapY={16}>
@@ -100,7 +100,6 @@ export default function Footer() {
                 label="Contact"
                 items={[
                   { label: "hello@wastevest.com", href: "mailto:hello@wastevest.com" },
-                  { label: "partners@wastevest.com", href: "mailto:partners@wastevest.com" },
                   { label: "Abuja · Nigeria" },
                 ]}
               />

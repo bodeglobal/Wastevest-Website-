@@ -1,20 +1,56 @@
 import { Button, ButtonProps } from "@chakra-ui/react";
 import ArrowRight from "./arrow-right";
+import { ReactElement } from "react";
 
-export function BookBode({
+type BtnProps = Omit<ButtonProps, "children"> & {
+  showArrow?: boolean;
+  children?: ReactElement<string> | string;
+};
+
+export function BookConsult({
   showArrow,
+  children = "Book a Consultation",
   ...btnProps
-}: ButtonProps & { showArrow?: boolean }) {
+}: BtnProps) {
   return (
-    <Button {...btnProps}>Book Bode {showArrow && <ArrowRight />} </Button>
+    <Button colorPalette={"primary"} {...btnProps}>
+      {children} {showArrow && <ArrowRight />}{" "}
+    </Button>
   );
 }
 
 export function PartnerWithUs({
   showArrow,
+  children = "Partner with Us",
   ...btnProps
-}: ButtonProps & { showArrow?: boolean }) {
+}: BtnProps) {
   return (
-    <Button {...btnProps}>Partner with Us {showArrow && <ArrowRight />}</Button>
+    <Button  {...btnProps}>
+      {children} {showArrow && <ArrowRight />}
+    </Button>
+  );
+}
+
+export function SchedulePickup({
+  showArrow,
+  children = "Schedule a Pickup",
+  ...btnProps
+}: BtnProps) {
+  return (
+    <Button {...btnProps}>
+      {children} {showArrow && <ArrowRight />}
+    </Button>
+  );
+}
+
+export function ScheduleRecyling({
+  showArrow,
+  children = "Schedule Recycling",
+  ...btnProps
+}: BtnProps) {
+  return (
+    <Button {...btnProps}>
+      {children} {showArrow && <ArrowRight />}
+    </Button>
   );
 }

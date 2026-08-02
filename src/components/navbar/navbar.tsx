@@ -17,12 +17,12 @@ import {
 import Link, { useLinkStatus } from "next/link";
 import { navItems } from "./navItems";
 import WVLogo from "../wv-logo";
-import { BookBode } from "../btns";
+import { BookConsult } from "../btns";
 import { LuChevronDown, LuMenu } from "react-icons/lu";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { motion } from "motion/react";
-import { WhatWeDoData } from "@/app/features/home/sections/what-we-do";
+import { WhatWeDoData } from "@/app/features/about/sections/what-we-do";
 import WVLink from "../wv-link";
 
 export default function NavigationBar({
@@ -105,7 +105,7 @@ export default function NavigationBar({
             })}
           </HStack>
           <ButtonGroup>
-            <BookBode variant={isHome ? "outline" : "solid"} color={"white"} />
+            <BookConsult variant={isHome ? "outline" : "solid"} color={"white"} />
 
             <IconButton hideFrom={"md"} color={isHome ?"white" : "black"} variant={"outline"}>
               <LuMenu />

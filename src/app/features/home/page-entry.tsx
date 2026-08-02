@@ -10,8 +10,9 @@ import HeroSection from "./sections/hero";
 import JoinMovement from "./sections/join-movement";
 import Quote from "./sections/quote";
 import Voices from "./sections/voices";
-import WhatWeDo from "./sections/what-we-do";
+import WhatWeDo from "../about/sections/what-we-do";
 import BookBodeCTA from "./sections/book-bode-cta";
+import { Separator } from "@chakra-ui/react";
 
 export default function HomePageEntry() {
   return (
@@ -22,6 +23,7 @@ export default function HomePageEntry() {
       </header>
       <main>
         <Quote />
+        <Separator />
         <Trusties />
         <AboutWV />
         <WhatWeDo />

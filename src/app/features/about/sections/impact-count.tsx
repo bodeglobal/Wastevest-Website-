@@ -2,6 +2,7 @@ import SectionTitleTag from "@/components/section-tag";
 import WVLink from "@/components/wv-link";
 import {
   Box,
+  Circle,
   Container,
   Heading,
   HStack,
@@ -19,7 +20,7 @@ export default function ImpactCount() {
       <Container py={100}>
         <SectionTitleTag color="primary">Impact so far</SectionTitleTag>
 
-        <Heading size={["2xl", null, "5xl"]} my={4} >
+        <Heading size={["4xl", null, "5xl"]} my={4}>
           Our Numbers and stories behind every one.
         </Heading>
 
@@ -27,11 +28,26 @@ export default function ImpactCount() {
           Read the Annual Report
         </WVLink>
 
-        <SimpleGrid ref={ref} columns={[2, null, 5]} mt={10} flexWrap={"wrap"}>
+        <HStack
+          ref={ref}
+          gap={10}
+          mt={10}
+          justifyContent={["center", null, "space-between"]}
+          flexWrap={"wrap"}
+        >
           {ImpactData.map((item, i) => {
             return (
-              <Box key={i} py={[4, 14]} textAlign={"center"}>
-                <Text fontSize={"4xl"} fontFamily={"heading"}>
+              <Box
+                key={i}
+                py={[4, 14]}
+                minW={["3/12", null, 28]}
+                textAlign={"center"}
+                // bg="red"
+              >
+                <Circle size={[16, 20]} bg="white" p={2} mx={"auto"}>
+                  {<item.icon size={["md", "2xl"]} />}
+                </Circle>
+                <Text fontSize={["3xl", "4xl"]} fontFamily={"heading"} mt={3}>
                   <AnimateNumberCount ref={ref} targetCount={item.value} />
                   {item.plus && "+"} {item.unit && ` ${item.unit}`}
                 </Text>
@@ -41,7 +57,7 @@ export default function ImpactCount() {
               </Box>
             );
           })}
-        </SimpleGrid>
+        </HStack>
       </Container>
     </Box>
   );

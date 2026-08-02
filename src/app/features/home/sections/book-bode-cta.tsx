@@ -1,3 +1,4 @@
+import { BookConsult } from "@/components/btns";
 import SectionTitleTag from "@/components/section-tag";
 import {
   Box,
@@ -14,19 +15,19 @@ export default function BookBodeCTA() {
     <Box as="section">
       <Container py={100}>
         <HStack
-          bg={`url('/assets/illustrations/wave-lines-dark.svg') {colors.primary}`}
-          p={[5, null, 10]}
+          bg={`url('/assets/illustrations/wave-lines-dark.svg') #031124`}
+          p={[10, null, 10]}
           gap={10}
           rounded="4xl"
           flexDir={["column", null, null, "row"]}
           color="white"
         >
-          <Box w="full">
+          <Box flex={1}>
             <SectionTitleTag>Book Bode</SectionTitleTag>
             <Heading mt={5} size={["3xl", null, "5xl"]} maxW={"sm"}>
               Your Vision inspires Action.
             </Heading>
-            <Text  mt={6}>
+            <Text mt={6}>
               Bode delivers sustainability training, workshops and keynote talks
               that turn climate ideas into practical action. As the founder of
               WasteVest, he helps individuals and organisations rethink waste as
@@ -38,17 +39,23 @@ export default function BookBodeCTA() {
               the mindset, tools and confidence to drive measurable change.
             </Text>
 
-            <Button mt={10} bg="white" color="primary">
-              Book a Call with Bode
-            </Button>
+            <BookConsult mt={10} />
           </Box>
-          <Box flex={1} bg="bg.muted/30" h={["10"]} rounded="2xl" asChild>
-            <Image
-              src={"/assets/images/gallery/founder3.jpg"}
-              alt="Wastevest Founder"
-              width={1080}
-              height={1080}
-            />
+          <Box flex={1}>
+            <Box
+              // w={["full", null, "6/12"]}
+              bg="bg.muted/30"
+              h="full"
+              rounded="2xl"
+              asChild
+            >
+              <Image
+                src={"/assets/images/gallery/founder3.webp"}
+                alt="Wastevest Founder"
+                width={1080}
+                height={1080}
+              />
+            </Box>
           </Box>
         </HStack>
       </Container>

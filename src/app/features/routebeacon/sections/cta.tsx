@@ -1,4 +1,4 @@
-import { BookBode } from "@/components/btns";
+import { BookConsult } from "@/components/btns";
 import SectionTitleTag from "@/components/section-tag";
 import {
   Box,
@@ -43,7 +43,7 @@ export default function CTA() {
             <Button bg="white" color="primary">
               Schedule a Pickup
             </Button>
-            <BookBode
+            <BookConsult
               showArrow
               color={"white"}
               _hover={{ bg: "white/10" }}
