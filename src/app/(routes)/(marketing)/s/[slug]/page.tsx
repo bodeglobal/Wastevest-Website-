@@ -1,3 +1,4 @@
+import NavigationBar from "@/components/navbar/navbar";
 import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 import { ViewTransition } from "react";
@@ -22,18 +23,21 @@ export default async function Page({
   if (slug == "circular-economy")
     return (
       <ViewTransition enter={"auto"} exit={"auto"}>
+        <NavigationBar pos="relative" />
         <CircularEconomyPageEntry />
       </ViewTransition>
     );
   if (slug == "carbon-litracy-training")
     return (
       <ViewTransition enter={"auto"} exit={"auto"}>
+        <NavigationBar pos="relative" />
         <CarbonLiteracyTrainingPageEntry />
       </ViewTransition>
     );
   if (slug == "community-engagement")
     return (
       <ViewTransition  enter={"auto"} exit={"auto"}>
+        <NavigationBar pos="relative" />
         <CommunityEngagementPageEntry />
       </ViewTransition>
     );

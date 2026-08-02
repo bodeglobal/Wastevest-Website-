@@ -35,7 +35,7 @@ export default function Hero({
         </Text>
 
         <Box mt={10}>{actions}</Box>
-        <Box mt={28} bg="bg.muted" h="md" w="full">
+        <Box viewTransitionName={"s-hero-banner"} mt={28} bg="bg.muted" h="2xl" w="full" asChild objectFit={"cover"}>
           {banner}
         </Box>
       </Container>
