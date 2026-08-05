@@ -68,15 +68,17 @@ export default function AboutWV(props: Props) {
           <Center flex={1}>
             <Box
               bg={"primary"}
-              w={{ base: "11/12", md: "full" }}
+              // w={{ base: "11/12", md: "full" }}
               rounded={"3xl"}
-              h={{ base: "sm", md: "xl" }}
+              // h={["xl", null, "2xl"]}
+              mdDown={{h: "xs", w: "11/12"}}
               boxShadow={`11px 12px 0px 0px {colors.primary/40}}`}
               overflow={"hidden"}
-              asChild
+              // asChild
+              
               pos={"relative"}
             >
-              <Box asChild w="full" h="full" objectFit={"cover"}>
+              <Box asChild w="full" h="full" rounded="3xl" objectFit={"cover"}>
                 <Image
                   src={"/assets/images/gallery/founder2.webp"}
                   alt="Wastvest Founder"
@@ -87,7 +89,7 @@ export default function AboutWV(props: Props) {
               <Text
                 pos="absolute"
                 bottom={4}
-                left={4}
+                left={12}
                 rounded={"full"}
                 bg="black/50"
                 color={"white"}
