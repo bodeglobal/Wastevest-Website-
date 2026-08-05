@@ -6,7 +6,7 @@ export default function WVLogo({
   iconOnly,
   useWhite,
   ...imgProps
-}: BoxProps & { iconOnly?: boolean, useWhite?: boolean }) {
+}: BoxProps & { iconOnly?: boolean; useWhite?: boolean }) {
   return (
     <Box {...imgProps} asChild>
       <Image

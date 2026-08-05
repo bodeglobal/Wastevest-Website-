@@ -68,9 +68,9 @@ export default function AboutWV(props: Props) {
           <Center flex={1}>
             <Box
               bg={"primary"}
-              w="full"
+              w={{ base: "11/12", md: "full" }}
               rounded={"3xl"}
-              h={"xl"}
+              h={{ base: "sm", md: "xl" }}
               boxShadow={`11px 12px 0px 0px {colors.primary/40}}`}
               overflow={"hidden"}
               asChild

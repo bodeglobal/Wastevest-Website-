@@ -25,7 +25,7 @@ export function PartnerWithUs({
   ...btnProps
 }: BtnProps) {
   return (
-    <Button  {...btnProps}>
+    <Button {...btnProps}>
       {children} {showArrow && <ArrowRight />}
     </Button>
   );

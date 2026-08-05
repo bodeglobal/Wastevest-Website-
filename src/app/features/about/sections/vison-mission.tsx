@@ -67,13 +67,13 @@ function DecorCard({
       overflow={"hidden"}
       flexDir={"row"}
       alignItems={"center"}
-      
+
       border={"none"}
       p={4}
       gap={5}
     >
       <Center boxSize={[28, null, null, 40]} color={"white"} fontSize={"xl"}>
-        <Icon  />
+        <Icon />
       </Center>
       <Card.Body
         p={0}
@@ -81,10 +81,20 @@ function DecorCard({
         fill={"purple"}
         // justifyContent={"space-between"}
       >
-        <Card.Title  fontFamily="heading" fontSize={["3xl", null, "5xl"]} color="white">
+        <Card.Title
+          fontFamily="heading"
+          fontSize={["3xl", null, "5xl"]}
+          color="white"
+        >
           {title}
         </Card.Title>
-        <Card.Description maxW="sm" mt={6} fontSize={"md"} fontWeight={500} color="white">
+        <Card.Description
+          maxW="sm"
+          mt={6}
+          fontSize={"md"}
+          fontWeight={500}
+          color="white"
+        >
           {description}
         </Card.Description>
       </Card.Body>

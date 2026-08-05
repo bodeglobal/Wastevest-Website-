@@ -20,22 +20,23 @@ export default function ErrorPage({
   return (
     <ThemeProvider>
       <Container>
-      <NavigationBar pos="relative" />
+        <NavigationBar pos="relative" />
 
-      <Center flexDir={"column"} py={200}>
-        <Heading>Something went wrong</Heading>
-        <Text>{error.message}</Text>
+        <Center flexDir={"column"} py={200}>
+          <Heading>Something went wrong</Heading>
+          <Text>{error.message}</Text>
 
-        <Button
-          onClick={
-            // Attempt to recover by re-fetching and re-rendering the segment
-            () => unstable_retry()
-          }
-        >
-          Try again
-        </Button>
-      </Center>
-    </Container>
+          <Button
+            mt={5}
+            onClick={
+              // Attempt to recover by re-fetching and re-rendering the segment
+              () => unstable_retry()
+            }
+          >
+            Try again
+          </Button>
+        </Center>
+      </Container>
     </ThemeProvider>
   );
 }

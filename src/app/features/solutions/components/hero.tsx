@@ -17,7 +17,7 @@ export default function Hero({
 }) {
   return (
     <Box as="section">
-      <Container centerContent textAlign={"center"} py={100}>
+      <Container centerContent textAlign={"center"} py={200}>
         <SectionTitleTag color="primary">{label}</SectionTitleTag>
         <Heading
           my={6}
@@ -35,7 +35,15 @@ export default function Hero({
         </Text>
 
         <Box mt={10}>{actions}</Box>
-        <Box viewTransitionName={"s-hero-banner"} mt={28} bg="bg.muted" h="2xl" w="full" asChild objectFit={"cover"}>
+        <Box
+          viewTransitionName={"s-hero-banner"}
+          mt={28}
+          bg="bg.muted"
+          h={{ base: "md", lg: "2xl" }}
+          w="full"
+          asChild
+          objectFit={"cover"}
+        >
           {banner}
         </Box>
       </Container>

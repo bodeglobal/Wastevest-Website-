@@ -23,7 +23,7 @@ export default function HeroSection() {
       autoplay={{ delay: 3000 }}
       pos={"relative"}
     >
-      <Carousel.ItemGroup gap={0} style={{gap: 0}}>
+      <Carousel.ItemGroup gap={0} style={{ gap: 0 }}>
         <Carousel.Item aria-hidden={false} m={0} index={0}>
           <SlideThree
             minH="svh"
@@ -45,7 +45,6 @@ export default function HeroSection() {
         </Carousel.Item>
 
         <Carousel.Item aria-hidden={false} m={0} index={2}>
-          
           <SlideOne
             minH="svh"
             h="full"
@@ -242,12 +241,17 @@ function SharedContent({
       <SectionTitleTag color="primary.muted">{label}</SectionTitleTag>
       <Heading
         size={{ mdDown: { _portrait: "5xl", _landscape: "7xl" }, md: "7xl" }}
-        fontSize={{ mdDown: { _portrait: "5xl", _landscape: "7xl" }, md: "7xl" }}
+        fontSize={{
+          mdDown: { _portrait: "5xl", _landscape: "7xl" },
+          md: "7xl",
+        }}
         maxW={"4xl"}
       >
         {title}
       </Heading>
-      <Text maxW={"md"} mt={3} mb={10} fontSize={["md", "xl"]}>{description}</Text>
+      <Text maxW={"md"} mt={3} mb={10} fontSize={["md", "xl"]}>
+        {description}
+      </Text>
       {actions}
     </Center>
   );

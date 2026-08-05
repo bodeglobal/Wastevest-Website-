@@ -1,6 +1,5 @@
 import { Abyssinica_SIL, Afacad } from "next/font/google";
 
-
 export const afacad = Afacad({
   variable: "--font-afacad",
   weight: ["400", "500", "600", "700"],

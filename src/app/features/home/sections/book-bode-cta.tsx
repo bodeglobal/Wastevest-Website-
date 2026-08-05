@@ -23,7 +23,7 @@ export default function BookBodeCTA() {
           color="white"
         >
           <Box flex={1}>
-            <SectionTitleTag>Book Bode</SectionTitleTag>
+            <SectionTitleTag>Book Bode as a Speaker</SectionTitleTag>
             <Heading mt={5} size={["3xl", null, "5xl"]} maxW={"sm"}>
               Your Vision inspires Action.
             </Heading>

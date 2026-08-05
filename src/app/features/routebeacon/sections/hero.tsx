@@ -21,7 +21,7 @@ export default function HeroSection() {
         justifyContent={"center"}
         pb={0}
         pt={[110, null, 180]}
-        // minH={"svh"}
+        minH={["svh", null, "auto"]}
         pos="relative"
         asChild
       >
@@ -37,6 +37,7 @@ export default function HeroSection() {
             color="white"
             rounded={"full"}
             textTransform={"uppercase"}
+            scale={[0.8, null, 1]}
           >
             Powered by RouteBeacon™
           </Badge>
@@ -59,7 +60,7 @@ export default function HeroSection() {
           </ButtonGroup>
 
           <Box pos="relative">
-            <Box asChild w={"xl"}>
+            <Box asChild w={"2xl"}>
               <Image
                 src="/assets/images/routebeacon-wa-demo.webp"
                 alt="RouteBeacon WhatsApp Demo"
@@ -80,6 +81,7 @@ export default function HeroSection() {
               rotate={"-11.66deg"}
               maxW={"36"}
               textAlign={"left"}
+              scale={[0.5, null, 1]}
             >
               <Circle p={1} bg="primary" w="fit" color="white">
                 <WVIcons.Trash size={"xs"} />
@@ -112,6 +114,7 @@ export default function HeroSection() {
               rotate={"11.66deg"}
               maxW={"36"}
               textAlign={"left"}
+              scale={[0.5, null, 1]}
             >
               <Circle p={1} bg="white" w="fit" color="primary">
                 <WVIcons.Vector size={"xs"} />

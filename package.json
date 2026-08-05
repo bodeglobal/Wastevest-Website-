@@ -9,11 +9,15 @@
     "lint": "eslint",
     "chakra:i-snippets": "bash ./scripts/chakra-snippet.sh",
     "init-base-template": "git remote add upstream https://github.com/epicdevler/website_template.git",
-    "update-from-base-template": "git pull upstream main"
+    "update-from-base-template": "git pull upstream main",
+    "prettier-check":"pnpm prettier 'src/**/*.{js,jsx,ts,tsx}' --check",
+    "prettier-format":"pnpm prettier 'src/**/*.{js,jsx,ts,tsx}' --write"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.36.1",
     "@emotion/react": "^11.14.0",
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.15.0",
     "motion": "^12.42.2",
     "next": "16.2.10",
     "next-themes": "^0.4.6",
@@ -28,8 +32,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
-    "typescript": "^5",
-    "prettier": "3.9.6"
-    
+    "prettier": "3.9.6",
+    "typescript": "^5"
   }
 }

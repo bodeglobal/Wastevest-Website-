@@ -22,22 +22,19 @@ export default async function Page({
 
   if (slug == "circular-economy")
     return (
-      <ViewTransition enter={"auto"} exit={"auto"}>
-        <NavigationBar pos="relative" />
+      <ViewTransition enter={"slide-in"} exit={"slide-out"}>
         <CircularEconomyPageEntry />
       </ViewTransition>
     );
   if (slug == "carbon-litracy-training")
     return (
-      <ViewTransition enter={"auto"} exit={"auto"}>
-        <NavigationBar pos="relative" />
+      <ViewTransition enter={"slide-in"} exit={"slide-out"}>
         <CarbonLiteracyTrainingPageEntry />
       </ViewTransition>
     );
   if (slug == "community-engagement")
     return (
-      <ViewTransition  enter={"auto"} exit={"auto"}>
-        <NavigationBar pos="relative" />
+      <ViewTransition enter={"slide-in"} exit={"slide-out"}>
         <CommunityEngagementPageEntry />
       </ViewTransition>
     );

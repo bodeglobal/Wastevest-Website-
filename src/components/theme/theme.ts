@@ -2,6 +2,7 @@ import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react";
 import { abyssinica_sil, afacad } from "./fonts";
 
 const config = defineConfig({
+  cssVarsPrefix: "wvui",
   globalCss: {
     "::selection": {
       bg: "primary",
@@ -111,7 +112,6 @@ const config = defineConfig({
           emphasized: { value: "{colors.tertiary.200}" },
           focusRing: { value: "{colors.tertiary.500}" },
         },
-
       },
     },
     recipes: {

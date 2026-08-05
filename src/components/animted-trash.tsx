@@ -47,14 +47,13 @@ export default function AnimatedTrash() {
   }, []);
 
   return (
-    
-      <AnimatePresence mode="sync">
-        {trashs.map((trash, i) => {
-          const current = active != i;
-          if (current) return null;
-          return (
-            <Box asChild>
-              <motion.div
+    <AnimatePresence mode="sync">
+      {trashs.map((trash, i) => {
+        const current = active != i;
+        if (current) return null;
+        return (
+          <Box asChild>
+            <motion.div
               key={i}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
@@ -76,10 +75,9 @@ export default function AnimatedTrash() {
                 />
               </Box>
             </motion.div>
-            </Box>
-          );
-        })}
-      </AnimatePresence>
-    
+          </Box>
+        );
+      })}
+    </AnimatePresence>
   );
 }

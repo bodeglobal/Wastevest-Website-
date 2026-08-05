@@ -26,12 +26,7 @@ export default function FeaturedPlatform() {
         <HStack flexDir={["column", null, "row"]} alignItems={"stretch"}>
           <Box flex={1} px={8} pb={[0, null, 100]} pt={[100]}>
             <SectionTitleTag color="primary">Featured Platform</SectionTitleTag>
-            <Heading
-              my="6"
-              size={["3xl", "5xl"]}
-              overflow={"break-word"}
-              maxW={"sm"}
-            >
+            <Heading my="6" size={["5xl"]} overflow={"break-word"} maxW={"sm"}>
               RouteBeacon. <Span color="primary">Recycling in a message.</Span>
             </Heading>
             <Text>
@@ -84,17 +79,23 @@ export default function FeaturedPlatform() {
                 <Circle as={"span"} size={2} rounded={"full"} bg="primary" />
                 Every kilogram becomes wallet credit for electricity or airtime.
               </Text>
-
             </Box>
 
+            <ButtonGroup mt={5}>
+              <SchedulePickup colorPalette={"primary"} showArrow />
 
-              <ButtonGroup mt={5}>
-                <SchedulePickup colorPalette={"primary"} showArrow />
-
-                <Button asChild variant={"outline"} border={"thin solid {colors.secondary}"} color={"secondary"} _hover={{bg: "secondary/5"}}>
-                  <WVLink hideArrow border="none" href="/routebeacon">Learn More</WVLink>
-                </Button>
-              </ButtonGroup>
+              <Button
+                asChild
+                variant={"outline"}
+                border={"thin solid {colors.secondary}"}
+                color={"secondary"}
+                _hover={{ bg: "secondary/5" }}
+              >
+                <WVLink hideArrow border="none" href="/routebeacon">
+                  Learn More
+                </WVLink>
+              </Button>
+            </ButtonGroup>
           </Box>
 
           <Flex
@@ -124,7 +125,9 @@ export default function FeaturedPlatform() {
               left={[2, 5, -7]}
               rotate={"-11.66deg"}
             >
-              <Text textTransform={"uppercase"} fontSize={["xs", "auto"]}>Wallet</Text>
+              <Text textTransform={"uppercase"} fontSize={["xs", "auto"]}>
+                Wallet
+              </Text>
               <Text fontSize={["2xl", "3xl"]} fontWeight={"semibold"}>
                 <FormatNumber
                   value={4820}
@@ -151,7 +154,9 @@ export default function FeaturedPlatform() {
               right={7}
               rotate={"11.66deg"}
             >
-              <Text textTransform={"uppercase"} fontSize={["xs", "auto"]}>This Week</Text>
+              <Text textTransform={"uppercase"} fontSize={["xs", "auto"]}>
+                This Week
+              </Text>
               <Text fontSize={["2xl", "3xl"]} fontWeight={"semibold"}>
                 18.4 kg
               </Text>

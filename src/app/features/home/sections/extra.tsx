@@ -5,7 +5,7 @@ import {
   ButtonGroup,
   Container,
   Heading,
-  SimpleGrid
+  SimpleGrid,
 } from "@chakra-ui/react";
 import Image from "next/image";
 
@@ -25,7 +25,7 @@ export default function Extra() {
 function Podcast() {
   return (
     <Box>
-      <Box asChild rounded={"4xl"} w={"full"}  >
+      <Box asChild rounded={"4xl"} w={"full"}>
         <Image
           width={1080}
           height={1080}
@@ -68,8 +68,12 @@ function Podcast() {
 
 function Newsletter() {
   return (
-    <Box  bg={`url('/assets/illustrations/wave-lines.svg')`}>
-      <Box asChild rounded={"4xl"} w="full" smOnly={{w: "sm"}} >
+    <Box
+      bg={`url('/assets/illustrations/wave-lines.svg')`}
+      bgSize={"cover"}
+      bgRepeat={"no-repeat"}
+    >
+      <Box asChild rounded={"4xl"} w="full" smOnly={{ w: "sm" }}>
         <Image
           width={1080}
           height={1080}

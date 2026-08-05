@@ -9,7 +9,7 @@ export const ImpactData: {
   value: number;
   unit?: string;
   plus?: boolean;
-  icon: (props: IconProps) => JSX.Element,
+  icon: (props: IconProps) => JSX.Element;
 }[] = [
   {
     value: 40,

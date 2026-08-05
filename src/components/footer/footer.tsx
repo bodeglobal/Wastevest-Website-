@@ -8,7 +8,7 @@ import {
   Input,
   SimpleGrid,
   Text,
-  Theme
+  Theme,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { PartnerWithUs } from "../btns";
@@ -19,7 +19,7 @@ import WVLink from "../wv-link";
 import { WhatWeDoData } from "@/app/features/about/sections/what-we-do";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear() //Temporal.PlainDate.prototype.year
+  const currentYear = new Date().getFullYear(); //Temporal.PlainDate.prototype.year
   return (
     <>
       <Theme appearance="dark">
@@ -36,9 +36,7 @@ export default function Footer() {
               // justifyContent={"space-between"}
               alignItems={"top"}
             >
-              
-
-              <GridItem maxW={"sm"} w="full" colSpan={[1, 2]} >
+              <GridItem maxW={"sm"} w="full" colSpan={[1, 2]}>
                 <WVLogo w={40} filter={"invert(100%)"} />
                 <Text mt={7} fontSize={"sm"} color="fg.muted" maxW={"sm"}>
                   Get one considered email a month, field notes, new episodes
@@ -47,7 +45,7 @@ export default function Footer() {
 
                 <HStack
                   mt={[8]}
-                  mb={[4, /* null, 8 */]}
+                  mb={[4 /* null, 8 */]}
                   borderWidth={"thin"}
                   borderColor="white"
                   maxW={"sm"}
@@ -80,39 +78,58 @@ export default function Footer() {
                   borderColor={"white"}
                 />
               </GridItem>
-            <SimpleGrid flex={1} columns={[1, 2, 4]} gap={5} gapY={16}>
-
-              {/* LINKS */}
-              <NavSection label="Explore" items={navItems} />
-              <NavSection
-                label="Solutions"
-                items={WhatWeDoData.map(item => ({label: item.title, href: item.learnMoreUrl}))}
-              />
-              <NavSection
-                label="Learn"
-                items={[
-                  { label: "Newsletter", href: "#" },
-                  { label: "Podcast", href: "#" },
-                  { label: "Legal", href: "#" },
-                ]}
-              />
-              <NavSection
-                label="Contact"
-                items={[
-                  { label: "hello@wastevest.com", href: "mailto:hello@wastevest.com" },
-                  { label: "Abuja · Nigeria" },
-                ]}
-              />
-            </SimpleGrid>
+              <SimpleGrid flex={1} columns={[1, 2, 4]} gap={5} gapY={16}>
+                {/* LINKS */}
+                <NavSection label="Explore" items={navItems} />
+                <NavSection
+                  label="Solutions"
+                  items={WhatWeDoData.map((item) => ({
+                    label: item.title,
+                    href: item.learnMoreUrl,
+                  }))}
+                />
+                <NavSection
+                  label="Learn"
+                  items={[
+                    { label: "Newsletter", href: "#" },
+                    { label: "Podcast", href: "#" },
+                    { label: "Legal", href: "#" },
+                  ]}
+                />
+                <NavSection
+                  label="Contact"
+                  items={[
+                    {
+                      label: "hello@wastevest.com",
+                      href: "mailto:hello@wastevest.com",
+                    },
+                    { label: "Abuja · Nigeria" },
+                  ]}
+                />
+              </SimpleGrid>
             </Flex>
 
-            <HStack mt={20} borderTopWidth={"thin"} pt={8} justifyContent={"space-between"} fontSize={"sm"} flexDir={["column", null, "row"]} gap={10}>
+            <HStack
+              mt={20}
+              borderTopWidth={"thin"}
+              pt={8}
+              justifyContent={"space-between"}
+              fontSize={"sm"}
+              flexDir={["column", null, "row"]}
+              gap={10}
+            >
               <Text>© {currentYear} WasteVest. All rights reserved.</Text>
 
-              <HStack gap={6} >
-                <WVLink href="" hideArrow border={"none"} p={0}>Privacy</WVLink>
-                <WVLink href="" hideArrow border={"none"} p={0}>Terms</WVLink>
-                <WVLink href="" hideArrow border={"none"} p={0}>Legal</WVLink>
+              <HStack gap={6}>
+                <WVLink href="" hideArrow border={"none"} p={0}>
+                  Privacy
+                </WVLink>
+                <WVLink href="" hideArrow border={"none"} p={0}>
+                  Terms
+                </WVLink>
+                <WVLink href="" hideArrow border={"none"} p={0}>
+                  Legal
+                </WVLink>
                 <Text>Made with intention · Abuja</Text>
               </HStack>
             </HStack>
@@ -134,8 +151,17 @@ function NavSection({ label, items }: { label: string; items: NavItem[] }) {
         {items.map((item) => {
           if (item.subMenuName) return null;
           return (
-            <Text key={item.href + item.label} as="li" color="fg.muted" _hover={{color: "fg"}}>
-              {item.href ? <Link href={item.href}>{item.label}</Link> : item.label}
+            <Text
+              key={item.href + item.label}
+              as="li"
+              color="fg.muted"
+              _hover={{ color: "fg" }}
+            >
+              {item.href ? (
+                <Link href={item.href}>{item.label}</Link>
+              ) : (
+                item.label
+              )}
             </Text>
           );
         })}

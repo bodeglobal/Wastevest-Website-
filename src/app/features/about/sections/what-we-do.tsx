@@ -60,11 +60,11 @@ export default function WhatWeDo({
             gap={4}
             mt={10}
             justifyContent={["start", null, null, "center"]}
-            scrollSnapAlign={"center"}
             alignItems={"stretch"}
             overflowX={"scroll"}
             py={4}
             scrollbar={"hidden"}
+
             // flexWrap={"wrap"}
           >
             {WhatWeDoData.map((item, i) => {
@@ -78,6 +78,9 @@ export default function WhatWeDo({
                   rounded={"3xl"}
                   p={5}
                   gap={4}
+                  scrollSnapAlign={"center"}
+                  scrollSnapType={"block"}
+                  scrollSnapDestination={"center"}
                 >
                   <Card.Header p={0} pos={"relative"} overflow={"clip"}>
                     {item.featured && (
@@ -160,7 +163,7 @@ export default function WhatWeDo({
           </Text>
         </HStack>
 
-        <VStack align="stretch" mt={[20, 0]}  gap={[20, 10]} w="full">
+        <VStack align="stretch" mt={[20, 0]} gap={[20, 10]} w="full">
           {WhatWeDoData.map((item, i) => {
             const sn = ++i;
             const isEven = i % 2 == 0;
@@ -169,7 +172,7 @@ export default function WhatWeDo({
                 key={i}
                 p={[4, null, 20]}
                 gap={[10, 20]}
-                
+
                 flexDir={isEven ? ["column", "row-reverse"] : ["column", "row"]}
                 // justifyContent={"space-between"}
               >
@@ -180,7 +183,11 @@ export default function WhatWeDo({
                     {item.featured && <FeaturedBadge />}
                   </HStack>
 
-                  <Text fontSize={["3xl", "4xl"]} fontFamily={"heading"} mt={10}>
+                  <Text
+                    fontSize={["3xl", "4xl"]}
+                    fontFamily={"heading"}
+                    mt={10}
+                  >
                     {item.title}
                   </Text>
                   <Text color="fg.muted" mt={3} mb={10} maxW={"xs"}>

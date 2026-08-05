@@ -9,13 +9,13 @@ export default function NotFoundPage() {
   return (
     <ThemeProvider>
       <Container>
-      <NavigationBar pos="relative" />
+        <NavigationBar pos="relative" />
 
-      <Center flexDir={"column"} py={200}>
-        <Heading>404 Path: {slug}</Heading>
-        <Text>this page or resourse is not found</Text>
-      </Center>
-    </Container>
+        <Center flexDir={"column"} py={200}>
+          <Heading>404 Path: {slug}</Heading>
+          <Text>this page or resourse is not found</Text>
+        </Center>
+      </Container>
     </ThemeProvider>
   );
 }

@@ -1,2 +1,1 @@
-
-export type NavItem = { label: string; href?: string; subMenuName?: string; };
+export type NavItem = { label: string; href?: string; subMenuName?: string };

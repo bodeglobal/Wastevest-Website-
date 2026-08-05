@@ -15,19 +15,19 @@ import FeaturedPlatform from "../home/sections/featured-platform";
 export default function AboutPageEntry() {
   return (
     <>
-    <header>
-      <NavigationBar bg="bg" bgOpacity={70} />
-      <HeroSection />
-    </header>
+      <header>
+        <NavigationBar bg="bg" bgOpacity={70} />
+        <HeroSection />
+      </header>
       <main>
         <Quote />
-      <AboutWV variant="subtle" />
-      <VisionMission />
-      <WhatWeDo mode="full" />
-      <FeaturedPlatform />
-      <TheTeam />
-      <ImpactCount />
-      <FinalCTA />
+        <AboutWV variant="subtle" />
+        <VisionMission />
+        <WhatWeDo mode="full" />
+        <FeaturedPlatform />
+        <TheTeam />
+        <ImpactCount />
+        <FinalCTA />
       </main>
     </>
   );

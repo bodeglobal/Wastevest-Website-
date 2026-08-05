@@ -15,9 +15,10 @@ import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 
 export default function Voices() {
   return (
-    <Box as="section">
-      <Container py={100}>
-        <HStack gap={20} mdDown={{ flexDir: "column" }}>
+    <Box as="section" py={100}>
+      <Container>
+        <SectionTitleTag color="primary">Voices</SectionTitleTag>
+        <HStack hidden gap={20} mdDown={{ flexDir: "column" }}>
           <Box w="full" maxW={"md"}>
             <SectionTitleTag color="primary">Voices</SectionTitleTag>
 
@@ -44,25 +45,40 @@ export default function Voices() {
           </Box>
         </HStack>
       </Container>
+      <Box mt={10}>
+        <VoicesSlide />
+      </Box>
     </Box>
   );
 }
 
 function VoicesSlide() {
   return (
-    <Carousel.Root slideCount={voices.length} autoplay pos="relative" w="full">
+    <Carousel.Root slideCount={voices.length} autoplay autoSize w="full">
       <Carousel.ItemGroup>
         {voices.map((item, i) => {
           return (
-            <Carousel.Item key={i} index={i} overflow={"hidden"}>
-              <Box key={i}>
-                <Text w="full" fontSize={["xl", "3xl"]} color="#0A0A0A" fontFamily={"heading"}>
+            <Carousel.Item
+              key={i}
+              index={i}
+
+              snapAlign="center"
+              w="fit"
+              bg="white"
+              rounded={"2xl"}
+              p={6}
+            >
+              <Box key={i} maxW="sm">
+                <Text
+                  w="full"
+                  // fontSize={["xl", "3xl"]}
+                  color="#0A0A0A"
+                  fontFamily={"heading"}
+                >
                   “{item.comment}”
                 </Text>
 
-                <Separator my={5} />
-
-                <HStack>
+                <HStack mt={16}>
                   <Avatar
                     src={item.user.profileUrl}
                     name={item.user.name}
@@ -82,14 +98,11 @@ function VoicesSlide() {
       </Carousel.ItemGroup>
 
       <Carousel.Control
-        w="fit"
+        w="full"
         color="#5A5A58"
-        bg="bg"
         gap={5}
-        pos="absolute"
-        right={0}
-        bottom={0}
-        p={2}
+        p={4}
+        justifyContent={"end"}
       >
         {/* <HStack color="#5A5A58"> */}
         {/* <Text fontSize={"sm"}>01 / 03</Text> */}
@@ -118,6 +131,37 @@ const voices: {
   comment: string;
   user: { name: string; org: string; state: string; profileUrl?: string };
 }[] = [
+  {
+    comment:
+      "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",
+    user: {
+      name: "Mrs. Adaeze Okoro",
+      state: "Estate Chair",
+      org: "Ikoyi, Lagos",
+      profileUrl: "/assets/images/gallery/g3.webp",
+    },
+  },
+  {
+    comment:
+      "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",
+    user: {
+      name: "Mrs. Jane Doe",
+      state: "Estate Chair",
+      org: "Ikoyi, Lagos",
+      profileUrl: "/assets/images/gallery/g3.webp",
+    },
+  },
+  {
+    comment:
+      "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",
+    user: {
+      name: "Mr. John Doe",
+      state: "Estate Chair",
+      org: "Ikoyi, Lagos",
+      profileUrl: "/assets/images/gallery/g3.webp",
+    },
+  },
+
   {
     comment:
       "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",

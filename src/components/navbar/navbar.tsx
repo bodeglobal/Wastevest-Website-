@@ -105,9 +105,18 @@ export default function NavigationBar({
             })}
           </HStack>
           <ButtonGroup>
-            <BookConsult variant={isHome ? "outline" : "solid"} color={"white"} />
+            <BookConsult
+              variant={isHome ? "outline" : "solid"}
+              color={"white"}
+            />
 
-            <IconButton hideFrom={"md"} color={isHome ?"white" : "black"} variant={"outline"}>
+            <IconButton
+              hideFrom={"md"}
+              colorPalette={isHome ? "secondary" : undefined}
+              // color={isHome ? "white" : "black"}
+              // borderColor={isHome ? "white" : "black"}
+              // variant={"outline"}
+            >
               <LuMenu />
             </IconButton>
           </ButtonGroup>

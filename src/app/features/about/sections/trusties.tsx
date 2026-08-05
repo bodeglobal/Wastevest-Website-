@@ -41,18 +41,22 @@ export default function Trusties() {
     <Box as="section" py={20}>
       <Text textAlign={"center"}>Trusted by partners across the continent</Text>
 
-      <Marquee.Root css={{"--marquee-edge-color": "colors.bg"}} autoFill spacing="5rem" mt={16}>
+      <Marquee.Root
+        css={{ "--marquee-edge-color": "colors.bg" }}
+        autoFill
+        spacing="5rem"
+        mt={16}
+      >
         <Marquee.Edge side="start" />
         <Marquee.Edge side="end" />
         <Marquee.Viewport>
-          <Marquee.Content          
+          <Marquee.Content
             gap={0}
             overflowX={"auto"}
             px={0}
             mx={0}
             py={4}
             // bg="red"
-
           >
             {list.map((item, i) => {
               return (

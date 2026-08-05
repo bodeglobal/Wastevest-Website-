@@ -14,7 +14,7 @@ export default function AboutWV() {
   return (
     <Box as="section" bg={"primary"} color={"white"} py={100}>
       <Container>
-        <SimpleGrid columns={[1,  2]} gap={[10]} alignItems={"center"}>
+        <SimpleGrid columns={[1, 2]} gap={[10]} alignItems={"center"}>
           <Box h="fit">
             <SectionTitleTag color={"white"}>About Wastevest</SectionTitleTag>
             <Heading size="5xl" mt={10}>
@@ -40,7 +40,7 @@ export default function AboutWV() {
               h={["sm", null, "xl"]}
               boxShadow={`11px 12px 0px 0px {colors.white/40}`}
               pos={"relative"}
-              overflow={"hidden"}              
+              overflow={"hidden"}
             >
               <Box asChild w="full" h="full" objectFit={"cover"}>
                 <Image

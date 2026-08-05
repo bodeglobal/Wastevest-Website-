@@ -30,9 +30,9 @@ export default function ImpactCount() {
 
         <HStack
           ref={ref}
-          gap={10}
+          gap={[5, null, 10]}
           mt={10}
-          justifyContent={["center", null, "space-between"]}
+          justifyContent={["start", null, "space-between"]}
           flexWrap={"wrap"}
         >
           {ImpactData.map((item, i) => {
