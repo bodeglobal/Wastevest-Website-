@@ -15,7 +15,7 @@ import { TeamProfile } from "./TeamProfile";
 export default function TheTeam() {
   return (
     <Box as="section" id="team">
-      <Container py={20}>
+      <Container py={[10, null, 20]}>
         <Center
           pos="relative"
           py={[10, null, 20]}

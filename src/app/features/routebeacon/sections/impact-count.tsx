@@ -22,7 +22,7 @@ export default function ImpactCount() {
   const ref = useRef(null);
   return (
     <Box as="section">
-      <Container py={100}>
+      <Container py={[10, null, 100]}>
         <SectionTitleTag color="primary">Impact so far</SectionTitleTag>
 
         <Heading size={["2xl", null, "5xl"]} maxW={"xl"} my={6}>

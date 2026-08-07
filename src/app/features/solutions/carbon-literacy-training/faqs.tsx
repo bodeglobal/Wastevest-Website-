@@ -47,7 +47,7 @@ const faqs = [
 
 export default function Faqs() {
   return (
-    <Box as="section" py={100}>
+    <Box as="section" py={[10, null, 100]}>
       <Container>
         <SectionTitle>Frequently Asked Questions</SectionTitle>
 

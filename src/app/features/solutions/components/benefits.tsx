@@ -25,11 +25,11 @@ type Props = {
 export default function Benefits({ title, data }: Props) {
   return (
     <Box as="section" bg="#031124">
-      <Container py={100} color="white">
+      <Container py={[10, null, 100]} color="white">
         <SectionTitleTag color="primary">Benefits</SectionTitleTag>
         <SectionTitle mt={5}>{title}</SectionTitle>
 
-        <SimpleGrid columns={[2, 2, 4]} mt={16}>
+        <SimpleGrid columns={[2, 2, 4]} mt={[8, null, 16]}>
           {(data ?? Array.from({ length: 8 })).map((item, idx) => {
             return (
               <Box key={idx} rounded={"xl"} p={4} py={6}>
@@ -54,7 +54,7 @@ export default function Benefits({ title, data }: Props) {
           bg="primary/10"
           rounded="3xl"
           p={[8]}
-          mt={20}
+          mt={[10, null, 20]}
           justifyContent={"space-between"}
         >
           <Text maxW={"44"} fontFamily={"heading"} fontSize={"xl"}>

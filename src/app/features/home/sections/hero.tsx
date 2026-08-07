@@ -12,7 +12,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
-import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
+import { LuArrowLeft, LuArrowRight, LuChevronLeft, LuChevronRight } from "react-icons/lu";
 
 export default function HeroSection() {
   return (
@@ -74,13 +74,13 @@ export default function HeroSection() {
         <ButtonGroup size="xs" variant={"outline"}>
           <Carousel.PrevTrigger asChild>
             <IconButton color="white" _hover={{ color: "black" }}>
-              <LuChevronLeft />
+              <LuArrowLeft />
             </IconButton>
           </Carousel.PrevTrigger>
 
           <Carousel.NextTrigger asChild>
             <IconButton color="white" _hover={{ color: "black" }}>
-              <LuChevronRight />
+              <LuArrowRight />
             </IconButton>
           </Carousel.NextTrigger>
         </ButtonGroup>
@@ -240,9 +240,9 @@ function SharedContent({
     >
       <SectionTitleTag color="primary.muted">{label}</SectionTitleTag>
       <Heading
-        size={{ mdDown: { _portrait: "5xl", _landscape: "7xl" }, md: "7xl" }}
+        size={{ mdDown: { _portrait: "4xl", _landscape: "7xl" }, md: "7xl" }}
         fontSize={{
-          mdDown: { _portrait: "5xl", _landscape: "7xl" },
+          mdDown: { _portrait: "4xl", _landscape: "7xl" },
           md: "7xl",
         }}
         maxW={"4xl"}

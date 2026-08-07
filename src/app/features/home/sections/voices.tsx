@@ -15,7 +15,7 @@ import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 
 export default function Voices() {
   return (
-    <Box as="section" py={100}>
+    <Box as="section" py={[10, null, 100]}>
       <Container>
         <SectionTitleTag color="primary">Voices</SectionTitleTag>
         <HStack hidden gap={20} mdDown={{ flexDir: "column" }}>

@@ -1,4 +1,11 @@
-import { Box, Container, SimpleGrid, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  GridItem,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/react";
 import { SectionTitle } from "./HeadingText";
 
 export default function OurProcess({
@@ -8,29 +15,37 @@ export default function OurProcess({
 }) {
   return (
     <Box as="section">
-      <Container py={100}>
+      <Container py={[10, null, 100]}>
         <SectionTitle>Our Process</SectionTitle>
 
         <SimpleGrid
           mt={10}
-          columns={[2, null, 4]}
+          columns={{ base: 2, lg: 4 }}
           bg="border"
           gap={"1px"}
           borderWidth={"thin"}
           rounded="2xl"
           overflow={"hidden"}
         >
-          {process.map((item, idx) => {
+          {process.map((item, idx, items) => {
+            const isOddLast =
+              items.length % 2 == 0 ? false : items.length - 1 == idx;
             return (
-              <Box
-                key={idx}
-                p={6}
-                bg={`url('/assets/illustrations/wave-lines.svg') {colors.bg}`}
-                bgPos={"bottom"}
-              >
-                <Text fontSize={"lg"}>{item.title}</Text>
-                <Text mt={16}>{item.description}</Text>
-              </Box>
+              <GridItem asChild key={idx} colSpan={isOddLast ? 2 : undefined}>
+                <Flex
+                  key={idx}
+                  p={6}
+                  bg={`url('/assets/illustrations/wave-lines.svg') {colors.bg}`}
+                  bgPos={"bottom"}
+                  flexDir={"column"}
+                  justifyContent={"space-between"}
+                >
+                  <Text fontSize={"lg"}>
+                    {item.title}
+                  </Text>
+                  <Text mt={16}>{item.description}</Text>
+                </Flex>
+              </GridItem>
             );
           })}
         </SimpleGrid>

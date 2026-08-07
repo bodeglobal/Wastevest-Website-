@@ -13,11 +13,11 @@ import {
 export default function CTA() {
   return (
     <Box as="section">
-      <Container py={100}>
+      <Container py={[10, null, 100]}>
         <HStack
           rounded={"4xl"}
           bg={`url('/assets/illustrations/wave-lines-dark.svg') {colors.primary}`}
-          p={[8, null, 20]}
+          p={[6, null, 20]}
           gap={20}
           color={"white"}
           alignItems={[null, "end"]}
@@ -29,7 +29,7 @@ export default function CTA() {
               Start today
             </SectionTitleTag>
 
-            <Heading maxW={"lg"} size={["4xl", null, "6xl"]} my={[5, null, 10]}>
+            <Heading maxW={"lg"} size={["3xl", null, "6xl"]} my={[5, null, 10]}>
               Ready to Clear the Clutter
             </Heading>
 

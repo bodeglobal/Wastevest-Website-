@@ -12,7 +12,7 @@ import Image from "next/image";
 export default function Extra() {
   return (
     <Box as="section" bg="#0A0A0A" color="white" borderColor="white">
-      <Container py={100}>
+      <Container py={[10, null, 100]}>
         <SimpleGrid columns={[1, 2]} gap={20}>
           <Podcast />
           <Newsletter />

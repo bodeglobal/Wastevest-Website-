@@ -10,12 +10,12 @@ import Faqs from "./faqs";
 import AboutCLT from "./about";
 
 export default async function CarbonLiteracyTrainingPageEntry() {
-  // const resp = await fetch("https://api.frankfurter.dev/v2/rate/EUR/USD", {
-  //   method: "GET",
-  // });
+  const resp = await fetch("https://api.frankfurter.dev/v2/rate/USD/NGN ", {
+    method: "GET",
+  });
 
-  // console.log("CurrencyRate Response: ", resp);
-  // console.log("CurrencyRate Body: ", await resp.json());
+  console.log("CurrencyRate Response: ", resp);
+  console.log("CurrencyRate Body: ", await resp.json());
   return (
     <>
       <NavigationBar bg="white" pos="fixed" />

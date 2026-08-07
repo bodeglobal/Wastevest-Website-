@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function Certification() {
   return (
-    <Box as="section" py={100} borderYWidth={"thin"}>
-      <Container bg="primary" color="white" py={10} rounded="3xl">
-        <HStack gap={10} mdDown={{ alignItems: "start", flexDir: "column" }}>
+    <Box as="section" py={[10,  null, 100]} borderYWidth={"thin"}>
+      <Container >
+        <HStack bg="primary" color="white" p={[4, null, 10]} rounded="3xl" gap={10} mdDown={{ alignItems: "start", flexDir: "column" }}>
           <Box flex={1}>
             <SectionTitle>Certification</SectionTitle>
 
@@ -41,7 +41,7 @@ export default function Certification() {
             </Button>
           </Box>
 
-          <Box h={"sm"} w="sm" bg="bg.muted" asChild>
+          <Box h={"sm"} w="sm" asChild objectFit={"contain"}>
             <Image
               src={"/assets/images/poster.png"}
               alt="Certificate poster"

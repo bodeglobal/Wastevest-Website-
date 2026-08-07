@@ -27,7 +27,7 @@ export default function AboutWV(props: Props) {
       as="section"
       bg={isSolid ? "primary" : undefined}
       color={isSolid ? "white" : undefined}
-      py={100}
+      py={[10, null, 100]}
     >
       <Container>
         <SimpleGrid columns={[1, null, 2]} gap={20} alignItems={"center"}>
@@ -55,7 +55,7 @@ export default function AboutWV(props: Props) {
               literacy programs that transform waste into value helping
               communities participate in a more circular, resilient future.
             </Text>
-
+ 
             <WVLink
               href=""
               color={"primary"}
@@ -65,17 +65,16 @@ export default function AboutWV(props: Props) {
               Read the Petition that started it all
             </WVLink>
           </Box>
-          <Center flex={1}>
+          <Center flex={1} pos="relative">
             <Box
               bg={"primary"}
               // w={{ base: "11/12", md: "full" }}
               rounded={"3xl"}
               // h={["xl", null, "2xl"]}
-              mdDown={{h: "xs", w: "11/12"}}
+              mdDown={{ h: "xs", w: "11/12" }}
               boxShadow={`11px 12px 0px 0px {colors.primary/40}}`}
               overflow={"hidden"}
               // asChild
-              
               pos={"relative"}
             >
               <Box asChild w="full" h="full" rounded="3xl" objectFit={"cover"}>
@@ -89,7 +88,7 @@ export default function AboutWV(props: Props) {
               <Text
                 pos="absolute"
                 bottom={4}
-                left={12}
+                left={{base: 4,}}
                 rounded={"full"}
                 bg="black/50"
                 color={"white"}

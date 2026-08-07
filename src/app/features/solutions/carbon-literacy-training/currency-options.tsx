@@ -13,7 +13,7 @@ export default function CurrencyOptions({
   onSelect: (value: string) => void;
 }) {
   return (
-    <ButtonGroup bg="primary.700" borderWidth={"thin"} p={0.5} rounded="full">
+    <ButtonGroup bg="primary.700" borderWidth={"thin"} p={0.5} rounded="full" w="fit">
       {options.map((item) => {
         const isActive = selected == item;
         return (

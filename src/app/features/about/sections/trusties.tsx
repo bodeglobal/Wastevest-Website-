@@ -38,7 +38,7 @@ const list = [
 
 export default function Trusties() {
   return (
-    <Box as="section" py={20}>
+    <Box as="section" py={[10, null, 20]}>
       <Text textAlign={"center"}>Trusted by partners across the continent</Text>
 
       <Marquee.Root

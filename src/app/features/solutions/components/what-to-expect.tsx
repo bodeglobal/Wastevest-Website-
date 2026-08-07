@@ -3,35 +3,37 @@ import { SectionTitle } from "./HeadingText";
 
 export default function WhatToExpect({ benefits }: { benefits: string[] }) {
   return (
-    <Box as="section" py={100}>
-      <Container
-        p={8}
-        rounded={"4xl"}
-        bg={`url('/assets/illustrations/wave-lines-dark.svg') {colors.primary}`}
-        color={"white"}
-      >
-        <SectionTitle>Outcomes you can expect</SectionTitle>
-
+    <Box as="section" py={[10, null, 100]}>
+      <Container>
         <Box
-          as="ul"
-          columnCount={2}
-          spaceY={3}
-          mt={10}
-          listStyle={"inside"}
-          fontWeight={500}
+          p={8}
+          rounded={"4xl"}
+          bg={`url('/assets/illustrations/wave-lines-dark.svg') {colors.primary}`}
+          color={"white"}
         >
-          {benefits.map((item, idx) => {
-            return (
-              <Text key={idx} as="li">
-                {item}
-              </Text>
-            );
-          })}
-        </Box>
+          <SectionTitle>Outcomes you can expect</SectionTitle>
 
-        <Button colorPalette={"secondary"} mt={10}>
-          Get Started
-        </Button>
+          <Box
+            as="ul"
+            columnCount={[1, null, 2]}
+            spaceY={3}
+            mt={10}
+            listStyle={"inside"}
+            fontWeight={500}
+          >
+            {benefits.map((item, idx) => {
+              return (
+                <Text key={idx} as="li">
+                  {item}
+                </Text>
+              );
+            })}
+          </Box>
+
+          <Button colorPalette={"secondary"} mt={10}>
+            Get Started
+          </Button>
+        </Box>
       </Container>
     </Box>
   );

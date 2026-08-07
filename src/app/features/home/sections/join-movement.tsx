@@ -12,7 +12,7 @@ import {
 export default function JoinMovement() {
   return (
     <Box as="section">
-      <Container py={100}>
+      <Container py={[10, null, 100]}>
         <SectionTitleTag color="primary">Join the Movement</SectionTitleTag>
         <Heading
           mt={4}

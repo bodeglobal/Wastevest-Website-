@@ -6,7 +6,7 @@ import { ReactElement } from "react";
 export default function Services() {
   return (
     <Box as="section">
-      <Container centerContent py={200}>
+      <Container centerContent py={[10, null, 200]}>
         <SectionTitleTag
           showBars={false}
           color={"primary"}

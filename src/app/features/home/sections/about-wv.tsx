@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function AboutWV() {
   return (
-    <Box as="section" bg={"primary"} color={"white"} py={100}>
+    <Box as="section" bg={"primary"} color={"white"} py={[10, null, 100]}>
       <Container>
         <SimpleGrid columns={[1, 2]} gap={[10]} alignItems={"center"}>
           <Box h="fit">

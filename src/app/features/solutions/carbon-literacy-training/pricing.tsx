@@ -28,16 +28,17 @@ export default function Pricing() {
   const [selectedCurrency, setSelectedCurrency] = useState(currencyOpts.at(0));
   return (
     <Box as="section">
-      <Container py={100}>
+      <Container py={[10, null, 100]}>
         <SectionTitleTag color="primary">Pricing</SectionTitleTag>
         <SectionTitle mt={5}>Course Costs</SectionTitle>
 
-        <Box mt={16}>
+        <Box mt={[8, null, 16]}>
           <Text fontWeight={"semibold"}>Course Fee Includes:</Text>
           <HStack
             justifyContent={"space-between"}
             flexDir={["column", null, "row"]}
-            alignItems={"end"}
+            alignItems={{ md: "end" }}
+            gap={10}
           >
             <Box
               as="ul"
@@ -51,15 +52,17 @@ export default function Pricing() {
               <Text as="li">Evidence Form review</Text>
               <Text as="li">Carbon Literacy certification processing.</Text>
             </Box>
-            <CurrencyOptions
+            <HStack justifyContent={"end"}>
+              <CurrencyOptions
               options={currencyOpts.reverse()}
               selected={selectedCurrency!}
               onSelect={setSelectedCurrency}
             />
+            </HStack>
           </HStack>
         </Box>
 
-        <SimpleGrid columns={[2, null, 4]} gap={4} mt={20}>
+        <SimpleGrid columns={[2, null, 4]} gap={4} mt={[10, null, 20]}>
           {pricings.map((item, idx) => {
             return (
               <Box
@@ -69,7 +72,7 @@ export default function Pricing() {
                 borderColor={"primary"}
               >
                 <Text>{item.label}</Text>
-                <Text fontWeight={"semibold"} fontSize={["2xl"]} mt={7}>
+                <Text fontWeight={"semibold"} fontSize={["2xl"]} mt={7} display={"flex"} alignItems={"center"} flexWrap={"wrap"}>
                   <FormatNumber
                     value={item.value}
                     style="currency"

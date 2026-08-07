@@ -27,7 +27,7 @@ export default function WhatWeDo({
 }) {
   if (mode == "compact")
     return (
-      <Box as="section" py={100}>
+      <Box as="section" py={[10, null, 100]}>
         <Container>
           <HStack
             textAlign={"center"}

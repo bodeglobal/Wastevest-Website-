@@ -46,7 +46,7 @@ none of it come back?"
           {
             title: "Action to Impact",
             body: `In 2021, WasteVest set out to solve a local waste challenge with a simple act of advocacy. That effort grew into partnerships, public awareness campaigns, and practical climate programs that now empower businesses, communities, and institutions across Africa.\n\nToday, we continue that mission by delivering Carbon Literacy training, circular economy solutions, and community-led climate action, helping people move beyond awareness to lasting impact.`,
-            illustrationUrl: "/assets/illustrations/hugging-planet-earth.png",
+            illustrationUrl: "/assets/illustrations/sustainable-electricity-gen.png",//"/assets/illustrations/hugging-planet-earth.png",
           },
         ]}
       />

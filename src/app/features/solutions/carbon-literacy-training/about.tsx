@@ -7,7 +7,7 @@ export default function AboutCLT() {
   const [active, setActive] = useState<number>();
   const scrollRef = useRef(null);
   return (
-    <Box as="section" py={100}>
+    <Box as="section" py={[10, null, 100]}>
       <Container>
         <HStack gap={20} alignItems={"start"}>
           <Box maxW={{ base: "auto", lg: "4/12" }}>

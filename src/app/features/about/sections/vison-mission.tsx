@@ -11,7 +11,7 @@ import { JSX, ReactElement } from "react";
 
 export default function VisionMission() {
   return (
-    <Box as="section" py={150} bg="black">
+    <Box as="section" py={[10, null, 150]} bg="black">
       <Container centerContent>
         <HStack
           w="full"
