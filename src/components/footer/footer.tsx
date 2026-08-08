@@ -16,7 +16,7 @@ import { NavItem } from "../navbar/NavItem";
 import { navItems } from "../navbar/navItems";
 import WVLogo from "../wv-logo";
 import WVLink from "../wv-link";
-import { WhatWeDoData } from "@/app/features/about/sections/what-we-do";
+import { WhatWeDoData } from "@/app/features-ui/about/sections/what-we-do";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear(); //Temporal.PlainDate.prototype.year
@@ -45,7 +45,7 @@ export default function Footer() {
 
                 <HStack
                   mt={[8]}
-                  mb={[4 /* null, 8 */]}
+                  
                   borderWidth={"thin"}
                   borderColor="white"
                   maxW={"sm"}
@@ -56,6 +56,7 @@ export default function Footer() {
                   }}
                   gap={0}
                   rounded={"full"}
+                  hidden
                   p={1}
                 >
                   <Input
@@ -73,6 +74,7 @@ export default function Footer() {
                 </HStack>
 
                 <PartnerWithUs
+                mt={[4 /* null, 8 */]}
                   showArrow
                   variant={"outline"}
                   borderColor={"white"}
@@ -91,9 +93,12 @@ export default function Footer() {
                 <NavSection
                   label="Learn"
                   items={[
-                    { label: "Newsletter", href: "#" },
-                    { label: "Podcast", href: "#" },
-                    { label: "Legal", href: "#" },
+                    { label: "Newsletter", href: "/newsletters" },
+                    {
+                      label: "Podcast",
+                      href: "https://open.spotify.com/episode/39VXwD8ei2cQSq7TTFJHJA?si=LX49PLeXQuGFe0z1uKYvVA&utm_source=copy-link",
+                    },
+                    { label: "Legal", href: "/legal" },
                   ]}
                 />
                 <NavSection
@@ -121,13 +126,13 @@ export default function Footer() {
               <Text>© {currentYear} WasteVest. All rights reserved.</Text>
 
               <HStack gap={6}>
-                <WVLink href="" hideArrow border={"none"} p={0}>
+                <WVLink href="/legal/privacy" hideArrow border={"none"} p={0}>
                   Privacy
                 </WVLink>
-                <WVLink href="" hideArrow border={"none"} p={0}>
+                <WVLink href="/legal/terms" hideArrow border={"none"} p={0}>
                   Terms
                 </WVLink>
-                <WVLink href="" hideArrow border={"none"} p={0}>
+                <WVLink href="/legal" hideArrow border={"none"} p={0}>
                   Legal
                 </WVLink>
                 <Text>Made with intention · Abuja</Text>

@@ -1,4 +1,4 @@
-import HomePageEntry from "@/app/features/home/page-entry";
+import HomePageEntry from "@/app/features-ui/home/page-entry";
 import { ViewTransition } from "react";
 
 export default function Home() {

@@ -4,13 +4,13 @@ import { notFound } from "next/navigation";
 import { ViewTransition } from "react";
 
 const CarbonLiteracyTrainingPageEntry = dynamic(
-  () => import("@/app/features/solutions/carbon-literacy-training"),
+  () => import("@/app/features-ui/solutions/carbon-literacy-training"),
 );
 const CircularEconomyPageEntry = dynamic(
-  () => import("@/app/features/solutions/circular-economy"),
+  () => import("@/app/features-ui/solutions/circular-economy"),
 );
 const CommunityEngagementPageEntry = dynamic(
-  () => import("@/app/features/solutions/community-engagement"),
+  () => import("@/app/features-ui/solutions/community-engagement"),
 );
 
 export default async function Page({

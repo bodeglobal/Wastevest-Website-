@@ -8,6 +8,9 @@ const config = defineConfig({
       bg: "primary",
       color: "white",
     },
+    "html":{
+      scrollBehavior: "smooth"
+    }
   },
   theme: {
     tokens: {
