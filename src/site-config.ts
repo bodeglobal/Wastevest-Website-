@@ -1,5 +1,6 @@
 export const SiteConfig = {
   name: "Wastevest Technologies",
+  url: process.env.SITE_URL ?? "https://wastevest.com",
   description:
     "A Pan-African climate and sustainability organization driving Africa's just transition",
   logo: {

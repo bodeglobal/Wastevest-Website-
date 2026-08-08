@@ -5,6 +5,7 @@ import Footer from "@/components/footer/footer";
 import NavigationBar from "@/components/navbar/navbar";
 import { abyssinica_sil, afacad } from "@/components/theme/fonts";
 import { SiteConfig } from "@/site-config";
+import { siteUrl } from "@/lib/seo";
 
 // App Router layout.tsx
 export const viewport = {
@@ -14,7 +15,11 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: SiteConfig.name,
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: SiteConfig.name,
+    template: `%s | ${SiteConfig.name}`,
+  },
   description: SiteConfig.description,
   authors: {
     name: "epicdevler | Nwadike Philip",
@@ -35,13 +40,16 @@ export const metadata: Metadata = {
     siteName: SiteConfig.name,
     countryName: "NG",
   },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  export default function RootLayout({
+    children,
+  }: Readonly<{
+    children: React.ReactNode;
+  }>) {
   return (
     <html
       lang="en"

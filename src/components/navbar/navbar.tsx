@@ -1,4 +1,5 @@
 "use client";
+import { WhatWeDoData } from "@/app/features-ui/about/sections/what-we-do";
 import {
   Box,
   BoxProps,
@@ -11,28 +12,28 @@ import {
   IconButton,
   Menu,
   Popover,
-  Portal,
   SimpleGrid,
   Text,
   useBreakpointValue,
-  VStack,
+  VStack
 } from "@chakra-ui/react";
-import Link, { useLinkStatus } from "next/link";
-import { navItems } from "./navItems";
-import WVLogo from "../wv-logo";
-import { BookConsult } from "../btns";
-import { LuChevronDown, LuMenu, LuX } from "react-icons/lu";
+import { motion } from "motion/react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
-import { motion } from "motion/react";
-import { WhatWeDoData } from "@/app/features-ui/about/sections/what-we-do";
+import { LuChevronDown, LuMenu, LuX } from "react-icons/lu";
+import { BookConsult } from "../btns";
 import WVLink from "../wv-link";
-import ArrowRight from "../arrow-right";
+import WVLogo from "../wv-logo";
+import { navItems } from "./navItems";
 
 export default function NavigationBar({
   bgOpacity = 40,
   ...props
 }: BoxProps & { bgOpacity?: number }) {
+
+  if(typeof window !== "object") return
+
   const isMobile = useBreakpointValue(
     { base: true, md: false },
     { ssr: false },

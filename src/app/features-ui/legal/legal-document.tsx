@@ -1,6 +1,5 @@
 import WVLink from "@/components/wv-link";
 import { Box, Container, Heading, Text, VStack, Wrap } from "@chakra-ui/react";
-import Link from "next/link";
 import { ReactNode } from "react";
 
 export type LegalSection = {

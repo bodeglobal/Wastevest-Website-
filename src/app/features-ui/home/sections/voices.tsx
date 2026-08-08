@@ -10,7 +10,7 @@ import {
   HStack,
   IconButton,
   Text,
-  VStack
+  VStack,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
@@ -155,19 +155,19 @@ const voices: {
       name: "Mrs. Grace Chukwufumanya Ndobu",
       state: "Founder",
       org: "Acerecycles Enterprise",
-      profileUrl: "/assets/images/gallery/g3.webp",
+      profileUrl: "/assets/avatars/grace-chukwufumanya-ndobu.jpeg",
     },
   },
-  // {
-  //   comment:
-  //     "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",
-  //   user: {
-  //     name: "Mrs. Jane Doe",
-  //     state: "Estate Chair",
-  //     org: "Ikoyi, Lagos",
-  //     profileUrl: "/assets/images/gallery/g3.webp",
-  //   },
-  // },
+  {
+    comment:
+      "WasteVest has been a game changer for me in the climate space. It turned waste from a problem into real climate action and livelihood opportunities. Through WasteVest, I’ve seen firsthand how recycling and circular solutions can cut emissions while creating impact in our communities.",
+    user: {
+      name: "Temi Okunola",
+      state: "Environmental Quality Control Officer",
+      org: "NESREA",
+      profileUrl: "/assets/avatars/temi-okunola.jpeg",
+    },
+  },
   // {
   //   comment:
   //     "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",
