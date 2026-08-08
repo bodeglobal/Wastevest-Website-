@@ -21,5 +21,7 @@ const partnershipMessages: Record<
 export function getPartnershipMailto(type: PartnershipType = "general") {
   const { subject, body } = partnershipMessages[type];
 
-  return `mailto:hello@wastevest.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  return encodeURI(
+    `mailto:hello@wastevest.com?subject=${subject}&body=${body}`,
+  );
 }
