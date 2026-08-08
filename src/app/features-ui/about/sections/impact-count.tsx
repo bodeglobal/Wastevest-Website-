@@ -28,12 +28,13 @@ export default function ImpactCount() {
           Read the Annual Report
         </WVLink>
 
-        <HStack
+        <SimpleGrid
           ref={ref}
           gap={[5, null, 10]}
           mt={10}
-          justifyContent={["start", null, "space-between"]}
-          flexWrap={"wrap"}
+          columns={[3, 4, 5]}
+          // justifyContent={["start", null, "space-between"]}
+          // flexWrap={"wrap"}
         >
           {ImpactData.map((item, i) => {
             return (
@@ -57,7 +58,7 @@ export default function ImpactCount() {
               </Box>
             );
           })}
-        </HStack>
+        </SimpleGrid>
       </Container>
     </Box>
   );

@@ -46,6 +46,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
+      data-scroll-behavior="smooth"
       // className={`${abyssinica_sil.className} ${afacad.className}`}
     >
       <head>

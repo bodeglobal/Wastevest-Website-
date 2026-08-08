@@ -2,6 +2,10 @@ import { Button, ButtonProps } from "@chakra-ui/react";
 import ArrowRight from "./arrow-right";
 import { ReactElement } from "react";
 import WVLink from "./wv-link";
+import {
+  getPartnershipMailto,
+  PartnershipType,
+} from "@/lib/partnership-email";
 
 type BtnProps = Omit<ButtonProps, "children"> & {
   showArrow?: boolean;
@@ -25,13 +29,18 @@ export function BookConsult({
 export function PartnerWithUs({
   showArrow,
   children = "Partner with Us",
-  href = "/partner-with-us",
+  href,
+  partnershipType = "general",
   ...btnProps
-}: BtnProps & { href?: string }) {
+}: BtnProps & { href?: string; partnershipType?: PartnershipType }) {
   return (
     <Button {...btnProps} asChild>
       {/* {children} {showArrow && <ArrowRight />} */}
-      <WVLink href={href} targetBlank hideArrow={!showArrow}>
+      <WVLink
+        href={href ?? getPartnershipMailto(partnershipType)}
+        targetBlank
+        hideArrow={!showArrow}
+      >
         {children}
       </WVLink>
     </Button>

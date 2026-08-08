@@ -17,6 +17,7 @@ import { AnimateNumberCount } from "@/components/animate-number-count";
 import { useRef } from "react";
 import Image from "next/image";
 import { SchedulePickup } from "@/components/btns";
+import { getPartnershipMailto } from "@/lib/partnership-email";
 
 export default function ImpactCount() {
   const ref = useRef(null);
@@ -32,7 +33,7 @@ export default function ImpactCount() {
         <ButtonGroup>
           <SchedulePickup showArrow colorPalette={"primary"} />
           <Button variant={"outline"} asChild>
-            <WVLink href="routebeaon/service-partner">
+            <WVLink href={getPartnershipMailto("service")}>
               Apply as a Service Partner
             </WVLink>
           </Button>

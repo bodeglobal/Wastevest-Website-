@@ -60,7 +60,7 @@ export default function HeroSection() {
             <SchedulePickup colorPalette={"blue"}>
               Schedule Pickup
             </SchedulePickup>
-            <PartnerWithUs variant={"outline"} href="/routebeacon/partner">
+            <PartnerWithUs variant={"outline"} partnershipType="routebeacon">
               Become a Partner
             </PartnerWithUs>
           </ButtonGroup>

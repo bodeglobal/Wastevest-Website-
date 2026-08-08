@@ -25,11 +25,6 @@ const nextConfig: NextConfig = {
       permanent: false,
     },
     {
-      source: "/partner-with-us",
-      destination: "https://google.com",
-      permanent: false,
-    },
-    {
       source: "/starting-petition",
       destination:
         "https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7358445961641189377",
@@ -38,16 +33,6 @@ const nextConfig: NextConfig = {
     {
       source: "/about/annual-report",
       destination: "/assets/documents/20252026-ANNUAL-IMPACT-REPORT.pdf",
-      permanent: false,
-    },
-    {
-      source: "/routebeacon/partner",
-      destination: "https://google.com",
-      permanent: false,
-    },
-    {
-      source: "/routebeacon/service-partner",
-      destination: "https://google.com",
       permanent: false,
     },
     {
