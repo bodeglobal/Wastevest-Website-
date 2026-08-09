@@ -39,10 +39,11 @@ export default function Hero({
           viewTransitionName={"s-hero-banner"}
           mt={28}
           bg="bg.muted"
-          h={{ base: "md", lg: "2xl" }}
+          aspectRatio="16 / 9"
           w="full"
-          asChild
+          overflow="hidden"
           objectFit={"cover"}
+          asChild
         >
           {banner}
         </Box>

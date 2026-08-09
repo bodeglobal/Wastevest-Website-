@@ -24,6 +24,7 @@ export default function WVLink({
       py={1}
       borderColor={txtProps.color}
       {...txtProps}
+      
     >
       <Link href={href} target={targetBlank ? "_blank" : undefined}>
         {children} {!hideArrow && <ArrowRight />}

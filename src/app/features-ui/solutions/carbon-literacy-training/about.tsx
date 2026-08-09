@@ -325,10 +325,10 @@ const data = [
         as="ul"
         textAlign={"center"}
         gap={[4, 8]}
-        columns={[2, null, 3]}
+        columns={[2, 3]}
       >
         {valueOfCLT.map(({ label, icon: Icon }) => (
-          <VStack as="li" key={label} gap={4}>
+          <VStack as="li" key={label} gap={4} mt={5}>
             <Icon size="2xl" color="primary" />
             <Text maxW={"40"} lineHeight={"shorter"}>
               {label}

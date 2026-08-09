@@ -26,6 +26,7 @@ import { BookConsult } from "../btns";
 import WVLink from "../wv-link";
 import WVLogo from "../wv-logo";
 import { navItems } from "./navItems";
+import TopNavbarBar from "./top-navbar-bar";
 
 export default function NavigationBar({
   bgOpacity = 40,
@@ -69,6 +70,7 @@ export default function NavigationBar({
         paddingInline={0}
         w="full"
       >
+        <TopNavbarBar />
         <Container pos="relative" ref={anchorRef} py={2}>
           <HStack pos="relative" justifyContent={"space-between"}>
             <Heading as="h1">

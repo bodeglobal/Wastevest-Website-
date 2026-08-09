@@ -16,11 +16,11 @@ const faqs = [
   },
   {
     q: "What are the objectives of Carbon Literacy training?",
-    a: "Carbon Literacy training has many specific goals. Firstly, it aims to increase awareness and understanding of climate change, its causes, and its impacts on the environment and society. This includes providing knowledge about the carbon cycle, greenhouse gas emissions, and the concept of a carbon footprint. Secondly, Carbon Literacy training seeks to empower individuals and organisations with the skills and tools needed to take action and reduce their own carbon footprint. It promotes sustainable practices, energy efficiency, waste reduction, and the adoption of renewable energy sources. Additionally, Carbon Literacy training aims to inspire individuals to become climate change advocates, sharing their knowledge and inspiring others to make a positive impact.\n\nOverall, the objectives of Carbon Literacy training are to Increase climate change knowledge and impacts of everyday actions, and to drive behavioural change both individually and within an organisation.",
+    a: "Carbon Literacy training helps people understand climate change, how everyday actions affect the planet, and what they can do to make a difference. It gives individuals and organizations practical ways to reduce emissions, manage waste responsibly, and build lasting habits that support a more sustainable future.",
   },
   {
     q: "Why do we need Carbon Literacy training?",
-    a: "Imagine being a Carbon Literate citizen, equipped with the power to understand how climate change impacts not only yourself but also your business.  With this knowledge, you are more able to take charge of reducing your carbon footprint and also that of your company, inspiring others to do the same. Carbon Literacy training gives individuals the confidence they need to share their understanding of the climate emergency.\n\nThe value of Carbon Literacy extends far beyond personal growth—it is a is a desirable asset for any employer. A Carbon Literate citizen will display compassion for the environment, their health and the health of those around them.",
+    a: "Carbon Literacy gives you the skills to understand climate change, reduce your environmental impact, and lead positive change in your workplace and community. It's a valuable skill for both personal and professional growth.",
   },
   {
     q: "What does WasteVest’s Carbon Literacy course include?",
@@ -35,31 +35,31 @@ const faqs = [
       "Scopes 1, 2 and 3",
       "Understanding our impact: Energy; buildings; travel; food and the circular economy",
       "Motivating others to act – employee engagement",
-      "Next steps – making a pledge; setting targets; tools; offsetting; resources",
+      "Next steps – making a pledge; setting targets; tools.",
     ],
   },
 
   {
     q: "Who is this for?",
-    a: "This course is adapted from the standard Carbon Literacy course to be appropriate specifically for business. It is suitable for anyone from junior management to CEO level. We encourage senior teams to take the course early, to demonstrate leadership and start the engagement journey.\n\nWhere possible, we tailor case studies within the training to make it sector-specific.\n\nOur course focuses on positivity, safe space for enquiry, personal confidence, and action. We expect organisations and individuals who attend the course to participate fully, and to leave ready to take positive climate action.",
+    a: "Designed for businesses of all sizes, this course equips everyone from team members to senior leaders, with the knowledge and confidence to take meaningful climate action. Through practical examples, industry-relevant case studies, and interactive learning, participants leave ready to drive positive change in their workplace and beyond.",
   },
   {
     q: "How do I become Carbon Literate?",
-    a: "In order to become certified as Carbon Literate, you must take part in a day’s worth of accredited CL learning.\n\nAt Lighthouse Sustainability, our CL courses run as 2 modules over 2 sessions, each 3.5 hours long. Participants are also required to complete 1 hour of pre-course learning and 1 hour of homework between sessions.\n\nYou must then submit a completed Participant Details and Evidence Form, including your individual and group pledges, which will be assessed by the Carbon Literacy Project. Following this, you will be awarded a Carbon Literacy certificate, unique to you.",
+    a: `In order to become certified as Carbon Literate, you must take part in a day’s worth of accredited CL learning.
+
+At WasteVest, our CL courses run as 2 modules over 2 sessions, each 3.5 hours long. Participants are also required to complete 1 hour of pre-course learning and 1 hour of homework between sessions.
+
+You must then submit a completed Participant Details and Evidence Form, including your individual and group pledges, which will be assessed by the Carbon Literacy Project. Following this, you will be awarded a Carbon Literacy certificate, unique to you.`,
   },
   {
     q: "What is needed for my personal pledges?",
-    a: `Carbon Literacy certification requires personal pledges – at least one significant action to reduce their individual carbon footprint, and at least one significant action involving other people to reduce the collective footprint of their workplace. You will spend 30 minutes at the end of session 2 going through the pledge form and brainstorming ideas as a group. Don’t worry, we will always be on hand with help and advice if you get stuck when completing your form after the workshop is complete.
-
-These are assessed independently by the Carbon Literacy Project to ensure that the learning from the course is reflected, and that the course is resulting in appropriate levels of impact.
-
-As this is a business facing course, the pledges should be work-based wherever possible.`,
+    a: "To earn your Carbon Literacy Certificate, you'll complete two practical climate pledges one personal and one workplace-focused. During the training, you'll receive guidance, collaborate with others, and develop realistic actions that create lasting environmental impact. Your pledges are then reviewed as part of the certification process.",
   },
   {
     q: "What opportunities are there to progress further?",
     a: `From each cohort delivered, we encourage at least one participant to continue onto Carbon Literacy Train the Trainer. Please see our Train the Trainer for Carbon Literacy Page for more information on this course.
 
-For organisations that want to go further, there is an opportunity to become a Carbon Literate Organisation (Bronze through to Platinum). As part of our services, we can help you on your journey to become a Carbon Literate certified organisation. Enquire here for further information.`,
+For organizations that want to go further, there is an opportunity to become a Carbon Literate Organization (Bronze through to Platinum). As part of our services, we can help you on your journey to become a Carbon Literate certified organization. Enquire here for further information.`,
   },
 ];
 

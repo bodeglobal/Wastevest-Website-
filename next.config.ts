@@ -15,8 +15,24 @@ const nextConfig: NextConfig = {
   redirects: () => [
     {
       source: "/newsletters",
+      destination: "https://google.com",
+      permanent: false,
+    },
+    {
+      source: "/follow/ig",
       destination:
-        "https://google.com",
+        "https://www.instagram.com/hellowastevest?utm_source=wastevest.com",
+      permanent: false,
+    },
+    {
+      source: "/follow/linkedin",
+      destination:
+        "https://www.linkedin.com/company/wastevesttechnologieslimited/",
+      permanent: false,
+    },
+    {
+      source: "/follow/x",
+      destination: "https://x.com/hellowastevest",
       permanent: false,
     },
     {
@@ -27,7 +43,7 @@ const nextConfig: NextConfig = {
     {
       source: "/starting-petition",
       destination:
-        "https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7358445961641189377",
+        "https://www.opinionnigeria.com/olabode-afurewaju-this-is-why-i-am-petitioning-the-abuja-environment-protection-board-to-keep-abuja-motor-parks-clean-by-ebenezar-wikina/",
       permanent: false,
     },
     {

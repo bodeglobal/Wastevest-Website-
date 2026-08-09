@@ -19,6 +19,7 @@ export function TeamProfile({
         rounded={"full"}
         objectFit={"cover"}
         objectPosition={"top"}
+        bg="#D9D9D9"
         mx="auto"
       >
         <Image

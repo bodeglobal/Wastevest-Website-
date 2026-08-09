@@ -332,6 +332,36 @@ function Binoculars(props: IconProps) {
   );
 }
 
+function IG(props: IconProps) {
+  return (
+    <Icon asChild {...props}>
+      <svg viewBox="0 0 18 18">
+        <use href="/assets/icons/ig.svg" />
+      </svg>
+    </Icon>
+  );
+}
+
+function LinkedIn(props: IconProps) {
+  return (
+    <Icon asChild {...props}>
+      <svg viewBox="0 0 18 18">
+        <use href="/assets/icons/linkedin.svg" />
+      </svg>
+    </Icon>
+  );
+}
+
+function X(props: IconProps) {
+  return (
+    <Icon asChild {...props}>
+      <svg viewBox="0 0 18 18">
+        <use href="/assets/icons/x.svg" />
+      </svg>
+    </Icon>
+  );
+}
+
 export const WVIcons = {
   Asterisk,
   BeerBottle,
@@ -358,4 +388,7 @@ export const WVIcons = {
   UsersThree,
   Vector,
   Binoculars,
+  IG,
+  LinkedIn,
+  X,
 };

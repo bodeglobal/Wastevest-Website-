@@ -1,5 +1,5 @@
 import { BookConsult, PartnerWithUs } from "@/components/btns";
-import { ButtonGroup } from "@chakra-ui/react";
+import { Box, ButtonGroup } from "@chakra-ui/react";
 import Hero from "../components/hero";
 import NavigationBar from "@/components/navbar/navbar";
 import Benefits from "../components/benefits";
@@ -13,7 +13,7 @@ export default async function CarbonLiteracyTrainingPageEntry() {
   const resp = await fetch("https://api.frankfurter.dev/v2/rate/USD/NGN ", {
     method: "GET",
   });
-  const resData = await resp.json()
+  const resData = await resp.json();
 
   return (
     <>
@@ -31,15 +31,18 @@ export default async function CarbonLiteracyTrainingPageEntry() {
           </ButtonGroup>
         }
         banner={
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/IaDM4Kn-gtc?si=oBBSu9Mv0uzdwDm8"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+          <Box w="full" h="full">
+            <iframe
+              width="100%"
+              height="100%"
+              style={{ border: 0, display: "block" }}
+              src="https://www.youtube.com/embed/IaDM4Kn-gtc?si=oBBSu9Mv0uzdwDm8"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </Box>
         }
       />
 

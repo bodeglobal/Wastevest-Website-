@@ -4,7 +4,9 @@ import {
   Container,
   Flex,
   GridItem,
+  Group,
   HStack,
+  IconButton,
   Input,
   SimpleGrid,
   Text,
@@ -17,6 +19,8 @@ import { navItems } from "../navbar/navItems";
 import WVLogo from "../wv-logo";
 import WVLink from "../wv-link";
 import { WhatWeDoData } from "@/app/features-ui/about/sections/what-we-do";
+import { WVIcons } from "../icons";
+import SocialIcons from "../social-icons";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear(); //Temporal.PlainDate.prototype.year
@@ -37,7 +41,7 @@ export default function Footer() {
               alignItems={"top"}
             >
               <GridItem maxW={"sm"} w="full" colSpan={[1, 2]}>
-                <WVLogo w={40} filter={"invert(100%)"} />
+                <WVLogo w={40} filter={"brightness(0) invert(100%)"} />
                 <Text mt={7} fontSize={"sm"} color="fg.muted" maxW={"sm"}>
                   Get one considered email a month, field notes, new episodes
                   and what we're building next.
@@ -45,7 +49,7 @@ export default function Footer() {
 
                 <HStack
                   mt={[8]}
-                  
+
                   borderWidth={"thin"}
                   borderColor="white"
                   maxW={"sm"}
@@ -74,7 +78,7 @@ export default function Footer() {
                 </HStack>
 
                 <PartnerWithUs
-                mt={[4 /* null, 8 */]}
+                  mt={[4 /* null, 8 */]}
                   showArrow
                   variant={"outline"}
                   borderColor={"white"}
@@ -111,6 +115,13 @@ export default function Footer() {
                     { label: "Abuja · Nigeria" },
                   ]}
                 />
+
+                <Box>
+                  <Text mb={5} textTransform={"capitalize"}>
+                    Follow
+                  </Text>
+                  <SocialIcons />
+                </Box>
               </SimpleGrid>
             </Flex>
 

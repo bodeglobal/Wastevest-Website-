@@ -18,10 +18,11 @@ export default function TheTeam() {
       <Container py={[10, null, 20]} centerContent>
           <HStack gap={{lg: 20}}  py={{lg: 20}}>
             <TeamProfile
+            
             imgSize={"40"}
             hideBelow={"lg"}
             member={{
-              profileUrl: "/assets/images/teams/two.webp",
+              profileUrl: "/assets/images/teams/bode.png",
               name: "Olabode Afurewaju",
               role: "Founder",
             }}
@@ -56,7 +57,7 @@ export default function TheTeam() {
             objectFit={"cover"}
             objectPosition={"top"}
             member={{
-              profileUrl: "/assets/images/teams/two.webp",
+              profileUrl: "/assets/images/teams/bode.png",
               name: "Olabode Afurewaju",
               role: "Founder",
             }}
@@ -74,12 +75,12 @@ export default function TheTeam() {
           mt={[10]}
           rounded={"4xl"}
           w="full"
-          p={[20, null, 40]}
+          p={[20, null, 36]}
           bg={`url('/assets/illustrations/wave-lines-dark.svg'), {colors.primary}`}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
         >
-          <WVLogo filter={"brightness(0) invert(100%)"} w={[36, null, 52]} />
+          <WVLogo filter={"brightness(0) invert(100%)"} w={[60]} />
         </Center>
       </Container>
     </Box>
