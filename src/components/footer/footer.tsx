@@ -60,7 +60,7 @@ export default function Footer() {
                   }}
                   gap={0}
                   rounded={"full"}
-                  hidden
+                  // hidden
                   p={1}
                 >
                   <Input
