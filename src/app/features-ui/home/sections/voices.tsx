@@ -55,7 +55,7 @@ export default function Voices() {
           </Box>
         </HStack>
       </Container>
-      <Box mt={10}>
+      <Box mt={5}>
         <VoicesSlide />
       </Box>
     </Box>
@@ -64,8 +64,20 @@ export default function Voices() {
 
 function VoicesSlide() {
   return (
-    <Carousel.Root slideCount={voices.length} autoplay autoSize w="full">
-      <Carousel.ItemGroup w="fit" px={[4, 8]} mx="auto">
+    <Carousel.Root
+      slideCount={voices.length}
+      autoplay
+      autoSize
+      w="full"
+      slidesPerMove={1}
+      loop
+    >
+      <Carousel.ItemGroup
+        w={{ base: "full", md: "fit" }}
+        mx={"auto"}
+        p={[4, 8]}
+        scrollSnapAlign={"center"}
+      >
         {voices.map((item, i) => {
           return (
             <Carousel.Item
@@ -168,6 +180,7 @@ const voices: {
       profileUrl: "/assets/avatars/temi-okunola.jpeg",
     },
   },
+
   // {
   //   comment:
   //     "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",
