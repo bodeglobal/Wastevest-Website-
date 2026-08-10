@@ -37,6 +37,7 @@ export default async function CarbonLiteracyTrainingPageEntry() {
               border="none"
               p={0}
               textUnderlineOffset={3}
+              textDecorationThickness={"from-font"}
             >
               Carbon Literacy Project
             </WVLink>{" "}
