@@ -61,7 +61,7 @@ export default function TopNavbarBar() {
             >
               FOLLOW
             </Text>
-            <SocialIcons color="white" _hover={{ bg: "bg.muted/10" }} />
+            <SocialIcons color="whiteAlpha.800" _hover={{ bg: "bg.muted/10" }} />
           </HStack>
         </HStack>
       </Container>
