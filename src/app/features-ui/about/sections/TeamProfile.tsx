@@ -44,7 +44,7 @@ export function TeamProfile({
           px={[2, null, 2]}
           py={[1, null, 1]}
 
-          fontSize={{ base: "x-small", md: "xs" }}
+          fontSize={{ base: "xs" }}
           backdropFilter={"auto"}
           backdropBlur={"sm"}
           textAlign={"center"}

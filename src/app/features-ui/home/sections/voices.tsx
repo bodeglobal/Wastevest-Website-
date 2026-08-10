@@ -181,10 +181,9 @@ const voices: {
     },
   },
   {
-    comment:
-      "WasteVest has been a game changer for me in the climate space. It turned waste from a problem into real climate action and livelihood opportunities. Through WasteVest, I’ve seen firsthand how recycling and circular solutions can cut emissions while creating impact in our communities.",
+    comment: "Wastevest is credible. Determination stood out. Yes highly recommend, because it has a sustainable vision",
     user: {
-      name: "Temi Okunola",
+      name: "Anthony Abayomi Bankole. Ph.D",
       state: "President/CEO.",
       org: "Green Pastures Integrated Resources Ltd Abuja",
       profileUrl: "/assets/avatars/anthony-abayomi-bankole.jpeg",

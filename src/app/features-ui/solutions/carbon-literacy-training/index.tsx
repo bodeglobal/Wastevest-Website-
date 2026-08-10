@@ -26,11 +26,15 @@ export default async function CarbonLiteracyTrainingPageEntry() {
           <>
             Understand climate change and learn how to reduce your carbon
             footprint through this{" "}
-            <Span asChild fontSize={"inherit"}>
-              <WVLink targetBlank href="https://carbonliteracy.com/what-is-carbon-literacy/" hideArrow>
-                Carbon Literacy Project
-              </WVLink>
-            </Span>{" "}
+            <WVLink
+              fontSize={"inherit"}
+              targetBlank
+              href="https://carbonliteracy.com/what-is-carbon-literacy/"
+              hideArrow
+              borderColor="primary"
+            >
+              Carbon Literacy Project
+            </WVLink>{" "}
             accredited training. Join WasteVest Technologies Limited to become a
             Certified Carbon Literate.
           </>
