@@ -164,7 +164,7 @@ const voices: {
     comment:
       "Through my interactions with WasteVest across leading climate and sustainability spaces, I’ve seen their strong commitment to advancing climate action, sustainability, and the circular economy. I highly recommend WasteVest to organizations and communities looking to strengthen their sustainability initiatives",
     user: {
-      name: "Mrs. Grace Chukwufumanya Ndobu",
+      name: "Grace Chukwufumanya Ndobu",
       state: "Founder",
       org: "Acerecycles Enterprise",
       profileUrl: "/assets/avatars/grace-chukwufumanya-ndobu.jpeg",
@@ -178,6 +178,16 @@ const voices: {
       state: "Environmental Quality Control Officer",
       org: "NESREA",
       profileUrl: "/assets/avatars/temi-okunola.jpeg",
+    },
+  },
+  {
+    comment:
+      "WasteVest has been a game changer for me in the climate space. It turned waste from a problem into real climate action and livelihood opportunities. Through WasteVest, I’ve seen firsthand how recycling and circular solutions can cut emissions while creating impact in our communities.",
+    user: {
+      name: "Temi Okunola",
+      state: "President/CEO.",
+      org: "Green Pastures Integrated Resources Ltd Abuja",
+      profileUrl: "/assets/avatars/anthony-abayomi-bankole.jpeg",
     },
   },
 

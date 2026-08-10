@@ -20,9 +20,9 @@ export default function WVLink({
     <Text
       asChild
       borderBottomWidth={"thin"}
-      fontSize={"sm"}
-      py={1}
-      borderColor={txtProps.color}
+      // fontSize={"sm"}
+      // py={1}
+      // borderColor={txtProps.color}
       {...txtProps}
       
     >

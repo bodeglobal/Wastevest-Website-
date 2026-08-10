@@ -110,7 +110,7 @@ export default function NavigationBar({
 
                 return (
                   <Menu.Root size={"md"} lazyMount unmountOnExit>
-                    <Menu.Trigger asChild>
+                    <Menu.Trigger asChild >
                       <Button
                         key={item.href + item.label}
                         as="li"
@@ -118,6 +118,7 @@ export default function NavigationBar({
                         variant={"ghost"}
                         color={isPage ? "primary" : textColor}
                         _hover={{ bg: isHome ? "bg/5" : undefined }}
+                        bg="none"
                         onClick={() => {
                           if (open == item.subMenuName) {
                             setOpen(undefined);

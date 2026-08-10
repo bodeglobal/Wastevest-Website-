@@ -47,7 +47,7 @@ function Podcast() {
       <ButtonGroup>
         <Button colorPalette={"blue"} asChild>
           <WVLink
-          hideArrow
+            hideArrow
             href={
               "https://open.spotify.com/episode/39VXwD8ei2cQSq7TTFJHJA?si=LX49PLeXQuGFe0z1uKYvVA&utm_source=copy-link"
             }
@@ -64,7 +64,7 @@ function Podcast() {
           asChild
         >
           <WVLink
-          hideArrow
+            hideArrow
             targetBlank
             href={
               "https://open.spotify.com/episode/39VXwD8ei2cQSq7TTFJHJA?si=LX49PLeXQuGFe0z1uKYvVA&utm_source=copy-link"
@@ -81,7 +81,7 @@ function Podcast() {
           asChild
         >
           <WVLink
-          hideArrow
+            hideArrow
             targetBlank
             href={"https://youtube.com/@hellowastevest?si=h774HIqkUJvvqkCp"}
           >
@@ -121,14 +121,14 @@ function Newsletter() {
       <ButtonGroup>
         <Button colorPalette={"blue"} asChild>
           <WVLink
-          hideArrow
+            hideArrow
             targetBlank
             href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7358445961641189377"
           >
             Read this issue
           </WVLink>
         </Button>
-        <Button 
+        <Button
           hidden
           variant={"ghost"}
           color="white"

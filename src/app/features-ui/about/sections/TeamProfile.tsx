@@ -31,16 +31,19 @@ export function TeamProfile({
       </Box>
       {member.name && (
         <Text
-          pos="relative"
-          bottom={8}
-          left={"50%"}
-          transform={"translateX(-50%)"}
+          // pos="relative"
+          // bottom={8}
+          // left={"50%"}
+          // transform={"translateX(-50%)"}
+          mt={3}
+          mx="auto"
           rounded={"full"}
           bg="black/50"
           color={"white"}
           w="fit"
-          px={[2, null, 4]}
-          py={[1, null, 2]}
+          px={[2, null, 2]}
+          py={[1, null, 1]}
+
           fontSize={{ base: "x-small", md: "xs" }}
           backdropFilter={"auto"}
           backdropBlur={"sm"}

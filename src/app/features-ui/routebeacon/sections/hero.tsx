@@ -1,5 +1,5 @@
 import { PartnerWithUs, SchedulePickup } from "@/components/btns";
-import { WVIcons } from "@/components/icons";
+import { WVIcons } from "@/components/wv-icons";
 import {
   Badge,
   Box,

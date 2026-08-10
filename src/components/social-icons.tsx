@@ -5,7 +5,7 @@ import {
   GroupProps,
   IconButton,
 } from "@chakra-ui/react";
-import { WVIcons } from "./icons";
+import { WVIcons } from "./wv-icons";
 import WVLink from "./wv-link";
 
 export default function SocialIcons(props: ButtonGroupProps) {

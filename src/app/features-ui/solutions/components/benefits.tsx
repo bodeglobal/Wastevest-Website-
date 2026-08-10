@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { SectionTitle } from "./HeadingText";
 import ArrowRight from "@/components/arrow-right";
-import { WVIcons } from "@/components/icons";
+import { WVIcons } from "@/components/wv-icons";
 import { JSX } from "react/jsx-runtime";
 import WVLink from "@/components/wv-link";
 

@@ -34,6 +34,10 @@ const list = [
     title: "Federal Ministry of Environment",
     logoUrl: "/assets/logo/trusted/fme.png",
   },
+  {
+    title: "Abuja Environmental Protection Board",
+    logoUrl: "/assets/logo/trusted/aepd.JPG",
+  },
 ];
 
 export default function Trusties() {

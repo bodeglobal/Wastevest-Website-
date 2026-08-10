@@ -5,7 +5,7 @@ import Hero from "../components/hero";
 import OurApproach from "../components/our-approach";
 import NavigationBar from "@/components/navbar/navbar";
 import Benefits from "../components/benefits";
-import { WVIcons } from "@/components/icons";
+import { WVIcons } from "@/components/wv-icons";
 import OurProcess from "../components/process";
 import WhatToExpect from "../components/what-to-expect";
 

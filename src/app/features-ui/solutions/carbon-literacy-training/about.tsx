@@ -1,5 +1,5 @@
 "use client";
-import { WVIcons } from "@/components/icons";
+import { WVIcons } from "@/components/wv-icons";
 import {
   Box,
   Center,

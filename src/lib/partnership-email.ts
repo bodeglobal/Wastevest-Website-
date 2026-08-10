@@ -1,4 +1,9 @@
-export type PartnershipType = "general" | "routebeacon" | "service";
+export type PartnershipType =
+  | "general"
+  | "routebeacon"
+  | "service"
+  | "school"
+  | "business";
 
 const partnershipMessages: Record<
   PartnershipType,
@@ -15,6 +20,14 @@ const partnershipMessages: Record<
   service: {
     subject: "RouteBeacon Service Partner Enquiry",
     body: "Hello WasteVest team,\n\nI would like to become a RouteBeacon service partner.\n\nOrganisation:\nName:\nService area:\nServices offered:\n\nThank you.",
+  },
+  school: {
+    subject: "WasteVest School Enquiry",
+    body: "Hello WasteVest team,\n\nI would like to bring climate literacy into our classroom through WasteVest's teacher toolkit.\n\nSchool:\nName:\nGrade levels:\n\nThank you.",
+  },
+  business: {
+    subject: "RouteBeacon Business Onboarding Enquiry",
+    body: "Hello WasteVest team,\n\nI would like to onboard our team onto RouteBeacon.\n\nOrganisation:\nName:\nTeam size:\n\nThank you.",
   },
 };
 

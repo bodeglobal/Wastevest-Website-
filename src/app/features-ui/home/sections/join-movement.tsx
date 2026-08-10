@@ -1,5 +1,6 @@
 import SectionTitleTag from "@/components/section-tag";
 import WVLink from "@/components/wv-link";
+import { getPartnershipMailto } from "@/lib/partnership-email";
 import {
   Box,
   Container,
@@ -51,6 +52,7 @@ export default function JoinMovement() {
                   href={item.action.href}
                   fontWeight={"600"}
                   border={"none"}
+                  targetBlank
                 >
                   {item.action.label}
                 </WVLink>
@@ -72,7 +74,7 @@ const items = [
       "Join local cleanups, school visits and community sorting days.",
     action: {
       label: "Sign Up",
-      href: "#",
+      href: "/volunteer",
     },
   },
   {
@@ -81,7 +83,7 @@ const items = [
       "Bring climate literacy into your classroom with our free teacher toolkit.",
     action: {
       label: "Register your School",
-      href: "#",
+      href: getPartnershipMailto("school"),
     },
   },
   {
@@ -89,7 +91,7 @@ const items = [
     description: "Onboard your team onto RouteBeacon and offset from source.",
     action: {
       label: "Start onboarding",
-      href: "#",
+      href: getPartnershipMailto("business"),
     },
   },
   {
@@ -98,7 +100,7 @@ const items = [
       "Governments, NGOs and funders let's build something at scale.",
     action: {
       label: "Email the team",
-      href: "#",
+      href: getPartnershipMailto(),
     },
   },
 ];

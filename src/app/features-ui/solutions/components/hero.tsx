@@ -11,7 +11,7 @@ export default function Hero({
 }: {
   label: string;
   title: string;
-  description: string;
+  description: ReactNode;
   actions: ReactNode;
   banner: ReactNode;
 }) {

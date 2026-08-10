@@ -19,7 +19,7 @@ import { navItems } from "../navbar/navItems";
 import WVLogo from "../wv-logo";
 import WVLink from "../wv-link";
 import { WhatWeDoData } from "@/app/features-ui/about/sections/what-we-do";
-import { WVIcons } from "../icons";
+import { WVIcons } from "../wv-icons";
 import SocialIcons from "../social-icons";
 
 export default function Footer() {

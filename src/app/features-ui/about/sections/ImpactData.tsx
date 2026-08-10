@@ -1,6 +1,6 @@
 /** DATA */
 
-import { WVIcons } from "@/components/icons";
+import { WVIcons } from "@/components/wv-icons";
 import { IconProps } from "@chakra-ui/react";
 import { JSX, ReactComponentElement } from "react";
 

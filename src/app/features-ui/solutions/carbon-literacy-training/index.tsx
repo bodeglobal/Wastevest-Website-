@@ -1,13 +1,14 @@
 import { BookConsult, PartnerWithUs } from "@/components/btns";
-import { Box, ButtonGroup } from "@chakra-ui/react";
+import { Box, ButtonGroup, Span } from "@chakra-ui/react";
 import Hero from "../components/hero";
 import NavigationBar from "@/components/navbar/navbar";
 import Benefits from "../components/benefits";
-import { WVIcons } from "@/components/icons";
+import { WVIcons } from "@/components/wv-icons";
 import Pricing from "./pricing";
 import Certification from "./certification";
 import Faqs from "./faqs";
 import AboutCLT from "./about";
+import WVLink from "@/components/wv-link";
 
 export default async function CarbonLiteracyTrainingPageEntry() {
   const resp = await fetch("https://api.frankfurter.dev/v2/rate/USD/NGN ", {
@@ -21,7 +22,19 @@ export default async function CarbonLiteracyTrainingPageEntry() {
       <Hero
         label="Service 03"
         title="Carbon Literacy Training"
-        description="Understand climate change and learn how to reduce your carbon footprint through this Carbon Literacy Project accredited training. Join WasteVest Technologies Limited to become a Certified Carbon Literate."
+        description={
+          <>
+            Understand climate change and learn how to reduce your carbon
+            footprint through this{" "}
+            <Span asChild fontSize={"inherit"}>
+              <WVLink targetBlank href="https://carbonliteracy.com/what-is-carbon-literacy/" hideArrow>
+                Carbon Literacy Project
+              </WVLink>
+            </Span>{" "}
+            accredited training. Join WasteVest Technologies Limited to become a
+            Certified Carbon Literate.
+          </>
+        }
         actions={
           <ButtonGroup>
             <BookConsult showArrow>Get Started</BookConsult>
