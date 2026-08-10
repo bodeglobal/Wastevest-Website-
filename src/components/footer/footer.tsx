@@ -112,6 +112,7 @@ export default function Footer() {
                       label: "hello@wastevest.com",
                       href: "mailto:hello@wastevest.com",
                     },
+                    { label: "+234 806 071 0484", href: "tel:+2348060710484" },
                     { label: "Abuja · Nigeria" },
                   ]}
                 />
