@@ -31,7 +31,12 @@ export default async function CarbonLiteracyTrainingPageEntry() {
               targetBlank
               href="https://carbonliteracy.com/what-is-carbon-literacy/"
               hideArrow
-              borderColor="primary"
+              textDecorationLine={"underline"}
+              // textDecorationColor="primary/60"
+              _hover={{textDecorationColor: "primary"}}
+              border="none"
+              p={0}
+              textUnderlineOffset={3}
             >
               Carbon Literacy Project
             </WVLink>{" "}
