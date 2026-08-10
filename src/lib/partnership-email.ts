@@ -3,7 +3,8 @@ export type PartnershipType =
   | "routebeacon"
   | "service"
   | "school"
-  | "business";
+  | "business"
+  | "custom-quote";
 
 const partnershipMessages: Record<
   PartnershipType,
@@ -28,6 +29,10 @@ const partnershipMessages: Record<
   business: {
     subject: "RouteBeacon Business Onboarding Enquiry",
     body: "Hello WasteVest team,\n\nI would like to onboard our team onto RouteBeacon.\n\nOrganisation:\nName:\nTeam size:\n\nThank you.",
+  },
+  "custom-quote": {
+    subject: "Request for a Custom Quote",
+    body: "Hello WasteVest team,\n\nI would like to schedule a meeting to discuss a custom quote for carbon literacy training.\n\nOrganisation:\nName:\nPreferred meeting time:\nTraining requirements:\n\nThank you.",
   },
 };
 

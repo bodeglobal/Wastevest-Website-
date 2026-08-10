@@ -97,6 +97,8 @@ function VoicesSlide() {
                 maxW="sm"
                 align={"stretch"}
                 justifyContent={"space-between"}
+                // bg="red"
+                h="full"
               >
                 <Text
                   w="full"
@@ -181,7 +183,8 @@ const voices: {
     },
   },
   {
-    comment: "Wastevest is credible. Determination stood out. Yes highly recommend, because it has a sustainable vision",
+    comment:
+      "Wastevest is credible. Determination stood out. Yes highly recommend, because it has a sustainable vision",
     user: {
       name: "Anthony Abayomi Bankole. Ph.D",
       state: "President/CEO.",

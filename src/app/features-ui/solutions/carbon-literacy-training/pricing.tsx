@@ -15,6 +15,7 @@ import { SectionTitle } from "../components/HeadingText";
 import CurrencyOptions from "./currency-options";
 import Link from "next/link";
 import WVLink from "@/components/wv-link";
+import { getPartnershipMailto } from "@/lib/partnership-email";
 import { AnimatePresence, motion } from "motion/react";
 
 const currencyOpts = ["USD", "NGN"];
@@ -117,7 +118,11 @@ export default function Pricing({ rating }: { rating?: number }) {
 
                   {item.customizable && (
                     <Span asChild ms={2} fontWeight={"normal"}>
-                      <WVLink hideArrow href="" borderColor={"#EF7809"}>
+                      <WVLink
+                        hideArrow
+                        href={getPartnershipMailto("custom-quote")}
+                        borderColor={"#EF7809"}
+                      >
                         Request a custom quote.
                       </WVLink>
                     </Span>
