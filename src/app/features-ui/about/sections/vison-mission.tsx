@@ -66,14 +66,14 @@ function DecorCard({
       rounded={"2xl"}
       overflow={"hidden"}
       flexDir={{base: "column", lg:"row"}}
-      // alignItems={{lg:"center"}}
+      alignItems={{base: "start",lg:"center"}}
 
       border={"none"}
       p={4}
       gap={5}
     >
-      <Center boxSize={{base: 28, }} color={"white"} fontSize={"xl"}>
-        <Icon />
+      <Center color={"white"} fontSize={"xl"}>
+        <Icon w={{base: "20", md:"28"}} />
       </Center>
       <Card.Body
         p={0}

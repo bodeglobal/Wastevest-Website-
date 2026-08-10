@@ -12,19 +12,19 @@ export default function SocialIcons(props: ButtonGroupProps) {
   const {_hover, ...rest} = props
   return (
     <ButtonGroup variant="ghost" {...rest}>
-      <IconButton asChild _hover={_hover}>
+      <IconButton asChild _hover={_hover} color={props.color}>
         <WVLink hideArrow href="/follow/ig">
-          <WVIcons.IG />
+          <WVIcons.IG size="sm" />
         </WVLink>
       </IconButton>
       <IconButton asChild _hover={_hover}>
-        <WVLink hideArrow href="/follow/linkedin">
-          <WVIcons.LinkedIn />
+        <WVLink hideArrow href="/follow/linkedin" color={props.color}>
+          <WVIcons.LinkedIn size="sm" />
         </WVLink>
       </IconButton>
       <IconButton asChild _hover={_hover}>
-        <WVLink hideArrow href="/follow/x">
-          <WVIcons.X />
+        <WVLink hideArrow href="/follow/x" color={props.color}>
+          <WVIcons.X size="sm" />
         </WVLink>
       </IconButton>
     </ButtonGroup>
