@@ -14,7 +14,7 @@ export default function AboutWV() {
   return (
     <Box as="section" bg={"primary"} color={"white"} py={[10, null, 100]}>
       <Container>
-        <SimpleGrid columns={[1, 2]} gap={[10]} alignItems={"center"}>
+        <SimpleGrid columns={[1, null, 2]} gap={[10]} alignItems={"center"}>
           <Box h="fit">
             <SectionTitleTag color={"white"}>About Wastevest</SectionTitleTag>
             <Heading size="5xl" mt={10}>
@@ -27,7 +27,7 @@ export default function AboutWV() {
               work at the intersection of environmental stewardship, circular
               economy innovation, and community empowerment to accelerate
               sustainable development and climate resilience across the
-              continent. Industry: Environmental Services.
+              continent.
             </Text>
 
             <WVLink href="/about#team">Meet the team</WVLink>

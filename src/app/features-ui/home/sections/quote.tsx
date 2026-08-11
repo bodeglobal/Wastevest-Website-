@@ -9,8 +9,8 @@ export default function Quote() {
             query={["education", "circular economy"]}
             styles={{ color: "primary" }}
           >
-            WasteVest is Africa's climate action ecosystem where education,
-            technology, the circular economy and community meet.
+            WasteVest is Africa's climate action ecosystem where education, the
+            circular economy and community meet.
           </Highlight>
         </Text>
       </Container>

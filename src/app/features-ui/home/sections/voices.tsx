@@ -192,28 +192,27 @@ const voices: {
       profileUrl: "/assets/avatars/anthony-abayomi-bankole.jpeg",
     },
   },
+  {
+    comment:
+      "My experience with WasteVest has been phenomenal from smart bins that communicate with collectors to a marketplace that rewards recycling with cash, airtime, or electricity, everything just works. The founder's accommodating nature made it even better. I'd recommend WasteVest without hesitation it's the future of waste management in Africa.",
+    user: {
+      name: "Trinity Makhari 🇿🇦",
+      state: "Founder and CEO",
+      org: "FirstJobly ",
+      profileUrl: "/assets/images/avatars/trinity-makhari.JPG",
+    },
+  },
 
-  // {
-  //   comment:
-  //     "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",
-  //   user: {
-  //     name: "Mr. John Doe",
-  //     state: "Estate Chair",
-  //     org: "Ikoyi, Lagos",
-  //     profileUrl: "/assets/images/gallery/g3.webp",
-  //   },
-  // },
-
-  // {
-  //   comment:
-  //     "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",
-  //   user: {
-  //     name: "Mrs. Adaeze Okoro",
-  //     state: "Estate Chair",
-  //     org: "Ikoyi, Lagos",
-  //     profileUrl: "/assets/images/gallery/g3.webp",
-  //   },
-  // },
+  {
+    comment:
+      "My experience with WasteVest was educational and inspiring. Their commitment to educating people about waste management stood out to me. Through their training programs and innovative solutions, WasteVest provides practical starting points for anyone interested in waste management and building a more sustainable future.",
+    user: {
+      name: "Noellie Nganmoue 🇿🇦",
+      state: "Manager & Cloud System Administrator",
+      org: "ALI GLOBAL",
+      profileUrl: "/assets/images/avatars/noellie-nganmoue.jpeg",
+    },
+  },
   // {
   //   comment:
   //     "WasteVest didn't just talk about recycling, they built the system that finally made it work on our street. Our estate now diverts half its waste.",

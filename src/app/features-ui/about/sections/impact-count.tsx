@@ -32,7 +32,7 @@ export default function ImpactCount() {
           ref={ref}
           gap={[5, null, 10]}
           mt={10}
-          columns={[3, 4, 5]}
+          columns={[3,]}
           // justifyContent={["start", null, "space-between"]}
           // flexWrap={"wrap"}
         >
@@ -48,7 +48,7 @@ export default function ImpactCount() {
                 <Circle size={[16, 20]} bg="white" p={2} mx={"auto"}>
                   {<item.icon size={["md", "2xl"]} />}
                 </Circle>
-                <Text fontSize={["3xl", "4xl"]} fontFamily={"heading"} mt={3}>
+                <Text fontSize={["3xl", null, "4xl"]} fontFamily={"heading"} mt={3}>
                   <AnimateNumberCount ref={ref} targetCount={item.value} />
                   {item.plus && "+"} {item.unit && ` ${item.unit}`}
                 </Text>

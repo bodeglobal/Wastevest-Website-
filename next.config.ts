@@ -47,8 +47,10 @@ const nextConfig: NextConfig = {
     },
     {
       source: "/starting-petition",
+      // destination:
+      //   "https://www.opinionnigeria.com/olabode-afurewaju-this-is-why-i-am-petitioning-the-abuja-environment-protection-board-to-keep-abuja-motor-parks-clean-by-ebenezar-wikina/",
       destination:
-        "https://www.opinionnigeria.com/olabode-afurewaju-this-is-why-i-am-petitioning-the-abuja-environment-protection-board-to-keep-abuja-motor-parks-clean-by-ebenezar-wikina/",
+        "https://www.thenigerianvoice.com/news/321933/this-is-why-i-am-petitioning-the-abuja-environment-protectio.html",
       permanent: false,
     },
     {

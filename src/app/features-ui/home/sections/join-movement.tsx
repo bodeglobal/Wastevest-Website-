@@ -51,7 +51,9 @@ export default function JoinMovement() {
                 <WVLink
                   href={item.action.href}
                   fontWeight={"600"}
+                  wordBreak={"keep-all"}
                   border={"none"}
+                  fontSize={{base: "sm", sm: "inherit"}}
                   targetBlank
                 >
                   {item.action.label}

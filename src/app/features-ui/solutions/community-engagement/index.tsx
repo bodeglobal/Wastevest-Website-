@@ -8,6 +8,7 @@ import Benefits from "../components/benefits";
 import { WVIcons } from "@/components/wv-icons";
 import OurProcess from "../components/process";
 import WhatToExpect from "../components/what-to-expect";
+import { getPartnershipMailto } from "@/lib/partnership-email";
 
 export default async function CommunityEngagementPageEntry() {
   return (
@@ -52,6 +53,7 @@ none of it come back?"
       />
 
       <Benefits
+        partnershipType="community-engagement"
         title="What is Included"
         data={[
           {
@@ -130,6 +132,7 @@ none of it come back?"
         ]}
       />
       <WhatToExpect
+      getStartedUrl={getPartnershipMailto("community-engagement")}
         benefits={[
           "A disclosure your legal team is comfortable defending publicly",
           "A materiality view your board actually references in decisions",

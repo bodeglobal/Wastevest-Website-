@@ -1,4 +1,10 @@
 import SectionTitleTag from "@/components/section-tag";
+import { WVIcons } from "@/components/wv-icons";
+import WVLink from "@/components/wv-link";
+import {
+  getPartnershipMailto,
+  PartnershipType,
+} from "@/lib/partnership-email";
 import {
   Box,
   Button,
@@ -8,14 +14,12 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import { SectionTitle } from "./HeadingText";
-import ArrowRight from "@/components/arrow-right";
-import { WVIcons } from "@/components/wv-icons";
 import { JSX } from "react/jsx-runtime";
-import WVLink from "@/components/wv-link";
+import { SectionTitle } from "./HeadingText";
 
 type Props = {
   title: string;
+  partnershipType?: PartnershipType;
   data?: {
     icon?: (props: IconProps) => JSX.Element;
     title: string;
@@ -23,7 +27,7 @@ type Props = {
   }[];
 };
 
-export default function Benefits({ title, data }: Props) {
+export default function Benefits({ title, partnershipType, data }: Props) {
   return (
     <Box as="section" bg="#031124">
       <Container py={[10, null, 100]} color="white">
@@ -63,9 +67,15 @@ export default function Benefits({ title, data }: Props) {
           </Text>
 
           <Button colorPalette={"secondary"} asChild>
-            <WVLink href="/s/carbon-litracy-training/join-training">
-                          Get Started
-                        </WVLink>
+            <WVLink
+              href={
+                partnershipType
+                  ? getPartnershipMailto(partnershipType)
+                  : "/s/carbon-litracy-training/join-training"
+              }
+            >
+              Get Started
+            </WVLink>
           </Button>
         </HStack>
       </Container>

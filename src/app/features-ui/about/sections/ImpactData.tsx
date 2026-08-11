@@ -28,15 +28,15 @@ export const ImpactData: {
     plus: true,
     icon: WVIcons.NuclearPlant,
   },
-  {
-    value: 500,
-    label: "Communities",
-    plus: true,
-    icon: WVIcons.GlobeSimple,
-  },
-  {
-    icon: WVIcons.Handshake,
-    value: 6,
-    label: "Partners",
-  },
+  // {
+  //   value: 500,
+  //   label: "Communities",
+  //   plus: true,
+  //   icon: WVIcons.GlobeSimple,
+  // },
+  // {
+  //   icon: WVIcons.Handshake,
+  //   value: 6,
+  //   label: "Partners",
+  // },
 ];

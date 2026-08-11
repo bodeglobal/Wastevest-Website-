@@ -8,13 +8,14 @@ import Benefits from "../components/benefits";
 import { WVIcons } from "@/components/wv-icons";
 import OurProcess from "../components/process";
 import WhatToExpect from "../components/what-to-expect";
+import { getPartnershipMailto } from "@/lib/partnership-email";
 
 export default async function CircularEconomyPageEntry() {
   return (
     <>
       <NavigationBar bg="white" pos="fixed" />
       <Hero
-        label="Service 01"
+        label="Service 03"
         title="Circular Economy"
         description="Circularity isn't just about recycling. It's about redesigning the way materials move through an organisation so that less is wasted, more value is recovered and fewer carbon emissions are created."
         actions={
@@ -56,6 +57,7 @@ export default async function CircularEconomyPageEntry() {
       />
 
       <Benefits
+        partnershipType="circular-economy"
         title="What is Included"
         data={[
           {
@@ -134,6 +136,7 @@ export default async function CircularEconomyPageEntry() {
         ]}
       />
       <WhatToExpect
+        getStartedUrl={getPartnershipMailto("circular-economy")}
         benefits={[
           "20–45% diversion within two quarters on the target streams",
           "A defensible business case your CFO can sign off on",

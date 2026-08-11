@@ -2,7 +2,13 @@ import { Box, Button, Container, Text } from "@chakra-ui/react";
 import { SectionTitle } from "./HeadingText";
 import WVLink from "@/components/wv-link";
 
-export default function WhatToExpect({ benefits }: { benefits: string[] }) {
+export default function WhatToExpect({
+  benefits,
+  getStartedUrl = "/s/carbon-litracy-training/join-training",
+}: {
+  benefits: string[];
+  getStartedUrl?: string;
+}) {
   return (
     <Box as="section" py={[10, null, 100]}>
       <Container>
@@ -13,7 +19,6 @@ export default function WhatToExpect({ benefits }: { benefits: string[] }) {
           color={"white"}
         >
           <SectionTitle>Outcomes you can expect</SectionTitle>
-
           <Box
             as="ul"
             columnCount={[1, null, 2]}
@@ -32,9 +37,7 @@ export default function WhatToExpect({ benefits }: { benefits: string[] }) {
           </Box>
 
           <Button colorPalette={"secondary"} mt={10} asChild>
-            <WVLink href="/s/carbon-litracy-training/join-training">
-              Get Started
-            </WVLink>
+            <WVLink href={getStartedUrl}>Get Started</WVLink>
           </Button>
         </Box>
       </Container>

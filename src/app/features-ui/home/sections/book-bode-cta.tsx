@@ -18,7 +18,7 @@ export default function BookBodeCTA() {
           bg={`url('/assets/illustrations/wave-lines-dark.svg') #031124`}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
-          p={[10, null, 10]}
+          p={[6, null, 10]}
           gap={10}
           rounded="4xl"
           flexDir={["column", null, null, "row"]}

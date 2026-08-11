@@ -4,7 +4,9 @@ export type PartnershipType =
   | "service"
   | "school"
   | "business"
-  | "custom-quote";
+  | "custom-quote"
+  | "circular-economy"
+  | "community-engagement";
 
 const partnershipMessages: Record<
   PartnershipType,
@@ -29,6 +31,14 @@ const partnershipMessages: Record<
   business: {
     subject: "RouteBeacon Business Onboarding Enquiry",
     body: "Hello WasteVest team,\n\nI would like to onboard our team onto RouteBeacon.\n\nOrganisation:\nName:\nTeam size:\n\nThank you.",
+  },
+  "circular-economy": {
+    subject: "Circular Economy Solutions Enquiry",
+    body: "Hello WasteVest team,\n\nI would like to discuss how WasteVest can support our organisation with circular economy solutions.\n\nOrganisation:\nName:\nCurrent waste or resource challenge:\nPartnership interest:\n\nThank you.",
+  },
+  "community-engagement": {
+    subject: "Community Engagement Solutions Enquiry",
+    body: "Hello WasteVest team,\n\nI would like to discuss a community engagement project with WasteVest.\n\nOrganisation or community:\nName:\nLocation:\nEngagement goals:\n\nThank you.",
   },
   "custom-quote": {
     subject: "Request for a Custom Quote",

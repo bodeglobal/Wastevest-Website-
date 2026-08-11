@@ -20,7 +20,7 @@ export default async function CarbonLiteracyTrainingPageEntry() {
     <>
       <NavigationBar bg="white" pos="fixed" />
       <Hero
-        label="Service 03"
+        label="Service 01"
         title="Carbon Literacy Training"
         description={
           <>
