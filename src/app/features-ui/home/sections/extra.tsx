@@ -30,7 +30,7 @@ function Podcast() {
         <Image
           width={1080}
           height={1080}
-          src={"/assets/images/circular-brief-podcast.png"}
+          src={"/assets/images/circular-brief-podcast.jpeg"}
           alt="Circular Brief Podcast Banner"
         />
       </Box>
