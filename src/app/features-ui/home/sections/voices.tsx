@@ -116,7 +116,9 @@ function VoicesSlide() {
                     size="xl"
                   />
                   <Box fontSize={"xs"} flex={1}>
-                    <Text fontWeight={600}>{item.user.name} {item.user.countryFlag}</Text>
+                    <Text fontWeight={600}>
+                      {item.user.name} {item.user.countryFlag}
+                    </Text>
                     <Text color="#5A5A58">
                       {item.user.org} · {item.user.state}
                     </Text>
@@ -160,8 +162,25 @@ function VoicesSlide() {
 
 const voices: {
   comment: string;
-  user: { name: string; org: string; state: string; profileUrl?: string,countryFlag: string };
+  user: {
+    name: string;
+    org: string;
+    state: string;
+    profileUrl?: string;
+    countryFlag: string;
+  };
 }[] = [
+  {
+    comment:
+      "WasteVest is driving the vision of the circular economy and this is absolutely the change we all need.",
+    user: {
+      name: "Damilola Daramola",
+      state: "Co-founder",
+      org: "TrashCoin",
+      profileUrl: "/assets/avatars/damilola-daramola.JPG",
+      countryFlag: "🇳🇬",
+    },
+  },
   {
     comment:
       "Through my interactions with WasteVest across leading climate and sustainability spaces, I’ve seen their strong commitment to advancing climate action, sustainability, and the circular economy. I highly recommend WasteVest to organizations and communities looking to strengthen their sustainability initiatives",
@@ -170,7 +189,7 @@ const voices: {
       state: "Founder",
       org: "Acerecycles Enterprise",
       profileUrl: "/assets/avatars/grace-chukwufumanya-ndobu.jpeg",
-      countryFlag: "🇳🇬"
+      countryFlag: "🇳🇬",
     },
   },
   {
@@ -181,7 +200,7 @@ const voices: {
       state: "Environmental Quality Control Officer",
       org: "NESREA",
       profileUrl: "/assets/avatars/temi-okunola.jpeg",
-      countryFlag: "🇳🇬"
+      countryFlag: "🇳🇬",
     },
   },
   {
@@ -192,7 +211,7 @@ const voices: {
       state: "President/CEO.",
       org: "Green Pastures Integrated Resources Ltd Abuja",
       profileUrl: "/assets/avatars/anthony-abayomi-bankole.jpeg",
-      countryFlag: "🇳🇬"
+      countryFlag: "🇳🇬",
     },
   },
   {
@@ -203,7 +222,7 @@ const voices: {
       state: "Founder and CEO",
       org: "FirstJobly ",
       profileUrl: "/assets/avatars/trinity-makhari.JPG",
-      countryFlag: "🇿🇦"
+      countryFlag: "🇿🇦",
     },
   },
 
@@ -215,7 +234,7 @@ const voices: {
       state: "Manager & Cloud System Administrator",
       org: "ALI GLOBAL",
       profileUrl: "/assets/avatars/noellie-nganmoue.jpeg",
-      countryFlag: "🇿🇦"
+      countryFlag: "🇿🇦",
     },
-  }
+  },
 ];
