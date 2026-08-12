@@ -7,7 +7,7 @@ import { SystemTheme } from "./theme/theme";
 export function ThemeProvider(props: ColorModeProviderProps) {
   return (
     <ChakraProvider value={SystemTheme}>
-      <ColorModeProvider enableSystem={false} {...props} />
+      <ColorModeProvider storageKey="wv-theme" enableSystem={false} {...props} />
     </ChakraProvider>
   );
 }
