@@ -26,7 +26,7 @@ export default function Extra() {
 function Podcast() {
   return (
     <Box>
-      <Box asChild rounded={"4xl"} w={"full"}>
+      <Box asChild rounded={"4xl"} w={"full"} maxH={"sm"} objectFit={"cover"}>
         <Image
           width={1080}
           height={1080}
@@ -100,7 +100,7 @@ function Newsletter() {
       bgSize={"cover"}
       bgRepeat={"no-repeat"}
     >
-      <Box asChild rounded={"4xl"} w="full" smOnly={{ w: "sm" }}>
+      <Box asChild rounded={"4xl"} w="full" smOnly={{ w: "sm" }} maxH={"sm"}>
         <Image
           width={1080}
           height={1080}

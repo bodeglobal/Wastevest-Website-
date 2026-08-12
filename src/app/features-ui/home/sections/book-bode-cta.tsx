@@ -29,16 +29,15 @@ export default function BookBodeCTA() {
             <Heading mt={5} size={["3xl", null, "5xl"]} maxW={"sm"}>
               Your Vision inspires Action.
             </Heading>
-            <Text mt={6}>
-              Bode delivers sustainability training, workshops and keynote talks
+            <Text mt={6} whiteSpace={"pre-line"}>
+              {`Bode delivers sustainability training, workshops and keynote talks
               that turn climate ideas into practical action. As the founder of
               WasteVest, he helps individuals and organisations rethink waste as
               a valuable resource and build solutions that create lasting
               environmental impact.
-              <br />
-              <br />
+              
               Through engaging, hands-on sessions, Bode equips audiences with
-              the mindset, tools and confidence to drive measurable change.
+              the mindset, tools and confidence to drive measurable change.`}
             </Text>
 
             <BookConsult mt={10} />

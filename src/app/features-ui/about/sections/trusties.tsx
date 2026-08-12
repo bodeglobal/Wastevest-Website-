@@ -38,6 +38,10 @@ const list = [
     title: "Abuja Environmental Protection Board",
     logoUrl: "/assets/logo/trusted/aepd.JPG",
   },
+  {
+    title: "Investorslist",
+    logoUrl: "/assets/logo/trusted/investor_list.svg",
+  },
 ];
 
 export default function Trusties() {

@@ -73,10 +73,11 @@ function VoicesSlide() {
       loop
     >
       <Carousel.ItemGroup
-        w={{ base: "full", md: "fit" }}
+        w={{ base: "full", "2xl": "fit-content" }}
         mx={"auto"}
         p={[4, 8]}
-        scrollSnapAlign={"center"}
+        // scrollSnapAlign={"center"}
+        // placeContent={{"2xl": "center"}}
       >
         {voices.map((item, i) => {
           return (
@@ -115,11 +116,11 @@ function VoicesSlide() {
                     name={item.user.name}
                     size="xl"
                   />
-                  <Box fontSize={"xs"} flex={1}>
+                  <Box flex={1}>
                     <Text fontWeight={600}>
                       {item.user.name} {item.user.countryFlag}
                     </Text>
-                    <Text color="#5A5A58">
+                    <Text color="#5A5A58" fontSize={"sm"}>
                       {item.user.org} · {item.user.state}
                     </Text>
                   </Box>

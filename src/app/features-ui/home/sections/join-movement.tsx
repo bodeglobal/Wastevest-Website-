@@ -45,7 +45,7 @@ export default function JoinMovement() {
                 bg={`url('/assets/illustrations/wave-lines.svg') {colors.bg}`}
               >
                 <Text fontSize={"xl"}>{item.label}</Text>
-                <Text my={10} color="fg.muted" fontSize={"sm"}>
+                <Text my={10} color="fg.muted">
                   {item.description}
                 </Text>
                 <WVLink
@@ -53,7 +53,7 @@ export default function JoinMovement() {
                   fontWeight={"600"}
                   wordBreak={"keep-all"}
                   border={"none"}
-                  fontSize={{base: "sm", sm: "inherit"}}
+                  fontSize={{ base: "sm", sm: "inherit" }}
                   targetBlank
                 >
                   {item.action.label}
