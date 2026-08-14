@@ -68,15 +68,18 @@ export default function Footer() {
                     type="email"
                     placeholder="your@company.com"
                     outline={"none"}
+                    disabled
                     focusRing={"none"}
 
                     border={"none"}
                   />
-                  <Button py={2} colorPalette="primary">
+                  <Button py={2} colorPalette="primary" disabled>
                     Subscribe
                   </Button>
                 </HStack>
-
+                <Text fontSize={"sm"} color="fg.muted" mt={1}>
+                  Newsetter subscription is currently not available.
+                </Text>
                 <PartnerWithUs
                   mt={[4 /* null, 8 */]}
                   showArrow
@@ -97,7 +100,7 @@ export default function Footer() {
                 <NavSection
                   label="Learn"
                   items={[
-                    { label: "Newsletter", href: "/newsletters" },
+                    // { label: "Newsletter", href: "/newsletters" },
                     {
                       label: "Podcast",
                       href: "https://open.spotify.com/episode/39VXwD8ei2cQSq7TTFJHJA?si=LX49PLeXQuGFe0z1uKYvVA&utm_source=copy-link",

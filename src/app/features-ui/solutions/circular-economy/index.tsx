@@ -28,9 +28,10 @@ export default async function CircularEconomyPageEntry() {
           <>
             <Image
               src="/assets/images/gallery/circular-econ.webp"
-              alt=""
+              alt="Circular Economy Banna"
               objectFit="cover"
               objectPosition="center"
+              style={{ objectFit: "cover", objectPosition: "center" }}
               width={1080}
               height={1080}
             />
