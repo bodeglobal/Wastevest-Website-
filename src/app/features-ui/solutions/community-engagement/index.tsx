@@ -63,43 +63,43 @@ none of it come back?"
               "Identify the sustainability issues that matter most to your business and stakeholders.",
           },
           {
-            icon: WVIcons.GlobeHemisphereWest,
+            icon: WVIcons.Database,
             title: "Reporting Framework",
             description:
               "Choose the right reporting standard for your organization's goals.",
           },
           {
-            icon: WVIcons.GlobeHemisphereWest,
+            icon: WVIcons.Devices,
             title: "Reliable Data",
             description:
               "Build trusted systems for collecting and reporting sustainability data.",
           },
           {
-            icon: WVIcons.GlobeHemisphereWest,
+            icon: WVIcons.ChatCenteredText,
             title: "Investor Story",
             description:
               "Communicate your sustainability strategy with confidence and clarity.",
           },
           {
-            icon: WVIcons.GlobeHemisphereWest,
+            icon: WVIcons.Calendar,
             title: "Annual Reporting",
             description:
               "Establish a consistent and effective sustainability reporting process.",
           },
           {
-            icon: WVIcons.GlobeHemisphereWest,
+            icon: WVIcons.Asterisk,
             title: "NGX Compliance",
             description:
               "Align your reports with NGX sustainability disclosure requirements.",
           },
           {
-            icon: WVIcons.GlobeHemisphereWest,
+            icon: WVIcons.CloudSun,
             title: "Climate Risk",
             description:
               "Understand climate risks and prepare for future challenges.",
           },
           {
-            icon: WVIcons.GlobeHemisphereWest,
+            icon: WVIcons.ChartLineUp,
             title: "Leadership Coaching",
             description:
               "Equip sustainability leaders with practical skills and strategic guidance.",
