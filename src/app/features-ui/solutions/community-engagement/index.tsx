@@ -57,7 +57,7 @@ none of it come back?"
         title="What is Included"
         data={[
           {
-            icon: WVIcons.GlobeHemisphereWest,
+            icon: WVIcons.Briefcase,
             title: "Material Priorities",
             description:
               "Identify the sustainability issues that matter most to your business and stakeholders.",
@@ -99,7 +99,7 @@ none of it come back?"
               "Understand climate risks and prepare for future challenges.",
           },
           {
-            icon: WVIcons.ChartLineUp,
+            icon: WVIcons.Ranking,
             title: "Leadership Coaching",
             description:
               "Equip sustainability leaders with practical skills and strategic guidance.",
