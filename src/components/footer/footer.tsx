@@ -1,26 +1,23 @@
+import { WhatWeDoData } from "@/app/features-ui/about/sections/what-we-do";
 import {
   Box,
   Button,
   Container,
   Flex,
   GridItem,
-  Group,
   HStack,
-  IconButton,
   Input,
   SimpleGrid,
   Text,
-  Theme,
+  Theme
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { PartnerWithUs } from "../btns";
 import { NavItem } from "../navbar/NavItem";
 import { navItems } from "../navbar/navItems";
-import WVLogo from "../wv-logo";
-import WVLink from "../wv-link";
-import { WhatWeDoData } from "@/app/features-ui/about/sections/what-we-do";
-import { WVIcons } from "../wv-icons";
 import SocialIcons from "../social-icons";
+import WVLink from "../wv-link";
+import WVLogo from "../wv-logo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear(); //Temporal.PlainDate.prototype.year
@@ -44,7 +41,7 @@ export default function Footer() {
                 <WVLogo w={40} filter={"brightness(0) invert(100%)"} />
                 <Text mt={7} fontSize={"sm"} color="fg.muted" maxW={"sm"}>
                   Get one considered email a month, field notes, new episodes
-                  and what we're building next.
+                  and what we&apos;re building next.
                 </Text>
 
                 <HStack

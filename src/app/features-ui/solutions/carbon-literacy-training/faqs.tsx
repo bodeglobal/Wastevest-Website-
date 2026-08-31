@@ -28,7 +28,7 @@ const faqs = [
     list: [
       "The Why, What and How of carbon and climate change",
       "Greenhouse gases, and their relationship to weather and climate",
-      "How climate change is likely to affect us in the UK and globally",
+      "How climate change is likely to affect us  here in Africa",
       "Key terminology, including – net zero; carbon neutral; carbon footprinting, and offsetting",
       "Climate Justice",
       "What we are already doing – national policy and local action",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "How do I become Carbon Literate?",
-    a: `In order to become certified as Carbon Literate, you must take part in a day’s worth of accredited CL learning.
+    a: `In order to become certified as Carbon Literate, you must take part in a two day’s worth of accredited CL learning.
 
 At WasteVest, our CL courses run as 2 modules over 2 sessions, each 3.5 hours long. Participants are also required to complete 1 hour of pre-course learning and 1 hour of homework between sessions.
 
@@ -57,7 +57,7 @@ You must then submit a completed Participant Details and Evidence Form, includin
   },
   {
     q: "What opportunities are there to progress further?",
-    a: `From each cohort delivered, we encourage at least one participant to continue onto Carbon Literacy Train the Trainer. Please see our Train the Trainer for Carbon Literacy Page for more information on this course.
+    a: `From each cohort delivered, we encourage at least one participant to continue onto Carbon Literacy Train the Trainer. Please book a consultation for train the trainer for carbon litracy information with us.
 
 For organizations that want to go further, there is an opportunity to become a Carbon Literate Organization (Bronze through to Platinum). As part of our services, we can help you on your journey to become a Carbon Literate certified organization. Enquire here for further information.`,
   },
