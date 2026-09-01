@@ -37,7 +37,7 @@ const faqs = [
       "Motivating others to act – employee engagement",
       "Next steps – making a pledge; setting targets; tools.",
     ],
-  },
+  }, 
 
   {
     q: "Who is this for?",
@@ -46,7 +46,7 @@ const faqs = [
   {
     q: "How do I become Carbon Literate?",
     a: `In order to become certified as Carbon Literate, you must take part in a two day’s worth of accredited CL learning.
-
+    
 At WasteVest, our CL courses run as 2 modules over 2 sessions, each 3.5 hours long. Participants are also required to complete 1 hour of pre-course learning and 1 hour of homework between sessions.
 
 You must then submit a completed Participant Details and Evidence Form, including your individual and group pledges, which will be assessed by the Carbon Literacy Project. Following this, you will be awarded a Carbon Literacy certificate, unique to you.`,
