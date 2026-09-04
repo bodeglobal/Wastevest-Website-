@@ -1,5 +1,5 @@
 import { BookConsult, PartnerWithUs } from "@/components/btns";
-import { Box, ButtonGroup, Span } from "@chakra-ui/react";
+import { Box, Button, ButtonGroup, Span } from "@chakra-ui/react";
 import Hero from "../components/hero";
 import NavigationBar from "@/components/navbar/navbar";
 import Benefits from "../components/benefits";
@@ -33,7 +33,7 @@ export default async function CarbonLiteracyTrainingPageEntry() {
               hideArrow
               textDecorationLine={"underline"}
               // textDecorationColor="primary/60"
-              _hover={{textDecorationColor: "primary"}}
+              _hover={{ textDecorationColor: "primary" }}
               border="none"
               p={0}
               textUnderlineOffset={3}
@@ -47,7 +47,16 @@ export default async function CarbonLiteracyTrainingPageEntry() {
         }
         actions={
           <ButtonGroup>
-            <BookConsult showArrow>Get Started</BookConsult>
+            <Button colorPalette={"primary"} asChild>
+              <WVLink
+                href="https://forms.cloud.microsoft/r/ynLexsdyKw"
+                targetBlank
+                hideArrow
+              >
+                Get Started
+              </WVLink>
+            </Button>
+
             <PartnerWithUs borderColor={"tertiary"} variant="outline">
               Become a Partner
             </PartnerWithUs>
