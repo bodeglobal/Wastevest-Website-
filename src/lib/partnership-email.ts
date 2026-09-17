@@ -2,6 +2,7 @@ export type PartnershipType =
   | "general"
   | "routebeacon"
   | "service"
+  | "volunteer"
   | "school"
   | "business"
   | "custom-quote"
@@ -23,6 +24,10 @@ const partnershipMessages: Record<
   service: {
     subject: "RouteBeacon Service Partner Enquiry",
     body: "Hello WasteVest team,\n\nI would like to become a RouteBeacon service partner.\n\nOrganisation:\nName:\nService area:\nServices offered:\n\nThank you.",
+  },
+  volunteer: {
+    subject: "WasteVest Volunteer Enquiry",
+    body: "Hello WasteVest team,\n\nI would like to volunteer with WasteVest and contribute to your work. I am interested in exploring opportunities such as community cleanups, climate education and school visits, waste sorting and recycling activities, community outreach and events, research and storytelling, or contributing my professional skills.\n\nName:\nLocation:\nAvailability:\nAreas of interest or skills:\n\nThank you.",
   },
   school: {
     subject: "WasteVest School Enquiry",

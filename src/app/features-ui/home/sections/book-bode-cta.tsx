@@ -18,13 +18,13 @@ export default function BookBodeCTA() {
           bg={`url('/assets/illustrations/wave-lines-dark.svg') #031124`}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
-          p={[6, null, 10]}
+          p={{ base: 6, md: 10 }}
           gap={10}
           rounded="4xl"
-          flexDir={["column", null, null, "row"]}
+          flexDir={{ base: "column", lg: "row" }}
           color="white"
         >
-          <Box flex={1}>
+          <Box flex={1} w="full">
             <SectionTitleTag>Book Bode as a Speaker</SectionTitleTag>
             <Heading mt={5} size={["3xl", null, "5xl"]} maxW={"sm"}>
               Your Vision inspires Action.
@@ -40,7 +40,9 @@ export default function BookBodeCTA() {
               the mindset, tools and confidence to drive measurable change.`}
             </Text>
 
-            <BookConsult mt={10} />
+            <HStack justifyContent={{ base: "end", lg: "start" }}>
+              <BookConsult mt={10} />
+            </HStack>
           </Box>
           <Box flex={1}>
             <Box

@@ -44,8 +44,8 @@ export default function NewsletterSubscriptionModal() {
       <Portal>
         <Dialog.Positioner p={4}>
           <Dialog.Content
-          boxShadow={"md"}
-            bgImage="linear-gradient(rgb(0 0 0 / 45%), rgb(0 0 0 / 45%)), url('/assets/images/newsletter-modal-bg.jpg')"
+            boxShadow={"md"}
+            bgImage="linear-gradient(rgb(0 0 0 / 45%), rgb(0 0 0 / 45%)), url('/assets/images/newsletter-modal-bg.webp')"
             bgPos={"bottom"}
             bgSize={"cover"}
             textAlign={"center"}
@@ -64,7 +64,12 @@ export default function NewsletterSubscriptionModal() {
             </Dialog.Header>
             <Dialog.Body>
               <VStack maxW={"xl"} mx="auto">
-                <Heading size="5xl" fontSize={"5xl"} textTransform={"capitalize"} fontWeight={"semibold"}>
+                <Heading
+                  size={{ base: "3xl", md: "5xl" }}
+                  fontSize={{ base: "3xl", md: "5xl" }}
+                  textTransform={"capitalize"}
+                  fontWeight={"semibold"}
+                >
                   A sustainable future starts with you. Be part of it.
                 </Heading>
                 <Text fontSize="md" color="white/100" mt={2}>
@@ -73,7 +78,7 @@ export default function NewsletterSubscriptionModal() {
                 <NewsletterSubscriptionForm
                   mt={10}
                   mx={"auto"}
-                  
+
                   w="full"
                   onSuccess={handleSuccess}
                 />

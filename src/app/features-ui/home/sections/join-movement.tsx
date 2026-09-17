@@ -21,7 +21,7 @@ export default function JoinMovement() {
           maxW={"lg"}
           wordBreak={"break-word"}
         >
-          Africa's just transition is a team sport. Pick your position.
+          Africa&apos;s just transition is a team sport. Pick your position.
         </Heading>
 
         <SimpleGrid
@@ -76,7 +76,7 @@ const items = [
       "Join local cleanups, school visits and community sorting days.",
     action: {
       label: "Sign Up",
-      href: "/volunteer",
+      href: getPartnershipMailto("volunteer"),
     },
   },
   {

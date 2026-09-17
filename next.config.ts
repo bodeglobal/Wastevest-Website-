@@ -41,7 +41,7 @@ const nextConfig: NextConfig = {
       permanent: false,
     },
     {
-      source: "/voluteer",
+      source: "/volunteer",
       destination: "https://chat.whatsapp.com/KHaki2J7uOk916An2viFYR?mode=gi_t",
       permanent: false,
     },
@@ -55,7 +55,7 @@ const nextConfig: NextConfig = {
     },
     {
       source: "/about/annual-report",
-      destination: "/assets/documents/20252026-ANNUAL-IMPACT-REPORT.pdf",
+      destination: "/wastevest-annual-impact-report-2025-2026.html",
       // destination: "https://www.thenigerianvoice.com/news/321933/this-is-why-i-am-petitioning-the-abuja-environment-protectio.html",
       permanent: false,
     },

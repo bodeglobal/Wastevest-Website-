@@ -17,9 +17,7 @@ export default async function CommunityEngagementPageEntry() {
       <Hero
         label="Service 02"
         title="Community Engagement"
-        description="WasteVest started in a two-room office in Wuse in 2023 with a stubborn question and
-a spreadsheet. Why, in a city that generates 2,500 tonnes of waste a day, does almost
-none of it come back?"
+        description="WasteVest started with a decision to act In 2023, that meant submitting a petition to the Abuja Environmental Protection Board for waste receptacles in identified public spaces. We had little, but we had our networks, our own resources and the determination to keep asking for what was needed. That spirit still shapes how we work today."
         actions={
           <ButtonGroup>
             <BookConsult showArrow>Get Started</BookConsult>
@@ -47,7 +45,8 @@ none of it come back?"
           {
             title: "Action to Impact",
             body: `In 2023, WasteVest set out to solve a local waste challenge with a simple act of advocacy. That effort grew into partnerships, public awareness campaigns, and practical climate programs that now empower businesses, communities, and institutions across Africa.\n\nToday, we continue that mission by delivering Carbon Literacy training, circular economy solutions, and community-led climate action, helping people move beyond awareness to lasting impact.`,
-            illustrationUrl: "/assets/illustrations/sustainable-electricity-gen.png",//"/assets/illustrations/hugging-planet-earth.png",
+            illustrationUrl:
+              "/assets/illustrations/sustainable-electricity-gen.png", //"/assets/illustrations/hugging-planet-earth.png",
           },
         ]}
       />
@@ -132,7 +131,7 @@ none of it come back?"
         ]}
       />
       <WhatToExpect
-      getStartedUrl={getPartnershipMailto("community-engagement")}
+        getStartedUrl={getPartnershipMailto("community-engagement")}
         benefits={[
           "A disclosure your legal team is comfortable defending publicly",
           "A materiality view your board actually references in decisions",
