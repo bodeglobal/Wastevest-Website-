@@ -9,7 +9,7 @@ import {
   Input,
   SimpleGrid,
   Text,
-  Theme
+  Theme,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { PartnerWithUs } from "../btns";
@@ -18,9 +18,10 @@ import { navItems } from "../navbar/navItems";
 import SocialIcons from "../social-icons";
 import WVLink from "../wv-link";
 import WVLogo from "../wv-logo";
+import NewsletterSubscriptionForm from "./newsletter-sub-form";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear(); //Temporal.PlainDate.prototype.year
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <Theme appearance="dark">
@@ -44,39 +45,7 @@ export default function Footer() {
                   and what we&apos;re building next.
                 </Text>
 
-                <HStack
-                  mt={[8]}
-
-                  borderWidth={"thin"}
-                  borderColor="white"
-                  maxW={"sm"}
-                  // w="full"
-                  _focusWithin={{
-                    focusRing: "outside",
-                    focusRingWidth: "thin",
-                  }}
-                  gap={0}
-                  rounded={"full"}
-                  // hidden
-                  p={1}
-                >
-                  <Input
-                    name="email"
-                    type="email"
-                    placeholder="your@company.com"
-                    outline={"none"}
-                    disabled
-                    focusRing={"none"}
-
-                    border={"none"}
-                  />
-                  <Button py={2} colorPalette="primary" disabled>
-                    Subscribe
-                  </Button>
-                </HStack>
-                <Text fontSize={"sm"} color="fg.muted" mt={1}>
-                  Newsetter subscription is currently not available.
-                </Text>
+                <NewsletterSubscriptionForm mt={[8]} />
                 <PartnerWithUs
                   mt={[4 /* null, 8 */]}
                   showArrow
